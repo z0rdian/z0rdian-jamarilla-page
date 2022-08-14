@@ -82,7 +82,7 @@ function Contact({ contactItems }) {
                                     <p className={`${classes.form_desc} mb-0`}>
                                         {contactItem?.formDesc}
                                     </p>
-                                    <form className={classes.form}>
+                                    <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true" className={classes.form}>
                                         <div
                                             className={
                                                 classes.form_group__input
