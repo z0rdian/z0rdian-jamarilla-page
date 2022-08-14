@@ -82,8 +82,8 @@ function Contact({ contactItems }) {
                                     <p className={`${classes.form_desc} mb-0`}>
                                         {contactItem?.formDesc}
                                     </p>
-                                    <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true" className={classes.form}>
-                                        <input type="hidden" name="form-name" value="contact" />
+                                    <form name="contacti" method="POST" data-netlify="true" className={classes.form}>
+                                        <input type="hidden" name="form-name" value="contacti" />
 
                                         <div
                                             className={
