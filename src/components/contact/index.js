@@ -82,7 +82,7 @@ function Contact({ contactItems }) {
                                     <p className={`${classes.form_desc} mb-0`}>
                                         {contactItem?.formDesc}
                                     </p>
-                                    <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true" className={classes.form}>
+                                    <form name="contactnt" method="POST" data-netlify-recaptcha="true" data-netlify="true" className={classes.form}>
                                         <div
                                             className={
                                                 classes.form_group__input
@@ -109,7 +109,8 @@ function Contact({ contactItems }) {
                                         </div>
                                         <textarea
                                             type='text'
-                                            name='text'
+                                            id='txt'
+                                            name='message'
                                             placeholder='Message'
                                             className={`${classes.form_textarea__field} mt-30`}
                                         ></textarea>
@@ -117,12 +118,10 @@ function Contact({ contactItems }) {
                                             <button
                                                 className={`${classes.btn} ${classes.btn_secondary} ${classes.btn_hover__primary}`}
                                                 type='submit'
-                                                action='/success'
                                             >
                                                 {contactItem?.btnText}
                                             </button>
                                         </div>
-                                        <div data-netlify-recaptcha="true"></div>
                                     </form>
                                 </Col>
                                 <Col lg={{ span: 6 }} className='ps-lg-50'>
