@@ -13,7 +13,6 @@ body {
     line-height: 1.5;
     margin: 0;
     background-color: #14181e!important;
-    filter: saturate(2.6) sepia(0.25) url('#sepia') contrast(1.4) brightness(0.9) blur(3.8px) grayscale(0.15) invert(0.12);
 }
 button {
     &:focus:not(:focus-visible) {
