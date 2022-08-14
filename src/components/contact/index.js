@@ -109,6 +109,7 @@ function Contact({ contactItems }) {
                                         </div>
                                         <textarea
                                             type='text'
+                                            name='text'
                                             placeholder='Message'
                                             className={`${classes.form_textarea__field} mt-30`}
                                         ></textarea>
@@ -116,6 +117,7 @@ function Contact({ contactItems }) {
                                             <button
                                                 className={`${classes.btn} ${classes.btn_secondary} ${classes.btn_hover__primary}`}
                                                 type='submit'
+                                                action='/success'
                                             >
                                                 {contactItem?.btnText}
                                             </button>
