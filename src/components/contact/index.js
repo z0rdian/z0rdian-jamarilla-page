@@ -120,6 +120,7 @@ function Contact({ contactItems }) {
                                                 {contactItem?.btnText}
                                             </button>
                                         </div>
+                                        <div data-netlify-recaptcha="true"></div>
                                     </form>
                                 </Col>
                                 <Col lg={{ span: 6 }} className='ps-lg-50'>
