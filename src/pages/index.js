@@ -8,7 +8,7 @@ import Counter from "../components/counter";
 import Hero from "../components/home-page/hero";
 import HomePageServices from "../components/home-page/homepage-services";
 // import LatestBlog from "../components/home-page/latest-blog";
-import LatestProject from "../components/home-page/latest-project";
+// import LatestProject from "../components/home-page/latest-project";
 import Footer from "../components/layout/footer";
 import Newsletter from "../components/newsletter/newsletter";
 // import Team from "../components/team";
@@ -22,16 +22,16 @@ function HomePage(props) {
         <title>Home - Amarilla Construcciones</title>
         <meta
           name="description"
-          content="OxyBuild - Construction React Next JS Template Industry, Products Manufacturing Company, building companies, architecture firms, and the like can take to their advantage by using OxyBuild - Construction React Next JS Template."
+          content="refacciones amarilla construcciones"
         />
       </Head>
       <Hero heroItems={props.heroItems} />
       <BannerOne bannerItems={props.bannerItems} />
       <AboutOne aboutItems={props.aboutItems} />
-      <LatestProject
+      {/* <LatestProject
         projects={props.projects}
         project_section__items={props.project_section__items}
-      />
+      /> */}
       <HomePageServices
         services={props.services}
         service_section__items={props.service_section__items}
@@ -61,9 +61,9 @@ export function getStaticProps() {
   const heroItems = getAllItems("heros");
   const bannerItems = getAllItems("banner");
   const aboutItems = getAllItems("about");
-  const project_section__items = getAllItems("project-section");
-  const projects = getAllItems("projects");
-  const LatestProject = getFeaturedItems(projects);
+  // const project_section__items = getAllItems("project-section");
+  // const projects = getAllItems("projects");
+  // const LatestProject = getFeaturedItems(projects);
   // const brandItems = getAllItems("brand");
   const services = getAllItems("services");
   const service_section__items = getAllItems("service-section");
@@ -84,8 +84,8 @@ export function getStaticProps() {
       heroItems,
       bannerItems,
       aboutItems,
-      project_section__items,
-      projects: LatestProject,
+      // project_section__items,
+      // projects: LatestProject,
       // brandItems,
       services: HomePageServices,
       service_section__items,

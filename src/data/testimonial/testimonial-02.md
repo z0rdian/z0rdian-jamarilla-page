@@ -1,8 +1,9 @@
 ---
 title: 'testimonial'
-excerpt: 'Publishing packages and web page now use Lorem Ipsum as their mel text, and a search for lorem more than one articel a is very important which can be help us for building a beauiful construction design...'
+excerpt: 'La estructura contaba con un piso, se le agregó otro y se añadieron más habitaciones. Se logró finalizar la obra con una terraza nueva con tender y lavarropa en tiempo record.
+Gracias a la famila Amarilla por el trabajo.'
 avatar: '/images/testimonial/avatar/1-2-46x46.png'
 avatarAlt: 'Testimonial Avatar'
-userName: 'Rehana Williams'
-userOccupation: 'CEO, Xerox LTd.'
+userName: 'Hotel Familiar Diego'
+userOccupation: ''
 ---

@@ -10,7 +10,7 @@ function ServiceItem(props) {
 
     return (
         <div className='service-item'>
-            <Link href={linkPath}>
+            <Link href='/contact'>
                 <a className={classes.img}>
                     <img className='img-full' src={imagePath} alt={title} />
                 </a>
@@ -20,7 +20,7 @@ function ServiceItem(props) {
                     <Link href={linkPath}>{title}</Link>
                 </h2>
                 <div className={classes.icon}>
-                    <Link href='mailto://info@example.com' passHref>
+                    <Link href='/contact' passHref>
                         <a>
                             <IoAddSharp />
                         </a>

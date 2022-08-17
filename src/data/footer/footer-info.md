@@ -25,7 +25,7 @@ quickLinkList:
 contactInfoTitle: 'Información de contacto'
 widgetAddress: 'Paraná 326 Buenos Aires<br /> Capital Federal'
 widgetNumber: '+54 9 11 6860-6386'
-additionWidgetAddress: 'Paraná 326 Buenos Aires<br /> Capital Federal'
+additionWidgetAddress: 'Mataderos Buenos Aires<br /> Capital Federal'
 additionWidgetNumber: '+54 9 11 6860-6386'
 socialList:
     [

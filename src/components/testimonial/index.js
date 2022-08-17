@@ -38,13 +38,13 @@ function Testimonial({ testimonialItems, testimonial_section__items }) {
                                             }}
                                         ></p>
                                         <div className='btn-wrap'>
-                                            <Link href='/'>
+                                            <Link href='/contact'>
                                                 <a
                                                     className={
                                                         classes.section__btn
                                                     }
                                                 >
-                                                    Contactanos
+                                                    Contáctanos
                                                 </a>
                                             </Link>
                                         </div>

@@ -1,6 +1,6 @@
 ---
-title: 'Hand over <br/> Project'
-excerpt: 'Meeting with our clients for all requirements for this project we start now'
+title: 'Renovación <br/> & Construcción'
+excerpt: 'Damos inicio a materializar el sueño. Relajese mientras nosotros nos encargamos.'
 path: '/projects'
 dataCount: '04'
 cName: 'item secondary__bg'

@@ -1,5 +1,5 @@
 ---
-sectionSubtitle: 'WORK PROCESS'
-sectionTitle: 'The way of our Working'
-sectionDesc: 'Construction of itself, because it is pain, but because some proper style design occur in toil and pain pleasure we have expert team'
+sectionSubtitle: 'Modus Operandi'
+sectionTitle: 'Nuestra forma de Trabajar'
+sectionDesc: 'Mantenemos una estructura y orden para maximizar la eficiencia. Obras de calidad en tiempo record.'
 ---

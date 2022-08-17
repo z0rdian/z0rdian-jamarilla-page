@@ -1,6 +1,6 @@
 ---
-title: 'Construction <br/> & Finalize'
-excerpt: 'Meeting with our clients for all requirements for this project we start now'
+title: 'Reunión <br/> & Inicio'
+excerpt: 'Se prepara el entorno con los materiales para dar inicio a la obra.'
 path: '/projects'
 dataCount: '03'
 cName: 'item secondary__bg'

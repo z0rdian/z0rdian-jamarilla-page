@@ -1,8 +1,9 @@
 ---
 title: 'testimonial'
-excerpt: 'Publishing packages and web page now use Lorem Ipsum as their mel text, and a search for lorem more than one articel a is very important which can be help us for building a beauiful construction design...'
+excerpt: 'Los muchachos en 3 meses terminarón la renovación del hotel. Pasó de contar con 36 habitaciones a 86 pintadas con un acabado excepcional.
+'
 avatar: '/images/testimonial/avatar/1-1-46x46.png'
 avatarAlt: 'Testimonial Avatar'
-userName: 'Christoper Luis'
-userOccupation: 'CEO, Octafact Group'
+userName: 'Hotel Azul'
+userOccupation: ''
 ---

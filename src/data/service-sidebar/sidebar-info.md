@@ -1,12 +1,12 @@
 ---
 sidebarList:
     [
-        { listText: 'Construcción', path: '/services/construction' },
-        { listText: 'Arquitectura', path: '/services/architecture' },
-        { listText: 'Reformación', path: '/services/renovation' },
-        { listText: 'Cemento', path: '/services/concrete-supply' },
-        { listText: 'Pisos', path: '/services/laminate-flooring' },
-        { listText: 'Planificación del Proyecto', path: '/services/project-planning' },
+        { listText: 'Construcción', path: '/contact' },
+        { listText: 'Arquitectura', path: '/contact' },
+        { listText: 'Reformación', path: '/contact' },
+        { listText: 'Cemento', path: '/contact' },
+        { listText: 'Pisos', path: '/contact' },
+        { listText: 'Planificación del Proyecto', path: '/contact' },
     ]
 downloadBrochure:
     [

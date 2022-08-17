@@ -50,13 +50,13 @@ function CounterTwo() {
                     <Col lg={{ span: 3 }}>
                         <CountUp
                             start={focus ? 0 : null}
-                            end={527}
+                            end={78}
                             duration={3}
                         >
                             {({ countUpRef }) => (
                                 <div className={classes.item}>
                                     <h2 className={classes.count_inner__text}>
-                                        527
+                                        +78
                                     </h2>
                                     <h3
                                         className={classes.count}
@@ -85,7 +85,7 @@ function CounterTwo() {
                             {({ countUpRef }) => (
                                 <div className={classes.item}>
                                     <h2 className={classes.count_inner__text}>
-                                        856
+                                        +230
                                     </h2>
                                     <h3
                                         className={classes.count}

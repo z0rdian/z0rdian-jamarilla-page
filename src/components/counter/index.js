@@ -21,13 +21,13 @@ function Counter() {
                     <Col lg={{ span: 4 }} sm={{ span: 6 }}>
                         <CountUp
                             start={focus ? 0 : null}
-                            end={10}
+                            end={26}
                             duration={3}
                         >
                             {({ countUpRef }) => (
                                 <div className={classes.item}>
                                     <h2 className={classes.count_inner__text}>
-                                        10
+                                        26
                                     </h2>
                                     <h3
                                         className={classes.count}
@@ -50,13 +50,13 @@ function Counter() {
                     <Col lg={{ span: 3 }} sm={{ span: 6 }}>
                         <CountUp
                             start={focus ? 0 : null}
-                            end={527}
+                            end={30}
                             duration={3}
                         >
                             {({ countUpRef }) => (
                                 <div className={classes.item}>
                                     <h2 className={classes.count_inner__text}>
-                                        527
+                                        30
                                     </h2>
                                     <h3
                                         className={classes.count}
@@ -79,13 +79,13 @@ function Counter() {
                     <Col lg={{ span: 3 }} sm={{ span: 6 }}>
                         <CountUp
                             start={focus ? 0 : null}
-                            end={856}
+                            end={25}
                             duration={3}
                         >
                             {({ countUpRef }) => (
                                 <div className={classes.item}>
                                     <h2 className={classes.count_inner__text}>
-                                        856
+                                        25
                                     </h2>
                                     <h3
                                         className={classes.count}
