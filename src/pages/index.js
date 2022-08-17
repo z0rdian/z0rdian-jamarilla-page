@@ -7,12 +7,12 @@ import BannerTwo from "../components/banner/index-2";
 import Counter from "../components/counter";
 import Hero from "../components/home-page/hero";
 import HomePageServices from "../components/home-page/homepage-services";
-import LatestBlog from "../components/home-page/latest-blog";
+// import LatestBlog from "../components/home-page/latest-blog";
 import LatestProject from "../components/home-page/latest-project";
 import Footer from "../components/layout/footer";
 import Newsletter from "../components/newsletter/newsletter";
-import Team from "../components/team";
-import Testimonial from "../components/testimonial";
+// import Team from "../components/team";
+// import Testimonial from "../components/testimonial";
 import { getAllItems, getFeaturedItems } from "../lib/items-util";
 
 function HomePage(props) {
@@ -36,20 +36,21 @@ function HomePage(props) {
         services={props.services}
         service_section__items={props.service_section__items}
       />
-      <BannerTwo bannerTwoItems={props.bannerTwoItems} />
+      {/* <BannerTwo bannerTwoItems={props.bannerTwoItems} /> */}
       <Counter />
-      <Team
+      
+      {/* <Team
         teamItems={props.teamItems}
         team_section__items={props.team_section__items}
-      />
-      <Testimonial
+      /> */}
+      {/* <Testimonial
         testimonialItems={props.testimonialItems}
         testimonial_section__items={props.testimonial_section__items}
-      />
-      <LatestBlog
+      /> */}
+      {/* <LatestBlog
         blogs={props.blogs}
         blog_section__items={props.blog_section__items}
-      />
+      /> */}
       <Newsletter newsletterItems={props.newsletterItems} />
       <Footer footerItems={props.footerItems} />
     </Fragment>
@@ -67,14 +68,14 @@ export function getStaticProps() {
   const services = getAllItems("services");
   const service_section__items = getAllItems("service-section");
   const HomePageServices = getFeaturedItems(services);
-  const bannerTwoItems = getAllItems("banner-2");
-  const teamItems = getAllItems("team");
-  const team_section__items = getAllItems("team-section");
-  const testimonialItems = getAllItems("testimonial");
-  const testimonial_section__items = getAllItems("testimonial-section");
-  const blog_section__items = getAllItems("blog-section");
-  const blogs = getAllItems("blogs");
-  const LatestBlog = getFeaturedItems(blogs);
+  // const bannerTwoItems = getAllItems("banner-2");
+  // const teamItems = getAllItems("team");
+  // const team_section__items = getAllItems("team-section");
+  // const testimonialItems = getAllItems("testimonial");
+  // const testimonial_section__items = getAllItems("testimonial-section");
+  // const blog_section__items = getAllItems("blog-section");
+  // const blogs = getAllItems("blogs");
+  // const LatestBlog = getFeaturedItems(blogs);
   const newsletterItems = getAllItems("newsletter");
   const footerItems = getAllItems("footer");
 
@@ -88,13 +89,13 @@ export function getStaticProps() {
       // brandItems,
       services: HomePageServices,
       service_section__items,
-      bannerTwoItems,
-      teamItems,
-      team_section__items,
-      testimonialItems,
-      testimonial_section__items,
-      blog_section__items,
-      blogs: LatestBlog,
+      // bannerTwoItems,
+      // teamItems,
+      // team_section__items,
+      // testimonialItems,
+      // testimonial_section__items,
+      // blog_section__items,
+      // blogs: LatestBlog,
       newsletterItems,
       footerItems,
     },

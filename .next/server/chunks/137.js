@@ -31,19 +31,20 @@ module.exports = {
 /* harmony import */ var react_icons_io5__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9989);
 /* harmony import */ var react_icons_io5__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_icons_io5__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1664);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 
 
 
 
 function PageNavigation() {
-    return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
         className: (_page_navigation_page_navigation_module_scss__WEBPACK_IMPORTED_MODULE_3___default().page_navigation__wrap),
         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
             className: (_page_navigation_page_navigation_module_scss__WEBPACK_IMPORTED_MODULE_3___default().page_navigation),
             children: [
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                     className: (_page_navigation_page_navigation_module_scss__WEBPACK_IMPORTED_MODULE_3___default().page_navigation__item),
-                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
+                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
                         href: "#",
                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                             className: (_page_navigation_page_navigation_module_scss__WEBPACK_IMPORTED_MODULE_3___default().page_navigation__link),
@@ -53,7 +54,7 @@ function PageNavigation() {
                 }),
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                     className: (_page_navigation_page_navigation_module_scss__WEBPACK_IMPORTED_MODULE_3___default().page_navigation__item),
-                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
+                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
                         href: "#",
                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                             className: `${(_page_navigation_page_navigation_module_scss__WEBPACK_IMPORTED_MODULE_3___default().page_navigation__link)} ${(_page_navigation_page_navigation_module_scss__WEBPACK_IMPORTED_MODULE_3___default().active)}`,
@@ -63,7 +64,7 @@ function PageNavigation() {
                 }),
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                     className: (_page_navigation_page_navigation_module_scss__WEBPACK_IMPORTED_MODULE_3___default().page_navigation__item),
-                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
+                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
                         href: "#",
                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                             className: (_page_navigation_page_navigation_module_scss__WEBPACK_IMPORTED_MODULE_3___default().page_navigation__link),
@@ -73,7 +74,7 @@ function PageNavigation() {
                 }),
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                     className: (_page_navigation_page_navigation_module_scss__WEBPACK_IMPORTED_MODULE_3___default().page_navigation__item),
-                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
+                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
                         href: "#",
                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                             className: (_page_navigation_page_navigation_module_scss__WEBPACK_IMPORTED_MODULE_3___default().page_navigation__link),
@@ -83,7 +84,7 @@ function PageNavigation() {
                 }),
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                     className: (_page_navigation_page_navigation_module_scss__WEBPACK_IMPORTED_MODULE_3___default().page_navigation__item),
-                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
+                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
                         href: "#",
                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                             className: (_page_navigation_page_navigation_module_scss__WEBPACK_IMPORTED_MODULE_3___default().page_navigation__link),
@@ -93,7 +94,7 @@ function PageNavigation() {
                 })
             ]
         })
-    }));
+    });
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PageNavigation);
 

@@ -44,7 +44,7 @@ function Testimonial({ testimonialItems, testimonial_section__items }) {
                                                         classes.section__btn
                                                     }
                                                 >
-                                                    view more
+                                                    Contactanos
                                                 </a>
                                             </Link>
                                         </div>

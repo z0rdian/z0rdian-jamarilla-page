@@ -50,7 +50,7 @@ export function getStaticProps() {
     const service_section__items = getAllItems('service-section');
     const servicesBreadcrumb = getAllItems('service-breadcrumb');
     const bannerTwoItems = getAllItems('banner-2');
-    const brandItems = getAllItems('brand');
+    // const brandItems = getAllItems('brand');
     const testimonial_section__items = getAllItems('testimonial-section');
     const bannerFourItems = getAllItems('banner-4');
     const bannerSection = getAllItems('banner-section');
@@ -65,7 +65,7 @@ export function getStaticProps() {
             servicesBreadcrumb,
             service_section__items,
             bannerTwoItems,
-            brandItems,
+            // brandItems,
             bannerFourItems,
             bannerSection,
             testimonialItems,

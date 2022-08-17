@@ -17,13 +17,13 @@ function Newsletter({ newsletterItems }) {
                                         <input
                                             className={classes.input_field}
                                             type='email'
-                                            placeholder='To get update, enter your email'
+                                            placeholder='¿Qué esperas?'
                                         ></input>
                                         <div className={classes.btn__wrap}>
                                             <button
                                                 className={`${classes.btn} ${classes.btn_secondary} ${classes.btn_hover__white}`}
                                             >
-                                                Subscribe now
+                                                Suscribirse
                                             </button>
                                         </div>
                                     </form>

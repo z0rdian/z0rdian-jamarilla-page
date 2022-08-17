@@ -82,9 +82,7 @@ function Contact({ contactItems }) {
                                     <p className={`${classes.form_desc} mb-0`}>
                                         {contactItem?.formDesc}
                                     </p>
-                                    <form name="contacti" method="POST" data-netlify="true" className={classes.form}>
-                                        <input type="hidden" name="form-name" value="contacti" />
-
+                                    <form className={classes.form}>
                                         <div
                                             className={
                                                 classes.form_group__input
@@ -111,8 +109,6 @@ function Contact({ contactItems }) {
                                         </div>
                                         <textarea
                                             type='text'
-                                            id='txt'
-                                            name='message'
                                             placeholder='Message'
                                             className={`${classes.form_textarea__field} mt-30`}
                                         ></textarea>

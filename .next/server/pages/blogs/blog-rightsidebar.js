@@ -35,6 +35,7 @@ var blog_module = __webpack_require__(5932);
 var blog_module_default = /*#__PURE__*/__webpack_require__.n(blog_module);
 // EXTERNAL MODULE: ./node_modules/next/link.js
 var next_link = __webpack_require__(1664);
+var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 ;// CONCATENATED MODULE: ./src/components/blogs/rightsidebar-item.js
 
 
@@ -44,14 +45,14 @@ function BlogRightSidebarItem(props) {
     const { title , blogMeta , excerpt , mediumImage , slug  } = props.blog;
     const imagePath = `/images/blogs/${slug}/${mediumImage}`;
     const linkPath = `/blogs/${slug}`;
-    return(/*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
+    return /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
         md: {
             span: 6
         },
         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
             className: (blog_module_default()).blog_item,
             children: [
-                /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
+                /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                     href: linkPath,
                     children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                         className: (blog_module_default()).blog_img,
@@ -71,7 +72,7 @@ function BlogRightSidebarItem(props) {
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("h3", {
                             className: (blog_module_default()).blog_title,
-                            children: /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
+                            children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                 href: linkPath,
                                 children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                     children: title
@@ -86,7 +87,7 @@ function BlogRightSidebarItem(props) {
                             className: (blog_module_default()).blog_btn__wrap,
                             children: [
                                 /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
+                                    children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                         href: linkPath,
                                         children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                             className: (blog_module_default()).blog_btn__link,
@@ -95,7 +96,7 @@ function BlogRightSidebarItem(props) {
                                     })
                                 }),
                                 /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
+                                    children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                         href: linkPath,
                                         children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                             children: "35 Comments"
@@ -108,7 +109,7 @@ function BlogRightSidebarItem(props) {
                 })
             ]
         })
-    }));
+    });
 }
 /* harmony default export */ const rightsidebar_item = (BlogRightSidebarItem);
 
@@ -121,7 +122,7 @@ function BlogRightSidebarItem(props) {
 
 function BlogRightSidebarGrid(props) {
     const { blogs  } = props;
-    return(/*#__PURE__*/ jsx_runtime_.jsx("div", {
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         className: (blog_module_default()).blog,
         children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Container, {
             children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Row, {
@@ -151,9 +152,9 @@ function BlogRightSidebarGrid(props) {
                             /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Row, {
                                 className: "g-4",
                                 children: blogs.map((blog)=>{
-                                    return(/*#__PURE__*/ jsx_runtime_.jsx(rightsidebar_item, {
+                                    return /*#__PURE__*/ jsx_runtime_.jsx(rightsidebar_item, {
                                         blog: blog
-                                    }, blog.slug));
+                                    }, blog.slug);
                                 })
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx(page_navigation/* default */.Z, {})
@@ -162,7 +163,7 @@ function BlogRightSidebarGrid(props) {
                 ]
             })
         })
-    }));
+    });
 }
 /* harmony default export */ const rightsidebar_grid = (BlogRightSidebarGrid);
 
@@ -172,7 +173,7 @@ function BlogRightSidebarGrid(props) {
 
 function BlogRightSidebar(props) {
     const { blogs , categories , tags  } = props;
-    return(/*#__PURE__*/ jsx_runtime_.jsx("div", {
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Container, {
             children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Row, {
                 className: "g-0",
@@ -189,7 +190,7 @@ function BlogRightSidebar(props) {
                 })
             })
         })
-    }));
+    });
 }
 /* harmony default export */ const rightsidebar = (BlogRightSidebar);
 
@@ -197,30 +198,30 @@ function BlogRightSidebar(props) {
 
 
 function RightSidebarBreadcrumb({ blogsBreadcrumb  }) {
-    return(/*#__PURE__*/ jsx_runtime_.jsx("div", {
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         className: "page_banner__bg",
         children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Container, {
-            children: blogsBreadcrumb === null || blogsBreadcrumb === void 0 ? void 0 : blogsBreadcrumb.map((blogBreadcrumb, i)=>{
-                return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+            children: blogsBreadcrumb?.map((blogBreadcrumb, i)=>{
+                return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                     className: "page_content",
                     children: [
                         /*#__PURE__*/ jsx_runtime_.jsx("span", {
                             className: "page_subtitle",
-                            children: blogBreadcrumb === null || blogBreadcrumb === void 0 ? void 0 : blogBreadcrumb.rightSidebarSubtitle
+                            children: blogBreadcrumb?.rightSidebarSubtitle
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("h1", {
                             className: "page_title",
-                            children: blogBreadcrumb === null || blogBreadcrumb === void 0 ? void 0 : blogBreadcrumb.rightSidebarTitle
+                            children: blogBreadcrumb?.rightSidebarTitle
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("p", {
                             className: "page_desc",
-                            children: blogBreadcrumb === null || blogBreadcrumb === void 0 ? void 0 : blogBreadcrumb.rightSidebarDesc
+                            children: blogBreadcrumb?.rightSidebarDesc
                         })
                     ]
-                }, i));
+                }, i);
             })
         })
-    }));
+    });
 }
 /* harmony default export */ const rightsidebar_breadcrumb = (RightSidebarBreadcrumb);
 
@@ -246,7 +247,7 @@ var items_util = __webpack_require__(7698);
 
 
 function BlogLeftSidebarPage(props) {
-    return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_.Fragment, {
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_.Fragment, {
         children: [
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)((head_default()), {
                 children: [
@@ -275,16 +276,16 @@ function BlogLeftSidebarPage(props) {
                 footerItems: props.footerItems
             })
         ]
-    }));
+    });
 }
 function getStaticProps() {
-    const allItems = (0,items_util/* getAllItems */.Nx)('blogs');
+    const allItems = (0,items_util/* getAllItems */.Nx)("blogs");
     const categories = (0,blog_categories/* getBlogCategories */.D)();
     const tags = (0,blog_tags/* getBlogTags */.y)();
-    const blogsBreadcrumb = (0,items_util/* getAllItems */.Nx)('blog-breadcrumb');
-    const blogsSidebar = (0,items_util/* getAllItems */.Nx)('blog-sidebar');
-    const newsletterItems = (0,items_util/* getAllItems */.Nx)('newsletter');
-    const footerItems = (0,items_util/* getAllItems */.Nx)('footer');
+    const blogsBreadcrumb = (0,items_util/* getAllItems */.Nx)("blog-breadcrumb");
+    const blogsSidebar = (0,items_util/* getAllItems */.Nx)("blog-sidebar");
+    const newsletterItems = (0,items_util/* getAllItems */.Nx)("newsletter");
+    const footerItems = (0,items_util/* getAllItems */.Nx)("footer");
     return {
         props: {
             blogs: allItems,
@@ -309,10 +310,17 @@ module.exports = require("gray-matter");
 
 /***/ }),
 
-/***/ 562:
+/***/ 3280:
 /***/ ((module) => {
 
-module.exports = require("next/dist/server/denormalize-page-path.js");
+module.exports = require("next/dist/shared/lib/app-router-context.js");
+
+/***/ }),
+
+/***/ 2796:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/head-manager-context.js");
 
 /***/ }),
 
@@ -337,10 +345,45 @@ module.exports = require("next/dist/shared/lib/mitt.js");
 
 /***/ }),
 
+/***/ 4406:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/page-path/denormalize-page-path.js");
+
+/***/ }),
+
 /***/ 4964:
 /***/ ((module) => {
 
 module.exports = require("next/dist/shared/lib/router-context.js");
+
+/***/ }),
+
+/***/ 1751:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/router/utils/add-path-prefix.js");
+
+/***/ }),
+
+/***/ 6220:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/router/utils/compare-states.js");
+
+/***/ }),
+
+/***/ 299:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/router/utils/format-next-pathname-info.js");
+
+/***/ }),
+
+/***/ 3938:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/router/utils/format-url.js");
 
 /***/ }),
 
@@ -351,10 +394,10 @@ module.exports = require("next/dist/shared/lib/router/utils/get-asset-path-from-
 
 /***/ }),
 
-/***/ 4365:
+/***/ 5789:
 /***/ ((module) => {
 
-module.exports = require("next/dist/shared/lib/router/utils/get-middleware-regex.js");
+module.exports = require("next/dist/shared/lib/router/utils/get-next-pathname-info.js");
 
 /***/ }),
 
@@ -365,6 +408,13 @@ module.exports = require("next/dist/shared/lib/router/utils/is-dynamic.js");
 
 /***/ }),
 
+/***/ 8854:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/router/utils/parse-path.js");
+
+/***/ }),
+
 /***/ 1292:
 /***/ ((module) => {
 
@@ -372,10 +422,24 @@ module.exports = require("next/dist/shared/lib/router/utils/parse-relative-url.j
 
 /***/ }),
 
+/***/ 4567:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/router/utils/path-has-prefix.js");
+
+/***/ }),
+
 /***/ 979:
 /***/ ((module) => {
 
 module.exports = require("next/dist/shared/lib/router/utils/querystring.js");
+
+/***/ }),
+
+/***/ 3297:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/router/utils/remove-trailing-slash.js");
 
 /***/ }),
 
@@ -484,7 +548,7 @@ module.exports = require("path");
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [730,664,698,71,932,72,137], () => (__webpack_exec__(8978)));
+var __webpack_exports__ = __webpack_require__.X(0, [952,664,698,71,932,72,137], () => (__webpack_exec__(8978)));
 module.exports = __webpack_exports__;
 
 })();

@@ -509,6 +509,7 @@ iframe {
 }
 
 /* -Breadcrumb- */
+
 .page {
     &_banner {
         &__bg {
@@ -519,9 +520,8 @@ iframe {
             min-height: 460px;
             display: flex;
             align-items: center;
-            filter: saturate(2.6) sepia(0.25) url('#sepia') contrast(1.4) brightness(0.9) blur(3.8px) grayscale(0.15) invert(0.12);
+            }
         }
-    }
     &_subtitle {
         font-family: 'Rajdhani', sans-serif;
         font-size: 24px;

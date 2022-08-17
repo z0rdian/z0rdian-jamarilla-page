@@ -40,18 +40,19 @@ module.exports = {
 /* harmony import */ var _banner_banner_2_module_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9289);
 /* harmony import */ var _banner_banner_2_module_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_banner_banner_2_module_scss__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1664);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 
 
 
 
 function BannerFive({ bannerTwoItems  }) {
-    return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
         className: (_banner_banner_2_module_scss__WEBPACK_IMPORTED_MODULE_3___default().bg),
         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Container, {
             fluid: true,
             className: "px-0",
-            children: bannerTwoItems === null || bannerTwoItems === void 0 ? void 0 : bannerTwoItems.map((bannerTwoItem, i)=>{
-                return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Row, {
+            children: bannerTwoItems?.map((bannerTwoItem, i)=>{
+                return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Row, {
                     className: "g-0",
                     children: [
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Col, {
@@ -61,8 +62,8 @@ function BannerFive({ bannerTwoItems  }) {
                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                 className: (_banner_banner_2_module_scss__WEBPACK_IMPORTED_MODULE_3___default().image),
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                    src: bannerTwoItem === null || bannerTwoItem === void 0 ? void 0 : bannerTwoItem.image,
-                                    alt: bannerTwoItem === null || bannerTwoItem === void 0 ? void 0 : bannerTwoItem.alt,
+                                    src: bannerTwoItem?.image,
+                                    alt: bannerTwoItem?.alt,
                                     className: "img-full"
                                 })
                             })
@@ -79,7 +80,7 @@ function BannerFive({ bannerTwoItems  }) {
                                     children: [
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                             className: (_banner_banner_2_module_scss__WEBPACK_IMPORTED_MODULE_3___default().sub_title),
-                                            children: bannerTwoItem === null || bannerTwoItem === void 0 ? void 0 : bannerTwoItem.subTitle
+                                            children: bannerTwoItem?.subTitle
                                         }),
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
                                             className: (_banner_banner_2_module_scss__WEBPACK_IMPORTED_MODULE_3___default().title),
@@ -89,11 +90,11 @@ function BannerFive({ bannerTwoItems  }) {
                                         }),
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                             className: (_banner_banner_2_module_scss__WEBPACK_IMPORTED_MODULE_3___default().desc),
-                                            children: bannerTwoItem === null || bannerTwoItem === void 0 ? void 0 : bannerTwoItem.desc
+                                            children: bannerTwoItem?.desc
                                         }),
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                             className: (_banner_banner_2_module_scss__WEBPACK_IMPORTED_MODULE_3___default().btn__wrap),
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
                                                 href: "/projects",
                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                                     className: `me-20 ${(_banner_banner_2_module_scss__WEBPACK_IMPORTED_MODULE_3___default().btn)} ${(_banner_banner_2_module_scss__WEBPACK_IMPORTED_MODULE_3___default().btn_primary)} ${(_banner_banner_2_module_scss__WEBPACK_IMPORTED_MODULE_3___default().btn_hover__white)}`,
@@ -106,10 +107,10 @@ function BannerFive({ bannerTwoItems  }) {
                             })
                         })
                     ]
-                }, i));
+                }, i);
             })
         })
-    }));
+    });
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (BannerFive);
 

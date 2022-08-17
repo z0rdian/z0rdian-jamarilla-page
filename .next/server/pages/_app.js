@@ -57,6 +57,7 @@ var jsx_runtime_ = __webpack_require__(997);
 var external_react_ = __webpack_require__(6689);
 // EXTERNAL MODULE: ./node_modules/next/link.js
 var next_link = __webpack_require__(1664);
+var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 // EXTERNAL MODULE: external "react-bootstrap"
 var external_react_bootstrap_ = __webpack_require__(358);
 // EXTERNAL MODULE: ./src/components/layout/header.module.scss
@@ -70,94 +71,94 @@ var io5_ = __webpack_require__(9989);
 const OffcanvasData = [
     {
         id: 1,
-        title: 'Home',
-        path: '/',
-        cName: 'offcanvas-text'
+        title: "Home",
+        path: "/",
+        cName: "offcanvas-text"
     },
     {
         id: 2,
-        title: 'About',
-        path: '/about',
-        cName: 'offcanvas-text'
+        title: "About",
+        path: "/about",
+        cName: "offcanvas-text"
     },
     {
         id: 3,
-        title: 'Services',
-        path: '/services',
-        cName: 'offcanvas-text'
+        title: "Services",
+        path: "/services",
+        cName: "offcanvas-text"
     },
     {
         id: 4,
-        title: 'Projects',
-        path: '#',
-        cName: 'offcanvas-text',
-        arrowDown: 'FaAngleDown',
+        title: "Projects",
+        path: "#",
+        cName: "offcanvas-text",
+        arrowDown: "FaAngleDown",
         submenu: [
             {
-                link: '/projects/project-fullwidth',
-                text: 'Project Fullwidth'
+                link: "/projects/project-fullwidth",
+                text: "Project Fullwidth"
             },
             {
-                link: '/projects/project-2-columns',
-                text: 'Two Columns'
+                link: "/projects/project-2-columns",
+                text: "Two Columns"
             },
             {
-                link: '/projects/project-gallery',
-                text: 'Project Gallery'
+                link: "/projects/project-gallery",
+                text: "Project Gallery"
             },
             {
-                link: '/projects/project-slider',
-                text: 'Project Slider'
+                link: "/projects/project-slider",
+                text: "Project Slider"
             }, 
         ]
     },
     {
         id: 5,
-        title: 'Pages',
-        path: '#',
-        cName: 'offcanvas-text',
-        arrowDown: 'FaAngleDown',
+        title: "Pages",
+        path: "#",
+        cName: "offcanvas-text",
+        arrowDown: "FaAngleDown",
         submenu: [
             {
-                link: '/our-clients',
-                text: 'Our Clients'
+                link: "/our-clients",
+                text: "Our Clients"
             },
             {
-                link: '/our-team',
-                text: 'Our Team'
+                link: "/our-team",
+                text: "Our Team"
             },
             {
-                link: '/our-working-process',
-                text: 'Our Working Process'
+                link: "/our-working-process",
+                text: "Our Working Process"
             }, 
         ]
     },
     {
         id: 6,
-        title: 'Blogs',
-        path: '#',
-        cName: 'offcanvas-text',
-        arrowDown: 'FaAngleDown',
+        title: "Blogs",
+        path: "#",
+        cName: "offcanvas-text",
+        arrowDown: "FaAngleDown",
         submenu: [
             {
-                link: '/blogs/blog-fullwidth',
-                text: 'Blog FullWidth'
+                link: "/blogs/blog-fullwidth",
+                text: "Blog FullWidth"
             },
             {
-                link: '/blogs/blog-leftsidebar',
-                text: 'Blog Left Sidebar'
+                link: "/blogs/blog-leftsidebar",
+                text: "Blog Left Sidebar"
             },
             {
-                link: '/blogs/blog-rightsidebar',
-                text: 'Blog Right Sidebar'
+                link: "/blogs/blog-rightsidebar",
+                text: "Blog Right Sidebar"
             }, 
         ]
     },
     {
         id: 7,
-        title: 'Contact',
-        path: '/contact',
-        cName: 'offcanvas-text'
+        title: "Contact",
+        path: "/contact",
+        cName: "offcanvas-text"
     }, 
 ];
 
@@ -174,14 +175,14 @@ function Header() {
     // Header Sticky Activation
     const header = (0,external_react_.useRef)();
     (0,external_react_.useEffect)(()=>{
-        window.addEventListener('scroll', isSticky);
+        window.addEventListener("scroll", isSticky);
         return ()=>{
-            window.removeEventListener('scroll', isSticky);
+            window.removeEventListener("scroll", isSticky);
         };
     }, []);
     const isSticky = (e)=>{
         const scrollTop = window.scrollY;
-        scrollTop >= 250 ? header.current.classList.add('is-sticky') : header.current.classList.remove('is-sticky');
+        scrollTop >= 250 ? header.current.classList.add("is-sticky") : header.current.classList.remove("is-sticky");
     };
     // End here
     // Header Search Toggle Activation
@@ -191,38 +192,35 @@ function Header() {
     };
     // End here
     // Offcanvas Activation
-    const { 0: offcanvas1 , 1: setOffcanvas  } = (0,external_react_.useState)(false);
-    const showOffcanvas = ()=>setOffcanvas(!offcanvas1)
-    ;
+    const { 0: offcanvas , 1: setOffcanvas  } = (0,external_react_.useState)(false);
+    const showOffcanvas = ()=>setOffcanvas(!offcanvas);
     const { 0: submenuOpenId , 1: setSubmenuOpenId  } = (0,external_react_.useState)({});
     const showSubmenuClickHandler = (id)=>setSubmenuOpenId((prevData)=>{
             return {
                 [id.toString()]: !prevData[id.toString()]
             };
-        })
-    ;
+        });
     (0,external_react_.useEffect)(()=>{
         document.body.onclick = (e)=>{
-            if (offcanvas1) {
+            if (offcanvas) {
                 const clickIgnoreClassList = [
-                    'offcanvas-menu',
-                    'menu-bar-button',
-                    'has-children',
-                    'offcanvas-close-btn', 
+                    "offcanvas-menu",
+                    "menu-bar-button",
+                    "has-children",
+                    "offcanvas-close-btn", 
                 ];
                 if (!clickIgnoreClassList.find((item)=>[
                         ...e.target.classList
-                    ].includes(item)
-                )) {
+                    ].includes(item))) {
                     setOffcanvas(false);
                 }
             }
         };
     }, [
-        offcanvas1
+        offcanvas
     ]);
     // End here
-    return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_.Fragment, {
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_.Fragment, {
         children: [
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("header", {
                 className: (header_module_default()).area,
@@ -252,10 +250,10 @@ function Header() {
                                                             src: "/images/header/icon/phone.png",
                                                             alt: "Phone"
                                                         }),
-                                                        /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
-                                                            href: "tel://01225-265-847",
+                                                        /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                                            href: "https://wa.me/message/E32XSP3MXIBFH1",
                                                             children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                                children: "01225 265 847"
+                                                                children: "+54 9 11 6860-6386"
                                                             })
                                                         })
                                                     ]
@@ -282,7 +280,7 @@ function Header() {
                                         className: `d-block d-lg-none`,
                                         children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                             className: `header-logo`,
-                                            children: /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                                 href: "/",
                                                 children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                                     className: (header_module_default()).logo,
@@ -292,63 +290,6 @@ function Header() {
                                                     })
                                                 })
                                             })
-                                        })
-                                    }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
-                                        xl: 6,
-                                        lg: 4,
-                                        sm: 6,
-                                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                            className: (header_module_default()).right,
-                                            children: [
-                                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                    children: /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
-                                                        href: "/login-register",
-                                                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
-                                                            children: [
-                                                                "Login",
-                                                                /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                                    children: "/ Register"
-                                                                })
-                                                            ]
-                                                        })
-                                                    })
-                                                }),
-                                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                                    className: `${search ? 'search-show' : 'search-hide'} d-block d-lg-none search-holder`,
-                                                    children: [
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("buton", {
-                                                            className: (header_module_default()).search__btn,
-                                                            onClick: SearchToggle,
-                                                            children: /*#__PURE__*/ jsx_runtime_.jsx(fa_.FaSearch, {})
-                                                        }),
-                                                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("form", {
-                                                            className: "search-form",
-                                                            children: [
-                                                                /*#__PURE__*/ jsx_runtime_.jsx("input", {
-                                                                    className: "search-input",
-                                                                    type: "search",
-                                                                    name: "search",
-                                                                    placeholder: "Search"
-                                                                }),
-                                                                /*#__PURE__*/ jsx_runtime_.jsx("button", {
-                                                                    className: "search-inner__btn",
-                                                                    type: "submit",
-                                                                    children: /*#__PURE__*/ jsx_runtime_.jsx(fa_.FaSearch, {})
-                                                                })
-                                                            ]
-                                                        })
-                                                    ]
-                                                }),
-                                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                    className: (header_module_default()).offcanvas,
-                                                    children: /*#__PURE__*/ jsx_runtime_.jsx("buton", {
-                                                        className: `${(header_module_default()).offcanvas__btn} d-block d-lg-none menu-bar-button`,
-                                                        onClick: showOffcanvas,
-                                                        children: /*#__PURE__*/ jsx_runtime_.jsx(fa_.FaBars, {})
-                                                    })
-                                                })
-                                            ]
                                         })
                                     })
                                 ]
@@ -373,7 +314,7 @@ function Header() {
                                                 className: (header_module_default()).menu__list,
                                                 children: [
                                                     /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                        children: /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
+                                                        children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                                             href: "/",
                                                             children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                                                 children: /*#__PURE__*/ jsx_runtime_.jsx("span", {
@@ -383,156 +324,28 @@ function Header() {
                                                         })
                                                     }),
                                                     /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                        children: /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
-                                                            href: "/about",
-                                                            children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                                children: /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                                    children: "About Us"
-                                                                })
-                                                            })
-                                                        })
-                                                    }),
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                        children: /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
+                                                        children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                                             href: "/services",
                                                             children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                                                 children: /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                                    children: "Service"
+                                                                    children: "Servicios"
                                                                 })
                                                             })
                                                         })
-                                                    }),
-                                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
-                                                        className: (header_module_default()).dropdown_holder,
-                                                        children: [
-                                                            /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
-                                                                href: "/projects/project-fullwidth",
-                                                                children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                                    children: /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                                        children: "Projects"
-                                                                    })
-                                                                })
-                                                            }),
-                                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
-                                                                className: (header_module_default()).dropdown_menu,
-                                                                children: [
-                                                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                                        children: /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
-                                                                            href: "/projects/project-2-columns",
-                                                                            children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                                                children: "Project 2 Columns"
-                                                                            })
-                                                                        })
-                                                                    }),
-                                                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                                        children: /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
-                                                                            href: "/projects/project-gallery",
-                                                                            children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                                                children: "Project Gallery"
-                                                                            })
-                                                                        })
-                                                                    }),
-                                                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                                        children: /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
-                                                                            href: "/projects/project-slider",
-                                                                            children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                                                children: "Project Slider"
-                                                                            })
-                                                                        })
-                                                                    })
-                                                                ]
-                                                            })
-                                                        ]
-                                                    }),
-                                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
-                                                        className: (header_module_default()).dropdown_holder,
-                                                        children: [
-                                                            /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
-                                                                href: "/",
-                                                                children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                                    children: /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                                        children: "Pages"
-                                                                    })
-                                                                })
-                                                            }),
-                                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
-                                                                className: (header_module_default()).dropdown_menu,
-                                                                children: [
-                                                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                                        children: /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
-                                                                            href: "/our-clients",
-                                                                            children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                                                children: "Our Clients"
-                                                                            })
-                                                                        })
-                                                                    }),
-                                                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                                        children: /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
-                                                                            href: "/our-team",
-                                                                            children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                                                children: "Our Team"
-                                                                            })
-                                                                        })
-                                                                    }),
-                                                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                                        children: /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
-                                                                            href: "/our-working-process",
-                                                                            children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                                                children: "Our Working Process"
-                                                                            })
-                                                                        })
-                                                                    })
-                                                                ]
-                                                            })
-                                                        ]
-                                                    }),
-                                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
-                                                        className: (header_module_default()).dropdown_holder,
-                                                        children: [
-                                                            /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
-                                                                href: "/blogs/blog-fullwidth",
-                                                                children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                                    children: /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                                        children: "Blogs"
-                                                                    })
-                                                                })
-                                                            }),
-                                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
-                                                                className: (header_module_default()).dropdown_menu,
-                                                                children: [
-                                                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                                        children: /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
-                                                                            href: "/blogs/blog-leftsidebar",
-                                                                            children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                                                children: "Blog Left Sidebar"
-                                                                            })
-                                                                        })
-                                                                    }),
-                                                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                                        children: /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
-                                                                            href: "/blogs/blog-rightsidebar",
-                                                                            children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                                                children: "Blog Right Sidebar"
-                                                                            })
-                                                                        })
-                                                                    })
-                                                                ]
-                                                            })
-                                                        ]
                                                     }),
                                                     /*#__PURE__*/ jsx_runtime_.jsx("li", {
                                                         className: (header_module_default()).separator,
-                                                        children: /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
+                                                        children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                                             href: "/contact",
                                                             children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                                                 children: /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                                    children: "Contact"
+                                                                    children: "Contacto"
                                                                 })
                                                             })
                                                         })
                                                     }),
                                                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
-                                                        className: `${search ? 'search-show' : 'search-hide'}`,
+                                                        className: `${search ? "search-show" : "search-hide"}`,
                                                         children: [
                                                             /*#__PURE__*/ jsx_runtime_.jsx("buton", {
                                                                 className: (header_module_default()).search__btn,
@@ -565,7 +378,7 @@ function Header() {
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                 className: `${(header_module_default()).fixed__logo} d-none d-lg-flex`,
-                                children: /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
+                                children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                     href: "/",
                                     children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                         className: (header_module_default()).logo,
@@ -581,7 +394,7 @@ function Header() {
                 ]
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                className: offcanvas1 ? 'offcanvas-menu-wrap active' : 'offcanvas-menu-wrap',
+                className: offcanvas ? "offcanvas-menu-wrap active" : "offcanvas-menu-wrap",
                 children: /*#__PURE__*/ jsx_runtime_.jsx("nav", {
                     className: "offcanvas-menu",
                     children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
@@ -597,42 +410,41 @@ function Header() {
                                     })
                                 })
                             }),
-                            OffcanvasData.map((item1, offcanvas)=>{
-                                const submenu1 = item1.submenu;
-                                return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
-                                    className: `${item1.cName}${submenuOpenId[item1.id.toString()] ? ' active' : ''}`,
-                                    onClick: submenu1 ? ()=>showSubmenuClickHandler(item1.id)
-                                     : ()=>{},
+                            OffcanvasData.map((item, offcanvas)=>{
+                                const submenu = item.submenu;
+                                return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
+                                    className: `${item.cName}${submenuOpenId[item.id.toString()] ? " active" : ""}`,
+                                    onClick: submenu ? ()=>showSubmenuClickHandler(item.id) : ()=>{},
                                     children: [
-                                        /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
-                                            href: item1.path,
+                                        /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                            href: item.path,
                                             children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                className: (item1 === null || item1 === void 0 ? void 0 : item1.submenu) ? 'has-children' : '',
-                                                children: item1.title
+                                                className: item?.submenu ? "has-children" : "",
+                                                children: item.title
                                             })
                                         }),
-                                        submenu1 && /*#__PURE__*/ jsx_runtime_.jsx("ul", {
+                                        submenu && /*#__PURE__*/ jsx_runtime_.jsx("ul", {
                                             className: "submenu",
-                                            children: submenu1 === null || submenu1 === void 0 ? void 0 : submenu1.map((item, submenu)=>{
-                                                return(/*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                    children: /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
+                                            children: submenu?.map((item, submenu)=>{
+                                                return /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                    children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                                         href: item.link,
                                                         children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                                             children: item.text
                                                         })
                                                     })
-                                                }, submenu));
+                                                }, submenu);
                                             })
                                         })
                                     ]
-                                }, offcanvas));
+                                }, offcanvas);
                             })
                         ]
                     })
                 })
             })
         ]
-    }));
+    });
 }
 /* harmony default export */ const header = (Header);
 
@@ -641,14 +453,14 @@ function Header() {
 
 
 function Layout(props) {
-    return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_.Fragment, {
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_.Fragment, {
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx(header, {}),
             /*#__PURE__*/ jsx_runtime_.jsx("main", {
                 children: props.children
             })
         ]
-    }));
+    });
 }
 /* harmony default export */ const layout = (Layout);
 
@@ -675,26 +487,26 @@ const ScrollToTop = ()=>{
     const scrollToTop = ()=>{
         window.scrollTo({
             top: 0,
-            behavior: 'smooth'
+            behavior: "smooth"
         });
     };
     (0,external_react_.useEffect)(()=>{
-        window.addEventListener('scroll', toggleVisibility);
+        window.addEventListener("scroll", toggleVisibility);
         return ()=>{
-            window.removeEventListener('scroll', toggleVisibility);
+            window.removeEventListener("scroll", toggleVisibility);
         };
     }, []);
-    return(/*#__PURE__*/ jsx_runtime_.jsx("div", {
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         children: /*#__PURE__*/ jsx_runtime_.jsx("button", {
             type: "button",
             onClick: scrollToTop,
-            className: `${(scroll_to_top_module_default()).scroll_to__top} ${isVisable ? 'opacity-1' : 'opacity-0 '}`,
+            className: `${(scroll_to_top_module_default()).scroll_to__top} ${isVisable ? "opacity-1" : "opacity-0 "}`,
             "aria-label": "Right Align",
             children: /*#__PURE__*/ jsx_runtime_.jsx(fa_.FaArrowUp, {
                 "aria-hidden": "true"
             })
         })
-    }));
+    });
 };
 
 ;// CONCATENATED MODULE: ./src/components/scroll/index.js
@@ -707,7 +519,7 @@ const ScrollToTop = ()=>{
 
 
 function MyApp({ Component , pageProps  }) {
-    return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)(layout, {
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(layout, {
         children: [
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)((head_default()), {
                 children: [
@@ -726,18 +538,26 @@ function MyApp({ Component , pageProps  }) {
             }),
             /*#__PURE__*/ jsx_runtime_.jsx(ScrollToTop, {})
         ]
-    }));
+    });
 }
 /* harmony default export */ const _app = (MyApp);
 
 
 /***/ }),
 
-/***/ 562:
+/***/ 3280:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/server/denormalize-page-path.js");
+module.exports = require("next/dist/shared/lib/app-router-context.js");
+
+/***/ }),
+
+/***/ 2796:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/head-manager-context.js");
 
 /***/ }),
 
@@ -765,11 +585,51 @@ module.exports = require("next/dist/shared/lib/mitt.js");
 
 /***/ }),
 
+/***/ 4406:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/page-path/denormalize-page-path.js");
+
+/***/ }),
+
 /***/ 4964:
 /***/ ((module) => {
 
 "use strict";
 module.exports = require("next/dist/shared/lib/router-context.js");
+
+/***/ }),
+
+/***/ 1751:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/add-path-prefix.js");
+
+/***/ }),
+
+/***/ 6220:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/compare-states.js");
+
+/***/ }),
+
+/***/ 299:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/format-next-pathname-info.js");
+
+/***/ }),
+
+/***/ 3938:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/format-url.js");
 
 /***/ }),
 
@@ -781,11 +641,11 @@ module.exports = require("next/dist/shared/lib/router/utils/get-asset-path-from-
 
 /***/ }),
 
-/***/ 4365:
+/***/ 5789:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/get-middleware-regex.js");
+module.exports = require("next/dist/shared/lib/router/utils/get-next-pathname-info.js");
 
 /***/ }),
 
@@ -797,6 +657,14 @@ module.exports = require("next/dist/shared/lib/router/utils/is-dynamic.js");
 
 /***/ }),
 
+/***/ 8854:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/parse-path.js");
+
+/***/ }),
+
 /***/ 1292:
 /***/ ((module) => {
 
@@ -805,11 +673,27 @@ module.exports = require("next/dist/shared/lib/router/utils/parse-relative-url.j
 
 /***/ }),
 
+/***/ 4567:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/path-has-prefix.js");
+
+/***/ }),
+
 /***/ 979:
 /***/ ((module) => {
 
 "use strict";
 module.exports = require("next/dist/shared/lib/router/utils/querystring.js");
+
+/***/ }),
+
+/***/ 3297:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/remove-trailing-slash.js");
 
 /***/ }),
 
@@ -900,7 +784,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [730,664], () => (__webpack_exec__(5782)));
+var __webpack_exports__ = __webpack_require__.X(0, [952,664], () => (__webpack_exec__(5782)));
 module.exports = __webpack_exports__;
 
 })();

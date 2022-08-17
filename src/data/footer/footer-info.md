@@ -1,8 +1,8 @@
 ---
 footerLogo: '/images/logo/white.png'
 footerLogoAlt: 'Footer Logo'
-excerpt: 'Construction of itself, because it is are  <br/> but because some proper style design is occur in toil and pain pleasure'
-inquary: 'For inquary'
+excerpt: 'Soluciones & Servicios'
+inquary: 'Con 💙 para el mundo'
 inquaryNumber: '+12345 879 854'
 informationTitle: 'Information'
 informationList:
@@ -22,11 +22,11 @@ quickLinkList:
         { title: 'Payment Method', path: 'contact' },
         { title: 'Clients & Reviews', path: 'about' },
     ]
-contactInfoTitle: 'Contact Info'
-widgetAddress: '215 Central Road, North Street Central Park, <span class="text-primary">New York, USA</span>'
-widgetNumber: '+12345 698 745 / +32145 852 785'
-additionWidgetAddress: '75, Victoriya Street, New Town Park Road, <span class="text-primary">Sydney, Australia</span>'
-additionWidgetNumber: '+98745 258 102 / +98745 612 301'
+contactInfoTitle: 'Información de contacto'
+widgetAddress: 'Paraná 326 Buenos Aires<br /> Capital Federal'
+widgetNumber: '+54 9 11 6860-6386'
+additionWidgetAddress: 'Paraná 326 Buenos Aires<br /> Capital Federal'
+additionWidgetNumber: '+54 9 11 6860-6386'
 socialList:
     [
         { socialIcon: 'FaFacebookF', path: 'https://www.example.com' },

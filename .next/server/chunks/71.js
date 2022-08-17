@@ -66,6 +66,7 @@ module.exports = {
 /* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6290);
 /* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1664);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6689);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
 
@@ -75,10 +76,9 @@ module.exports = {
 
 
 function Footer({ footerItems  }) {
-    return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("footer", {
-        children: footerItems === null || footerItems === void 0 ? void 0 : footerItems.map((footerItem, i)=>{
-            var ref, ref1, ref2;
-            return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("footer", {
+        children: footerItems?.map((footerItem, i)=>{
+            return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
                 children: [
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                         className: `${(_layout_footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default().bg)}`,
@@ -92,37 +92,28 @@ function Footer({ footerItems  }) {
                                         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                             className: (_layout_footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default().widget__item),
                                             children: [
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_3__["default"], {
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_3___default()), {
                                                     href: "/",
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                                         className: (_layout_footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default().logo),
                                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                                            src: footerItem === null || footerItem === void 0 ? void 0 : footerItem.footerLogo,
-                                                            alt: footerItem === null || footerItem === void 0 ? void 0 : footerItem.footerLogoAlt
+                                                            src: footerItem?.footerLogo,
+                                                            alt: footerItem?.footerLogoAlt
                                                         })
                                                     })
                                                 }),
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                                     className: (_layout_footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default().desc),
                                                     dangerouslySetInnerHTML: {
-                                                        __html: footerItem === null || footerItem === void 0 ? void 0 : footerItem.excerpt
+                                                        __html: footerItem?.excerpt
                                                     }
                                                 }),
-                                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                                     className: (_layout_footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default().inquary),
-                                                    children: [
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
-                                                            className: (_layout_footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default().inquary_info),
-                                                            children: footerItem === null || footerItem === void 0 ? void 0 : footerItem.inquary
-                                                        }),
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_3__["default"], {
-                                                            href: "tel://+12345-879-854",
-                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                                className: (_layout_footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default().inquary_number),
-                                                                children: footerItem === null || footerItem === void 0 ? void 0 : footerItem.inquaryNumber
-                                                            })
-                                                        })
-                                                    ]
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
+                                                        className: (_layout_footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default().inquary_info),
+                                                        children: footerItem?.inquary
+                                                    })
                                                 })
                                             ]
                                         })
@@ -137,28 +128,7 @@ function Footer({ footerItems  }) {
                                         sm: {
                                             span: 6
                                         },
-                                        className: "ps-xl-80 pt-40 pt-lg-0",
-                                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                            className: (_layout_footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default().widget__item),
-                                            children: [
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
-                                                    className: (_layout_footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default().widget__title),
-                                                    children: footerItem === null || footerItem === void 0 ? void 0 : footerItem.informationTitle
-                                                }),
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("ul", {
-                                                    className: (_layout_footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default().widget__list),
-                                                    children: footerItem === null || footerItem === void 0 ? void 0 : (ref = footerItem.informationList) === null || ref === void 0 ? void 0 : ref.map((item, index)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_3__["default"], {
-                                                                href: `/${item.path}`,
-                                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                                    children: item.title
-                                                                })
-                                                            })
-                                                        }, index)
-                                                    )
-                                                })
-                                            ]
-                                        })
+                                        className: "ps-xl-80 pt-40 pt-lg-0"
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Col, {
                                         lg: {
@@ -167,28 +137,7 @@ function Footer({ footerItems  }) {
                                         sm: {
                                             span: 6
                                         },
-                                        className: "ps-lg-50 pt-40 pt-lg-0",
-                                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                            className: (_layout_footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default().widget__item),
-                                            children: [
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
-                                                    className: (_layout_footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default().widget__title),
-                                                    children: footerItem === null || footerItem === void 0 ? void 0 : footerItem.quickLinkTitle
-                                                }),
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("ul", {
-                                                    className: (_layout_footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default().widget__list),
-                                                    children: footerItem === null || footerItem === void 0 ? void 0 : (ref1 = footerItem.quickLinkList) === null || ref1 === void 0 ? void 0 : ref1.map((item, index)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_3__["default"], {
-                                                                href: `/${item.path}`,
-                                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                                    children: item.title
-                                                                })
-                                                            })
-                                                        }, index)
-                                                    )
-                                                })
-                                            ]
-                                        })
+                                        className: "ps-lg-50 pt-40 pt-lg-0"
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Col, {
                                         xl: {
@@ -203,22 +152,7 @@ function Footer({ footerItems  }) {
                                             children: [
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
                                                     className: (_layout_footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default().widget__title),
-                                                    children: footerItem === null || footerItem === void 0 ? void 0 : footerItem.contactInfoTitle
-                                                }),
-                                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                    className: `pb-25 ${(_layout_footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default().widget__info)}`,
-                                                    children: [
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                            className: (_layout_footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default().widget_address),
-                                                            dangerouslySetInnerHTML: {
-                                                                __html: footerItem === null || footerItem === void 0 ? void 0 : footerItem.widgetAddress
-                                                            }
-                                                        }),
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                                            className: (_layout_footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default().widget_number),
-                                                            children: footerItem === null || footerItem === void 0 ? void 0 : footerItem.widgetNumber
-                                                        })
-                                                    ]
+                                                    children: footerItem?.contactInfoTitle
                                                 }),
                                                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                                     className: (_layout_footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default().widget__info),
@@ -226,12 +160,12 @@ function Footer({ footerItems  }) {
                                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                                             className: (_layout_footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default().widget_address),
                                                             dangerouslySetInnerHTML: {
-                                                                __html: footerItem === null || footerItem === void 0 ? void 0 : footerItem.additionWidgetAddress
+                                                                __html: footerItem?.additionWidgetAddress
                                                             }
                                                         }),
                                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                                             className: (_layout_footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default().widget_number),
-                                                            children: footerItem === null || footerItem === void 0 ? void 0 : footerItem.additionWidgetNumber
+                                                            children: footerItem?.additionWidgetNumber
                                                         })
                                                     ]
                                                 })
@@ -256,16 +190,16 @@ function Footer({ footerItems  }) {
                                         },
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("ul", {
                                             className: (_layout_footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default().social),
-                                            children: footerItem === null || footerItem === void 0 ? void 0 : (ref2 = footerItem.socialList) === null || ref2 === void 0 ? void 0 : ref2.map((item, index)=>{
+                                            children: footerItem?.socialList?.map((item, index)=>{
                                                 const Social = react_icons_fa__WEBPACK_IMPORTED_MODULE_2__[item.socialIcon];
-                                                return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_3__["default"], {
+                                                return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_3___default()), {
                                                         href: `${item.path}`,
                                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Social, {})
                                                         })
                                                     })
-                                                }, index));
+                                                }, index);
                                             })
                                         })
                                     }),
@@ -275,34 +209,16 @@ function Footer({ footerItems  }) {
                                         },
                                         sm: {
                                             span: 8
-                                        },
-                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                            className: (_layout_footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default().copyright),
-                                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
-                                                className: (_layout_footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default().text),
-                                                children: [
-                                                    "\xa9 2022 OxyBuild Made with",
-                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                                        className: (_layout_footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default().icon),
-                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__.FaHeart, {})
-                                                    }),
-                                                    "by",
-                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                        href: "https://hasthemes.com/",
-                                                        children: "HasThemes"
-                                                    })
-                                                ]
-                                            })
-                                        })
+                                        }
                                     })
                                 ]
                             })
                         })
                     })
                 ]
-            }, i));
+            }, i);
         })
-    }));
+    });
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Footer);
 
@@ -326,12 +242,12 @@ function Footer({ footerItems  }) {
 
 
 function Newsletter({ newsletterItems  }) {
-    return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
         className: `${(_newsletter_newsletter_module_scss__WEBPACK_IMPORTED_MODULE_2___default().bg)}`,
         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Container, {
             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Row, {
-                children: newsletterItems === null || newsletterItems === void 0 ? void 0 : newsletterItems.map((newsletterItem, i)=>{
-                    return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Col, {
+                children: newsletterItems?.map((newsletterItem, i)=>{
+                    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Col, {
                         lg: {
                             span: 12
                         },
@@ -340,7 +256,7 @@ function Newsletter({ newsletterItems  }) {
                             children: [
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
                                     className: (_newsletter_newsletter_module_scss__WEBPACK_IMPORTED_MODULE_2___default().title),
-                                    children: newsletterItem === null || newsletterItem === void 0 ? void 0 : newsletterItem.title
+                                    children: newsletterItem?.title
                                 }),
                                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("form", {
                                     className: (_newsletter_newsletter_module_scss__WEBPACK_IMPORTED_MODULE_2___default().form),
@@ -348,24 +264,24 @@ function Newsletter({ newsletterItems  }) {
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("input", {
                                             className: (_newsletter_newsletter_module_scss__WEBPACK_IMPORTED_MODULE_2___default().input_field),
                                             type: "email",
-                                            placeholder: "To get update, enter your email"
+                                            placeholder: "\xbfQu\xe9 esperas?"
                                         }),
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                             className: (_newsletter_newsletter_module_scss__WEBPACK_IMPORTED_MODULE_2___default().btn__wrap),
                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                                                 className: `${(_newsletter_newsletter_module_scss__WEBPACK_IMPORTED_MODULE_2___default().btn)} ${(_newsletter_newsletter_module_scss__WEBPACK_IMPORTED_MODULE_2___default().btn_secondary)} ${(_newsletter_newsletter_module_scss__WEBPACK_IMPORTED_MODULE_2___default().btn_hover__white)}`,
-                                                children: "Subscribe now"
+                                                children: "Suscribirse"
                                             })
                                         })
                                     ]
                                 })
                             ]
                         })
-                    }, i));
+                    }, i);
                 })
             })
         })
-    }));
+    });
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Newsletter);
 

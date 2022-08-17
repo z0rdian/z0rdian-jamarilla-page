@@ -1,3 +1,3 @@
 ---
-title: 'Subscribe our Newsletter'
+title: '¡Suscríbete y recibe descuentos!'
 ---

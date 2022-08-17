@@ -1,5 +1,5 @@
 ---
-title: 'Laminate Flooring'
+title: 'Colocación de Pisos'
 mediumImage: 'laminate-flooring-md.jpg'
 largeImage: 'laminate-flooring-lg.jpg'
 detailBreadcrumbSubTitle: 'Single Service'

@@ -43,31 +43,31 @@ var external_react_bootstrap_ = __webpack_require__(358);
 ;// CONCATENATED MODULE: ./src/components/breadcrumb/banner/banner-breadcrumb.js
 
 
-function BannerBredcrumb({ bannerBredcrumb: bannerBredcrumb1  }) {
-    return(/*#__PURE__*/ jsx_runtime_.jsx("div", {
+function BannerBredcrumb({ bannerBredcrumb  }) {
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         className: "page_banner__bg",
         children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Container, {
-            children: bannerBredcrumb1 === null || bannerBredcrumb1 === void 0 ? void 0 : bannerBredcrumb1.map((bannerBredcrumb, i)=>{
-                return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+            children: bannerBredcrumb?.map((bannerBredcrumb, i)=>{
+                return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                     className: "page_content",
                     children: [
                         /*#__PURE__*/ jsx_runtime_.jsx("span", {
                             className: "page_subtitle",
-                            children: bannerBredcrumb === null || bannerBredcrumb === void 0 ? void 0 : bannerBredcrumb.breadcrumbSubtitle
+                            children: bannerBredcrumb?.breadcrumbSubtitle
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("h1", {
                             className: "page_title",
-                            children: bannerBredcrumb === null || bannerBredcrumb === void 0 ? void 0 : bannerBredcrumb.breadcrumbTitle
+                            children: bannerBredcrumb?.breadcrumbTitle
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("p", {
                             className: "page_desc",
-                            children: bannerBredcrumb === null || bannerBredcrumb === void 0 ? void 0 : bannerBredcrumb.breadcrumbDesc
+                            children: bannerBredcrumb?.breadcrumbDesc
                         })
                     ]
-                }, i));
+                }, i);
             })
         })
-    }));
+    });
 }
 /* harmony default export */ const banner_breadcrumb = (BannerBredcrumb);
 
@@ -84,7 +84,7 @@ function BannerBredcrumb({ bannerBredcrumb: bannerBredcrumb1  }) {
 
 
 function OurClients(props) {
-    return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_.Fragment, {
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_.Fragment, {
         children: [
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)((head_default()), {
                 children: [
@@ -119,17 +119,17 @@ function OurClients(props) {
                 footerItems: props.footerItems
             })
         ]
-    }));
+    });
 }
 function getStaticProps() {
-    const bannerBredcrumb = (0,items_util/* getAllItems */.Nx)('banner-breadcrumb');
-    const bannerFourItems = (0,items_util/* getAllItems */.Nx)('banner-4');
-    const bannerSection = (0,items_util/* getAllItems */.Nx)('banner-section');
-    const bannerTwoItems = (0,items_util/* getAllItems */.Nx)('banner-2');
-    const testimonialItems = (0,items_util/* getAllItems */.Nx)('testimonial');
-    const testimonial_section__items = (0,items_util/* getAllItems */.Nx)('testimonial-section');
-    const newsletterItems = (0,items_util/* getAllItems */.Nx)('newsletter');
-    const footerItems = (0,items_util/* getAllItems */.Nx)('footer');
+    const bannerBredcrumb = (0,items_util/* getAllItems */.Nx)("banner-breadcrumb");
+    const bannerFourItems = (0,items_util/* getAllItems */.Nx)("banner-4");
+    const bannerSection = (0,items_util/* getAllItems */.Nx)("banner-section");
+    const bannerTwoItems = (0,items_util/* getAllItems */.Nx)("banner-2");
+    const testimonialItems = (0,items_util/* getAllItems */.Nx)("testimonial");
+    const testimonial_section__items = (0,items_util/* getAllItems */.Nx)("testimonial-section");
+    const newsletterItems = (0,items_util/* getAllItems */.Nx)("newsletter");
+    const footerItems = (0,items_util/* getAllItems */.Nx)("footer");
     return {
         props: {
             bannerBredcrumb,
@@ -155,10 +155,17 @@ module.exports = require("gray-matter");
 
 /***/ }),
 
-/***/ 562:
+/***/ 3280:
 /***/ ((module) => {
 
-module.exports = require("next/dist/server/denormalize-page-path.js");
+module.exports = require("next/dist/shared/lib/app-router-context.js");
+
+/***/ }),
+
+/***/ 2796:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/head-manager-context.js");
 
 /***/ }),
 
@@ -183,10 +190,45 @@ module.exports = require("next/dist/shared/lib/mitt.js");
 
 /***/ }),
 
+/***/ 4406:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/page-path/denormalize-page-path.js");
+
+/***/ }),
+
 /***/ 4964:
 /***/ ((module) => {
 
 module.exports = require("next/dist/shared/lib/router-context.js");
+
+/***/ }),
+
+/***/ 1751:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/router/utils/add-path-prefix.js");
+
+/***/ }),
+
+/***/ 6220:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/router/utils/compare-states.js");
+
+/***/ }),
+
+/***/ 299:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/router/utils/format-next-pathname-info.js");
+
+/***/ }),
+
+/***/ 3938:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/router/utils/format-url.js");
 
 /***/ }),
 
@@ -197,10 +239,10 @@ module.exports = require("next/dist/shared/lib/router/utils/get-asset-path-from-
 
 /***/ }),
 
-/***/ 4365:
+/***/ 5789:
 /***/ ((module) => {
 
-module.exports = require("next/dist/shared/lib/router/utils/get-middleware-regex.js");
+module.exports = require("next/dist/shared/lib/router/utils/get-next-pathname-info.js");
 
 /***/ }),
 
@@ -211,6 +253,13 @@ module.exports = require("next/dist/shared/lib/router/utils/is-dynamic.js");
 
 /***/ }),
 
+/***/ 8854:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/router/utils/parse-path.js");
+
+/***/ }),
+
 /***/ 1292:
 /***/ ((module) => {
 
@@ -218,10 +267,24 @@ module.exports = require("next/dist/shared/lib/router/utils/parse-relative-url.j
 
 /***/ }),
 
+/***/ 4567:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/router/utils/path-has-prefix.js");
+
+/***/ }),
+
 /***/ 979:
 /***/ ((module) => {
 
 module.exports = require("next/dist/shared/lib/router/utils/querystring.js");
+
+/***/ }),
+
+/***/ 3297:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/router/utils/remove-trailing-slash.js");
 
 /***/ }),
 
@@ -323,7 +386,7 @@ module.exports = require("path");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [730,664,698,71,875,557,105], () => (__webpack_exec__(9044)));
+var __webpack_exports__ = __webpack_require__.X(0, [952,664,698,71,404,557,105], () => (__webpack_exec__(9044)));
 module.exports = __webpack_exports__;
 
 })();

@@ -30,9 +30,9 @@ function LatestProject(props) {
         <div>
             <div className={classes.bg}>
                 <div className={classes.btn__wrap}>
-                    <Link href='/projects'>
+                    <Link href='/contact'>
                         <a className={classes.btn}>
-                            <span>View More</span>
+                            <span>Contáctanos</span>
                         </a>
                     </Link>
                 </div>

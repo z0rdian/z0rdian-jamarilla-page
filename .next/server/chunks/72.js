@@ -16,6 +16,7 @@ exports.modules = {
 /* harmony import */ var _blog_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(5932);
 /* harmony import */ var _blog_module_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_blog_module_scss__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1664);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2770);
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(swiper__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var swiper_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(3630);
@@ -33,11 +34,10 @@ swiper__WEBPACK_IMPORTED_MODULE_3___default().use([
     swiper__WEBPACK_IMPORTED_MODULE_3__.Autoplay
 ]);
 function BlogSidebar({ blogsSidebar , categories , tags  }) {
-    return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
         className: (_blog_module_scss__WEBPACK_IMPORTED_MODULE_6___default().sidebar),
-        children: blogsSidebar === null || blogsSidebar === void 0 ? void 0 : blogsSidebar.map((blogSidebar, i)=>{
-            var ref;
-            return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        children: blogsSidebar?.map((blogSidebar, i)=>{
+            return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                 className: "sidebar-inner",
                 children: [
                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
@@ -45,7 +45,7 @@ function BlogSidebar({ blogsSidebar , categories , tags  }) {
                         children: [
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
                                 className: (_blog_module_scss__WEBPACK_IMPORTED_MODULE_6___default().sidebar_title),
-                                children: blogSidebar === null || blogSidebar === void 0 ? void 0 : blogSidebar.searchTitle
+                                children: blogSidebar?.searchTitle
                             }),
                             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("form", {
                                 className: (_blog_module_scss__WEBPACK_IMPORTED_MODULE_6___default().sidebar_form),
@@ -69,21 +69,20 @@ function BlogSidebar({ blogsSidebar , categories , tags  }) {
                         children: [
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
                                 className: (_blog_module_scss__WEBPACK_IMPORTED_MODULE_6___default().sidebar_title),
-                                children: blogSidebar === null || blogSidebar === void 0 ? void 0 : blogSidebar.categoryTitle
+                                children: blogSidebar?.categoryTitle
                             }),
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("ul", {
                                 className: `${(_blog_module_scss__WEBPACK_IMPORTED_MODULE_6___default().sidebar_widget__list)}`,
-                                children: categories === null || categories === void 0 ? void 0 : categories.map((category)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
-                                            href: `/blogs/category/${category.split('|')[0].trim()}`,
+                                children: categories?.map((category)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
+                                            href: `/blogs/category/${category.split("|")[0].trim()}`,
                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                                 dangerouslySetInnerHTML: {
-                                                    __html: category.replace('|', '')
+                                                    __html: category.replace("|", "")
                                                 }
                                             })
                                         })
-                                    }, category)
-                                )
+                                    }, category))
                             })
                         ]
                     }),
@@ -92,7 +91,7 @@ function BlogSidebar({ blogsSidebar , categories , tags  }) {
                         children: [
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
                                 className: `${(_blog_module_scss__WEBPACK_IMPORTED_MODULE_6___default().sidebar_title)} mb-25`,
-                                children: blogSidebar === null || blogSidebar === void 0 ? void 0 : blogSidebar.popularPostTitle
+                                children: blogSidebar?.popularPostTitle
                             }),
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                 className: (_blog_module_scss__WEBPACK_IMPORTED_MODULE_6___default().sidebar_list__slider),
@@ -107,31 +106,31 @@ function BlogSidebar({ blogsSidebar , categories , tags  }) {
                                             slidesPerView: 1,
                                             slidesPerColumn: 2,
                                             slidesPerGroup: 1,
-                                            slidesPerColumnFill: 'row'
+                                            slidesPerColumnFill: "row"
                                         },
                                         992: {
                                             slidesPerView: 1,
                                             slidesPerColumn: 2,
                                             slidesPerGroup: 1,
-                                            slidesPerColumnFill: 'row'
+                                            slidesPerColumnFill: "row"
                                         },
                                         576: {
                                             slidesPerView: 1,
                                             slidesPerColumn: 2,
                                             slidesPerGroup: 1,
-                                            slidesPerColumnFill: 'row'
+                                            slidesPerColumnFill: "row"
                                         },
                                         0: {
                                             slidesPerView: 1,
                                             slidesPerColumn: 2,
                                             slidesPerGroup: 1,
-                                            slidesPerColumnFill: 'row'
+                                            slidesPerColumnFill: "row"
                                         }
                                     },
-                                    children: blogSidebar === null || blogSidebar === void 0 ? void 0 : (ref = blogSidebar.listSlider) === null || ref === void 0 ? void 0 : ref.map((item, index)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(swiper_react__WEBPACK_IMPORTED_MODULE_4__.SwiperSlide, {
+                                    children: blogSidebar?.listSlider?.map((item, index)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(swiper_react__WEBPACK_IMPORTED_MODULE_4__.SwiperSlide, {
                                             className: (_blog_module_scss__WEBPACK_IMPORTED_MODULE_6___default().sidebar_list__item),
                                             children: [
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
                                                     href: `/${item.path}`,
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                                         className: (_blog_module_scss__WEBPACK_IMPORTED_MODULE_6___default().sidebar_list__img),
@@ -146,7 +145,7 @@ function BlogSidebar({ blogsSidebar , categories , tags  }) {
                                                     children: [
                                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
                                                             className: (_blog_module_scss__WEBPACK_IMPORTED_MODULE_6___default().sidebar_list__title),
-                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
+                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
                                                                 href: `/${item.path}`,
                                                                 children: item.title
                                                             })
@@ -158,8 +157,7 @@ function BlogSidebar({ blogsSidebar , categories , tags  }) {
                                                     ]
                                                 })
                                             ]
-                                        }, index)
-                                    )
+                                        }, index))
                                 })
                             })
                         ]
@@ -169,26 +167,25 @@ function BlogSidebar({ blogsSidebar , categories , tags  }) {
                         children: [
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
                                 className: (_blog_module_scss__WEBPACK_IMPORTED_MODULE_6___default().sidebar_title),
-                                children: blogSidebar === null || blogSidebar === void 0 ? void 0 : blogSidebar.tagTitle
+                                children: blogSidebar?.tagTitle
                             }),
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("ul", {
                                 className: `${(_blog_module_scss__WEBPACK_IMPORTED_MODULE_6___default().sidebar_widget__tags)}`,
-                                children: tags === null || tags === void 0 ? void 0 : tags.map((tag)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
+                                children: tags?.map((tag)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
                                             href: `/blogs/tag/${tag}`,
                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                                 children: tag
                                             })
                                         })
-                                    }, tag)
-                                )
+                                    }, tag))
                             })
                         ]
                     })
                 ]
-            }, i));
+            }, i);
         })
-    }));
+    });
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (BlogSidebar);
 
@@ -207,9 +204,8 @@ function BlogSidebar({ blogsSidebar , categories , tags  }) {
 
 
 const getBlogCategories = ()=>{
-    const blogs = (0,_items_util__WEBPACK_IMPORTED_MODULE_0__/* .getAllItems */ .Nx)('blogs');
-    const categories = (0,_utils_flatDeep__WEBPACK_IMPORTED_MODULE_1__/* .flatDeep */ .d)(blogs.map((blog)=>blog.category
-    ));
+    const blogs = (0,_items_util__WEBPACK_IMPORTED_MODULE_0__/* .getAllItems */ .Nx)("blogs");
+    const categories = (0,_utils_flatDeep__WEBPACK_IMPORTED_MODULE_1__/* .flatDeep */ .d)(blogs.map((blog)=>blog.category));
     return [
         ...new Set(categories)
     ];
@@ -231,8 +227,7 @@ const getBlogCategories = ()=>{
 
 const getBlogTags = ()=>{
     const blogs = (0,_items_util__WEBPACK_IMPORTED_MODULE_0__/* .getAllItems */ .Nx)("blogs");
-    const tags = (0,_utils_flatDeep__WEBPACK_IMPORTED_MODULE_1__/* .flatDeep */ .d)(blogs.map((blog)=>blog.tag
-    ));
+    const tags = (0,_utils_flatDeep__WEBPACK_IMPORTED_MODULE_1__/* .flatDeep */ .d)(blogs.map((blog)=>blog.tag));
     return [
         ...new Set(tags)
     ];
@@ -249,8 +244,7 @@ const getBlogTags = ()=>{
 /* harmony export */   "d": () => (/* binding */ flatDeep)
 /* harmony export */ });
 const flatDeep = (arr, d = 1)=>{
-    return d > 0 ? arr.reduce((acc, val)=>acc.concat(Array.isArray(val) ? flatDeep(val, d - 1) : val)
-    , []) : arr.slice();
+    return d > 0 ? arr.reduce((acc, val)=>acc.concat(Array.isArray(val) ? flatDeep(val, d - 1) : val), []) : arr.slice();
 };
 
 

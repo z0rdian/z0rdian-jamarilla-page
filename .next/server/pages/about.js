@@ -22,33 +22,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 9482:
-/***/ ((module) => {
-
-// Exports
-module.exports = {
-	"area": "testimonial_area__D0I_d",
-	"y_axis__140": "testimonial_y_axis__140__9kcDi",
-	"section__wrap": "testimonial_section__wrap__2yQOk",
-	"subtitle": "testimonial_subtitle__wxiD1",
-	"title": "testimonial_title__Ug7pI",
-	"section__btn": "testimonial_section__btn__4V7T2",
-	"item": "testimonial_item__JO1cW",
-	"content": "testimonial_content__PmWbO",
-	"desc": "testimonial_desc__gpB_E",
-	"quotation": "testimonial_quotation__fOmA7",
-	"direction_left": "testimonial_direction_left__7oFtg",
-	"direction_right": "testimonial_direction_right__lMH5h",
-	"user_info": "testimonial_user_info___dbPs",
-	"user_content": "testimonial_user_content__igDS8",
-	"user_name": "testimonial_user_name__J4ped",
-	"user_occupation": "testimonial_user_occupation__QBPND"
-};
-
-
-/***/ }),
-
-/***/ 3810:
+/***/ 1508:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -76,30 +50,30 @@ var external_react_bootstrap_ = __webpack_require__(358);
 
 
 function AboutBreadcrumb({ aboutItems  }) {
-    return(/*#__PURE__*/ jsx_runtime_.jsx("div", {
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         className: "page_banner__bg",
         children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Container, {
-            children: aboutItems === null || aboutItems === void 0 ? void 0 : aboutItems.map((aboutItem, i)=>{
-                return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+            children: aboutItems?.map((aboutItem, i)=>{
+                return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                     className: "page_content",
                     children: [
                         /*#__PURE__*/ jsx_runtime_.jsx("span", {
                             className: "page_subtitle",
-                            children: aboutItem === null || aboutItem === void 0 ? void 0 : aboutItem.breadcrumbSubtitle
+                            children: aboutItem?.breadcrumbSubtitle
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("h1", {
                             className: "page_title",
-                            children: aboutItem === null || aboutItem === void 0 ? void 0 : aboutItem.breadcrumbTitle
+                            children: aboutItem?.breadcrumbTitle
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("p", {
                             className: "page_desc",
-                            children: aboutItem === null || aboutItem === void 0 ? void 0 : aboutItem.breadcrumbDesc
+                            children: aboutItem?.breadcrumbDesc
                         })
                     ]
-                }, i));
+                }, i);
             })
         })
-    }));
+    });
 }
 /* harmony default export */ const about_breadcrumb = (AboutBreadcrumb);
 
@@ -108,6 +82,7 @@ var banner_3_module = __webpack_require__(7201);
 var banner_3_module_default = /*#__PURE__*/__webpack_require__.n(banner_3_module);
 // EXTERNAL MODULE: ./node_modules/next/link.js
 var next_link = __webpack_require__(1664);
+var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 // EXTERNAL MODULE: external "react-icons/io5"
 var io5_ = __webpack_require__(9989);
 ;// CONCATENATED MODULE: ./src/components/banner/index-3.js
@@ -117,13 +92,13 @@ var io5_ = __webpack_require__(9989);
 
 
 function BannerThree({ bannerThreeItems  }) {
-    return(/*#__PURE__*/ jsx_runtime_.jsx("div", {
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         className: "banner_area",
         children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Container, {
             children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Row, {
                 className: "g-30",
-                children: bannerThreeItems === null || bannerThreeItems === void 0 ? void 0 : bannerThreeItems.map((bannerThreeItem, i)=>{
-                    return(/*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
+                children: bannerThreeItems?.map((bannerThreeItem, i)=>{
+                    return /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
                         lg: {
                             span: 4
                         },
@@ -131,26 +106,25 @@ function BannerThree({ bannerThreeItems  }) {
                             span: 6
                         },
                         children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                            className: bannerThreeItem.dynamicClassName.split(' ').map((item)=>(banner_3_module_default())[item]
-                            ).join(' '),
+                            className: bannerThreeItem.dynamicClassName.split(" ").map((item)=>(banner_3_module_default())[item]).join(" "),
                             children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                 className: (banner_3_module_default()).content,
-                                "data-count": `${bannerThreeItem === null || bannerThreeItem === void 0 ? void 0 : bannerThreeItem.dataCount}`,
+                                "data-count": `${bannerThreeItem?.dataCount}`,
                                 children: [
                                     /*#__PURE__*/ jsx_runtime_.jsx("h2", {
                                         className: (banner_3_module_default()).title,
-                                        children: bannerThreeItem === null || bannerThreeItem === void 0 ? void 0 : bannerThreeItem.title
+                                        children: bannerThreeItem?.title
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("p", {
                                         className: (banner_3_module_default()).desc,
-                                        children: bannerThreeItem === null || bannerThreeItem === void 0 ? void 0 : bannerThreeItem.excerpt
+                                        children: bannerThreeItem?.excerpt
                                     }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
+                                    /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                         href: `${bannerThreeItem.path}`,
                                         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
                                             className: (banner_3_module_default()).link__btn,
                                             children: [
-                                                bannerThreeItem === null || bannerThreeItem === void 0 ? void 0 : bannerThreeItem.btnText,
+                                                bannerThreeItem?.btnText,
                                                 /*#__PURE__*/ jsx_runtime_.jsx("span", {
                                                     className: (banner_3_module_default()).icon,
                                                     children: /*#__PURE__*/ jsx_runtime_.jsx(io5_.IoArrowForwardOutline, {})
@@ -161,11 +135,11 @@ function BannerThree({ bannerThreeItems  }) {
                                 ]
                             })
                         })
-                    }, i));
+                    }, i);
                 })
             })
         })
-    }));
+    });
 }
 /* harmony default export */ const index_3 = (BannerThree);
 
@@ -177,8 +151,189 @@ var latest_project = __webpack_require__(4672);
 var footer = __webpack_require__(5608);
 // EXTERNAL MODULE: ./src/components/newsletter/newsletter.js
 var newsletter = __webpack_require__(1939);
-// EXTERNAL MODULE: ./src/components/team/index.js
-var team = __webpack_require__(1963);
+// EXTERNAL MODULE: ./src/components/team/team.module.scss
+var team_module = __webpack_require__(1058);
+var team_module_default = /*#__PURE__*/__webpack_require__.n(team_module);
+// EXTERNAL MODULE: external "swiper"
+var external_swiper_ = __webpack_require__(2770);
+var external_swiper_default = /*#__PURE__*/__webpack_require__.n(external_swiper_);
+// EXTERNAL MODULE: external "swiper/react"
+var react_ = __webpack_require__(3630);
+// EXTERNAL MODULE: ./node_modules/swiper/swiper-bundle.css
+var swiper_bundle = __webpack_require__(9984);
+// EXTERNAL MODULE: external "react-icons/fa"
+var fa_ = __webpack_require__(6290);
+;// CONCATENATED MODULE: ./src/components/team/index.js
+
+
+
+
+
+
+
+
+
+external_swiper_default().use([
+    external_swiper_.Navigation,
+    external_swiper_.Pagination,
+    external_swiper_.Autoplay
+]);
+function Team({ teamItems , team_section__items  }) {
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
+        className: (team_module_default()).area,
+        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Container, {
+            children: [
+                team_section__items?.map((team_section__item, index)=>{
+                    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        className: (team_module_default()).section,
+                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                            className: (team_module_default()).section__wrap,
+                            children: [
+                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                    className: (team_module_default()).section_title,
+                                    children: [
+                                        /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                            children: team_section__item?.subTitle
+                                        }),
+                                        /*#__PURE__*/ jsx_runtime_.jsx("h2", {
+                                            children: team_section__item?.title
+                                        })
+                                    ]
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                    className: (team_module_default()).section_desc,
+                                    children: /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                        dangerouslySetInnerHTML: {
+                                            __html: team_section__item.desc
+                                        }
+                                    })
+                                })
+                            ]
+                        })
+                    }, index);
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Row, {
+                    children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
+                        lg: {
+                            span: 12
+                        },
+                        children: /*#__PURE__*/ jsx_runtime_.jsx(react_.Swiper, {
+                            pagination: false,
+                            spaceBetween: 30,
+                            slidesPerView: 4,
+                            loop: false,
+                            breakpoints: {
+                                1200: {
+                                    slidesPerView: 4
+                                },
+                                992: {
+                                    slidesPerView: 3
+                                },
+                                576: {
+                                    slidesPerView: 2
+                                },
+                                0: {
+                                    slidesPerView: 1
+                                }
+                            },
+                            children: teamItems?.map((teamItem, i)=>{
+                                return /*#__PURE__*/ jsx_runtime_.jsx(react_.SwiperSlide, {
+                                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: (team_module_default()).item,
+                                        children: [
+                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                className: (team_module_default()).img,
+                                                children: [
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                                        src: teamItem?.image,
+                                                        alt: teamItem?.alt,
+                                                        className: "img-full"
+                                                    }),
+                                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
+                                                        className: (team_module_default()).add__action,
+                                                        children: [
+                                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
+                                                                className: (team_module_default()).social_link__wrap,
+                                                                children: [
+                                                                    /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                                                        href: "https://www.example.com",
+                                                                        children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                                            children: /*#__PURE__*/ jsx_runtime_.jsx(fa_.FaShareAlt, {})
+                                                                        })
+                                                                    }),
+                                                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
+                                                                        className: (team_module_default()).social_link,
+                                                                        children: [
+                                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                                children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                                                                    href: "https://www.example.com",
+                                                                                    children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                                                        children: /*#__PURE__*/ jsx_runtime_.jsx(fa_.FaFacebookF, {})
+                                                                                    })
+                                                                                })
+                                                                            }),
+                                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                                children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                                                                    href: "https://www.example.com",
+                                                                                    children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                                                        children: /*#__PURE__*/ jsx_runtime_.jsx(fa_.FaTwitter, {})
+                                                                                    })
+                                                                                })
+                                                                            }),
+                                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                                children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                                                                    href: "https://www.example.com",
+                                                                                    children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                                                        children: /*#__PURE__*/ jsx_runtime_.jsx(fa_.FaInstagram, {})
+                                                                                    })
+                                                                                })
+                                                                            })
+                                                                        ]
+                                                                    })
+                                                                ]
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                className: (team_module_default()).mail_link__wrap,
+                                                                children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                                                    href: "mailto://info@example.com",
+                                                                    children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                                        className: (team_module_default()).mail_link,
+                                                                        children: /*#__PURE__*/ jsx_runtime_.jsx(io5_.IoAddOutline, {})
+                                                                    })
+                                                                })
+                                                            })
+                                                        ]
+                                                    })
+                                                ]
+                                            }),
+                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                className: (team_module_default()).content,
+                                                children: [
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("h3", {
+                                                        className: (team_module_default()).title,
+                                                        dangerouslySetInnerHTML: {
+                                                            __html: teamItem?.teamTitle
+                                                        }
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                        className: (team_module_default()).occupation,
+                                                        children: teamItem?.teamOccupation
+                                                    })
+                                                ]
+                                            })
+                                        ]
+                                    })
+                                }, i);
+                            })
+                        })
+                    })
+                })
+            ]
+        })
+    });
+}
+/* harmony default export */ const team = (Team);
+
 // EXTERNAL MODULE: ./src/components/testimonial/index.js
 var testimonial = __webpack_require__(4286);
 // EXTERNAL MODULE: ./src/lib/items-util.js
@@ -198,7 +353,7 @@ var items_util = __webpack_require__(7698);
 
 
 function AboutPage(props) {
-    return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_.Fragment, {
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_.Fragment, {
         children: [
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)((head_default()), {
                 children: [
@@ -225,7 +380,7 @@ function AboutPage(props) {
                 projects: props.projects,
                 project_section__items: props.project_section__items
             }),
-            /*#__PURE__*/ jsx_runtime_.jsx(team/* default */.Z, {
+            /*#__PURE__*/ jsx_runtime_.jsx(team, {
                 teamItems: props.teamItems,
                 team_section__items: props.team_section__items
             }),
@@ -240,26 +395,26 @@ function AboutPage(props) {
                 footerItems: props.footerItems
             })
         ]
-    }));
+    });
 }
 function getStaticProps() {
-    const aboutItems = (0,items_util/* getAllItems */.Nx)('about');
-    const bannerThreeItems = (0,items_util/* getAllItems */.Nx)('banner-3');
-    const project_section__items = (0,items_util/* getAllItems */.Nx)('project-section');
-    const projects = (0,items_util/* getAllItems */.Nx)('projects');
-    const LatestProject1 = (0,items_util/* getFeaturedItems */.E)(projects);
-    const team_section__items = (0,items_util/* getAllItems */.Nx)('team-section');
-    const teamItems = (0,items_util/* getAllItems */.Nx)('team');
-    const testimonial_section__items = (0,items_util/* getAllItems */.Nx)('testimonial-section');
-    const testimonialItems = (0,items_util/* getAllItems */.Nx)('testimonial');
-    const newsletterItems = (0,items_util/* getAllItems */.Nx)('newsletter');
-    const footerItems = (0,items_util/* getAllItems */.Nx)('footer');
+    const aboutItems = (0,items_util/* getAllItems */.Nx)("about");
+    const bannerThreeItems = (0,items_util/* getAllItems */.Nx)("banner-3");
+    const project_section__items = (0,items_util/* getAllItems */.Nx)("project-section");
+    const projects = (0,items_util/* getAllItems */.Nx)("projects");
+    const LatestProject = (0,items_util/* getFeaturedItems */.E)(projects);
+    const team_section__items = (0,items_util/* getAllItems */.Nx)("team-section");
+    const teamItems = (0,items_util/* getAllItems */.Nx)("team");
+    const testimonial_section__items = (0,items_util/* getAllItems */.Nx)("testimonial-section");
+    const testimonialItems = (0,items_util/* getAllItems */.Nx)("testimonial");
+    const newsletterItems = (0,items_util/* getAllItems */.Nx)("newsletter");
+    const footerItems = (0,items_util/* getAllItems */.Nx)("footer");
     return {
         props: {
             aboutItems,
             bannerThreeItems,
             project_section__items,
-            projects: LatestProject1,
+            projects: LatestProject,
             team_section__items,
             testimonialItems,
             testimonial_section__items,
@@ -282,11 +437,19 @@ module.exports = require("gray-matter");
 
 /***/ }),
 
-/***/ 562:
+/***/ 3280:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/server/denormalize-page-path.js");
+module.exports = require("next/dist/shared/lib/app-router-context.js");
+
+/***/ }),
+
+/***/ 2796:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/head-manager-context.js");
 
 /***/ }),
 
@@ -314,11 +477,51 @@ module.exports = require("next/dist/shared/lib/mitt.js");
 
 /***/ }),
 
+/***/ 4406:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/page-path/denormalize-page-path.js");
+
+/***/ }),
+
 /***/ 4964:
 /***/ ((module) => {
 
 "use strict";
 module.exports = require("next/dist/shared/lib/router-context.js");
+
+/***/ }),
+
+/***/ 1751:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/add-path-prefix.js");
+
+/***/ }),
+
+/***/ 6220:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/compare-states.js");
+
+/***/ }),
+
+/***/ 299:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/format-next-pathname-info.js");
+
+/***/ }),
+
+/***/ 3938:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/format-url.js");
 
 /***/ }),
 
@@ -330,11 +533,11 @@ module.exports = require("next/dist/shared/lib/router/utils/get-asset-path-from-
 
 /***/ }),
 
-/***/ 4365:
+/***/ 5789:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/get-middleware-regex.js");
+module.exports = require("next/dist/shared/lib/router/utils/get-next-pathname-info.js");
 
 /***/ }),
 
@@ -346,6 +549,14 @@ module.exports = require("next/dist/shared/lib/router/utils/is-dynamic.js");
 
 /***/ }),
 
+/***/ 8854:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/parse-path.js");
+
+/***/ }),
+
 /***/ 1292:
 /***/ ((module) => {
 
@@ -354,11 +565,27 @@ module.exports = require("next/dist/shared/lib/router/utils/parse-relative-url.j
 
 /***/ }),
 
+/***/ 4567:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/path-has-prefix.js");
+
+/***/ }),
+
 /***/ 979:
 /***/ ((module) => {
 
 "use strict";
 module.exports = require("next/dist/shared/lib/router/utils/querystring.js");
+
+/***/ }),
+
+/***/ 3297:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/remove-trailing-slash.js");
 
 /***/ }),
 
@@ -497,7 +724,7 @@ module.exports = require("path");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [730,664,698,71,286,734,252,706], () => (__webpack_exec__(3810)));
+var __webpack_exports__ = __webpack_require__.X(0, [952,664,698,71,289,286,995], () => (__webpack_exec__(1508)));
 module.exports = __webpack_exports__;
 
 })();

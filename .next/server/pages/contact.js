@@ -65,31 +65,31 @@ var external_react_bootstrap_ = __webpack_require__(358);
 ;// CONCATENATED MODULE: ./src/components/breadcrumb/contact/index.js
 
 
-function ContactBreadcrumb({ ContactBreadcrumb: ContactBreadcrumb1  }) {
-    return(/*#__PURE__*/ jsx_runtime_.jsx("div", {
+function ContactBreadcrumb({ ContactBreadcrumb  }) {
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         className: "page_banner__bg",
         children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Container, {
-            children: ContactBreadcrumb1 === null || ContactBreadcrumb1 === void 0 ? void 0 : ContactBreadcrumb1.map((contactBreadcrumb, i)=>{
-                return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+            children: ContactBreadcrumb?.map((contactBreadcrumb, i)=>{
+                return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                     className: "page_content",
                     children: [
                         /*#__PURE__*/ jsx_runtime_.jsx("span", {
                             className: "page_subtitle",
-                            children: contactBreadcrumb === null || contactBreadcrumb === void 0 ? void 0 : contactBreadcrumb.breadcrumbSubtitle
+                            children: contactBreadcrumb?.breadcrumbSubtitle
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("h1", {
                             className: "page_title",
-                            children: contactBreadcrumb === null || contactBreadcrumb === void 0 ? void 0 : contactBreadcrumb.breadcrumbTitle
+                            children: contactBreadcrumb?.breadcrumbTitle
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("p", {
                             className: "page_desc",
-                            children: contactBreadcrumb === null || contactBreadcrumb === void 0 ? void 0 : contactBreadcrumb.breadcrumbDesc
+                            children: contactBreadcrumb?.breadcrumbDesc
                         })
                     ]
-                }, i));
+                }, i);
             })
         })
-    }));
+    });
 }
 /* harmony default export */ const contact = (ContactBreadcrumb);
 
@@ -98,16 +98,16 @@ var index_module = __webpack_require__(9723);
 var index_module_default = /*#__PURE__*/__webpack_require__.n(index_module);
 // EXTERNAL MODULE: ./node_modules/next/link.js
 var next_link = __webpack_require__(1664);
+var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 ;// CONCATENATED MODULE: ./src/components/contact/index.js
 
 
 
 
 function Contact({ contactItems  }) {
-    return(/*#__PURE__*/ jsx_runtime_.jsx("main", {
-        children: contactItems === null || contactItems === void 0 ? void 0 : contactItems.map((contactItem, i)=>{
-            var ref;
-            return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Container, {
+    return /*#__PURE__*/ jsx_runtime_.jsx("main", {
+        children: contactItems?.map((contactItem, i)=>{
+            return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Container, {
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                         className: (index_module_default()).area,
@@ -124,15 +124,15 @@ function Contact({ contactItems  }) {
                                                 className: (index_module_default()).img,
                                                 children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
                                                     className: "img-full",
-                                                    src: contactItem === null || contactItem === void 0 ? void 0 : contactItem.image,
-                                                    alt: contactItem === null || contactItem === void 0 ? void 0 : contactItem.imageAlt
+                                                    src: contactItem?.image,
+                                                    alt: contactItem?.imageAlt
                                                 })
                                             }),
                                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                                 className: (index_module_default()).pattern,
                                                 children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                                                    src: contactItem === null || contactItem === void 0 ? void 0 : contactItem.pattern,
-                                                    alt: contactItem === null || contactItem === void 0 ? void 0 : contactItem.patternAlt
+                                                    src: contactItem?.pattern,
+                                                    alt: contactItem?.patternAlt
                                                 })
                                             })
                                         ]
@@ -148,26 +148,26 @@ function Contact({ contactItems  }) {
                                         children: [
                                             /*#__PURE__*/ jsx_runtime_.jsx("span", {
                                                 className: (index_module_default()).subtitle,
-                                                children: contactItem === null || contactItem === void 0 ? void 0 : contactItem.subTitle
+                                                children: contactItem?.subTitle
                                             }),
                                             /*#__PURE__*/ jsx_runtime_.jsx("h2", {
                                                 className: (index_module_default()).title,
-                                                children: contactItem === null || contactItem === void 0 ? void 0 : contactItem.title
+                                                children: contactItem?.title
                                             }),
                                             /*#__PURE__*/ jsx_runtime_.jsx("p", {
                                                 className: (index_module_default()).desc,
-                                                children: contactItem === null || contactItem === void 0 ? void 0 : contactItem.desc
+                                                children: contactItem?.desc
                                             }),
                                             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                                 className: (index_module_default()).info,
                                                 children: [
                                                     /*#__PURE__*/ jsx_runtime_.jsx("h3", {
                                                         className: (index_module_default()).info_title,
-                                                        children: contactItem === null || contactItem === void 0 ? void 0 : contactItem.addressTitle
+                                                        children: contactItem?.addressTitle
                                                     }),
                                                     /*#__PURE__*/ jsx_runtime_.jsx("p", {
                                                         className: (index_module_default()).info_desc,
-                                                        children: contactItem === null || contactItem === void 0 ? void 0 : contactItem.addressDesc
+                                                        children: contactItem?.addressDesc
                                                     })
                                                 ]
                                             }),
@@ -176,22 +176,21 @@ function Contact({ contactItems  }) {
                                                 children: [
                                                     /*#__PURE__*/ jsx_runtime_.jsx("h3", {
                                                         className: (index_module_default()).info_title,
-                                                        children: contactItem === null || contactItem === void 0 ? void 0 : contactItem.infoTitle
+                                                        children: contactItem?.infoTitle
                                                     }),
                                                     /*#__PURE__*/ jsx_runtime_.jsx("ul", {
                                                         className: (index_module_default()).info_list,
-                                                        children: contactItem === null || contactItem === void 0 ? void 0 : (ref = contactItem.infoList) === null || ref === void 0 ? void 0 : ref.map((item, index)=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
+                                                        children: contactItem?.infoList?.map((item, index)=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
                                                                 children: [
                                                                     item.listText,
-                                                                    /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
+                                                                    /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                                                         href: item.path,
                                                                         children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                                                             children: item.listValue
                                                                         })
                                                                     })
                                                                 ]
-                                                            }, index)
-                                                        )
+                                                            }, index))
                                                     })
                                                 ]
                                             })
@@ -212,11 +211,11 @@ function Contact({ contactItems  }) {
                                     children: [
                                         /*#__PURE__*/ jsx_runtime_.jsx("h2", {
                                             className: (index_module_default()).form_title,
-                                            children: contactItem === null || contactItem === void 0 ? void 0 : contactItem.formTitle
+                                            children: contactItem?.formTitle
                                         }),
                                         /*#__PURE__*/ jsx_runtime_.jsx("p", {
                                             className: `${(index_module_default()).form_desc} mb-0`,
-                                            children: contactItem === null || contactItem === void 0 ? void 0 : contactItem.formDesc
+                                            children: contactItem?.formDesc
                                         }),
                                         /*#__PURE__*/ (0,jsx_runtime_.jsxs)("form", {
                                             className: (index_module_default()).form,
@@ -252,7 +251,7 @@ function Contact({ contactItems  }) {
                                                     children: /*#__PURE__*/ jsx_runtime_.jsx("button", {
                                                         className: `${(index_module_default()).btn} ${(index_module_default()).btn_secondary} ${(index_module_default()).btn_hover__primary}`,
                                                         type: "submit",
-                                                        children: contactItem === null || contactItem === void 0 ? void 0 : contactItem.btnText
+                                                        children: contactItem?.btnText
                                                     })
                                                 })
                                             ]
@@ -274,8 +273,8 @@ function Contact({ contactItems  }) {
                                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                                 className: "map_pattern",
                                                 children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                                                    src: contactItem === null || contactItem === void 0 ? void 0 : contactItem.mapPattern,
-                                                    alt: contactItem === null || contactItem === void 0 ? void 0 : contactItem.mapPatternAlt
+                                                    src: contactItem?.mapPattern,
+                                                    alt: contactItem?.mapPatternAlt
                                                 })
                                             })
                                         ]
@@ -285,9 +284,9 @@ function Contact({ contactItems  }) {
                         })
                     })
                 ]
-            }, i));
+            }, i);
         })
-    }));
+    });
 }
 /* harmony default export */ const components_contact = (Contact);
 
@@ -307,7 +306,7 @@ var items_util = __webpack_require__(7698);
 
 
 function ContactPage(props) {
-    return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_.Fragment, {
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_.Fragment, {
         children: [
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)((head_default()), {
                 children: [
@@ -333,16 +332,16 @@ function ContactPage(props) {
                 footerItems: props.footerItems
             })
         ]
-    }));
+    });
 }
 function getStaticProps() {
-    const ContactBreadcrumb1 = (0,items_util/* getAllItems */.Nx)('contact-breadcrumb');
-    const contactItems = (0,items_util/* getAllItems */.Nx)('contact');
-    const newsletterItems = (0,items_util/* getAllItems */.Nx)('newsletter');
-    const footerItems = (0,items_util/* getAllItems */.Nx)('footer');
+    const ContactBreadcrumb = (0,items_util/* getAllItems */.Nx)("contact-breadcrumb");
+    const contactItems = (0,items_util/* getAllItems */.Nx)("contact");
+    const newsletterItems = (0,items_util/* getAllItems */.Nx)("newsletter");
+    const footerItems = (0,items_util/* getAllItems */.Nx)("footer");
     return {
         props: {
-            ContactBreadcrumb: ContactBreadcrumb1,
+            ContactBreadcrumb,
             contactItems,
             newsletterItems,
             footerItems
@@ -362,11 +361,19 @@ module.exports = require("gray-matter");
 
 /***/ }),
 
-/***/ 562:
+/***/ 3280:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/server/denormalize-page-path.js");
+module.exports = require("next/dist/shared/lib/app-router-context.js");
+
+/***/ }),
+
+/***/ 2796:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/head-manager-context.js");
 
 /***/ }),
 
@@ -394,11 +401,51 @@ module.exports = require("next/dist/shared/lib/mitt.js");
 
 /***/ }),
 
+/***/ 4406:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/page-path/denormalize-page-path.js");
+
+/***/ }),
+
 /***/ 4964:
 /***/ ((module) => {
 
 "use strict";
 module.exports = require("next/dist/shared/lib/router-context.js");
+
+/***/ }),
+
+/***/ 1751:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/add-path-prefix.js");
+
+/***/ }),
+
+/***/ 6220:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/compare-states.js");
+
+/***/ }),
+
+/***/ 299:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/format-next-pathname-info.js");
+
+/***/ }),
+
+/***/ 3938:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/format-url.js");
 
 /***/ }),
 
@@ -410,11 +457,11 @@ module.exports = require("next/dist/shared/lib/router/utils/get-asset-path-from-
 
 /***/ }),
 
-/***/ 4365:
+/***/ 5789:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/get-middleware-regex.js");
+module.exports = require("next/dist/shared/lib/router/utils/get-next-pathname-info.js");
 
 /***/ }),
 
@@ -426,6 +473,14 @@ module.exports = require("next/dist/shared/lib/router/utils/is-dynamic.js");
 
 /***/ }),
 
+/***/ 8854:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/parse-path.js");
+
+/***/ }),
+
 /***/ 1292:
 /***/ ((module) => {
 
@@ -434,11 +489,27 @@ module.exports = require("next/dist/shared/lib/router/utils/parse-relative-url.j
 
 /***/ }),
 
+/***/ 4567:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/path-has-prefix.js");
+
+/***/ }),
+
 /***/ 979:
 /***/ ((module) => {
 
 "use strict";
 module.exports = require("next/dist/shared/lib/router/utils/querystring.js");
+
+/***/ }),
+
+/***/ 3297:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/remove-trailing-slash.js");
 
 /***/ }),
 
@@ -537,7 +608,7 @@ module.exports = require("path");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [730,664,698,71], () => (__webpack_exec__(7766)));
+var __webpack_exports__ = __webpack_require__.X(0, [952,664,698,71], () => (__webpack_exec__(7766)));
 module.exports = __webpack_exports__;
 
 })();

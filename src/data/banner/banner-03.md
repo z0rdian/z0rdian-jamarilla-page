@@ -2,6 +2,6 @@
 bannerBG: 'bg bg-03'
 image: '/images/banner/inner-bg/1-3.png'
 alt: 'Banner Image'
-title: 'Low Price'
-desc: 'Pricing is the construction packages we provide page editors now use Lorem as their default model text'
+title: 'Económico'
+desc: 'Presupuestos transparentes y los mejores proveedores. Haremos tu sueño realidad sin agujerear tu bolsillo.'
 ---

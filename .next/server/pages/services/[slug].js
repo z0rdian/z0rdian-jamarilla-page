@@ -86,7 +86,7 @@ var external_react_bootstrap_ = __webpack_require__(358);
 
 function DetailBreadcrumb(props) {
     const { title , detailBreadcrumbSubTitle , detailBreadcrumbDesc  } = props;
-    return(/*#__PURE__*/ jsx_runtime_.jsx("div", {
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         className: "page_banner__bg",
         children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Container, {
             children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
@@ -107,7 +107,7 @@ function DetailBreadcrumb(props) {
                 ]
             })
         })
-    }));
+    });
 }
 /* harmony default export */ const detail_breadcrumb = (DetailBreadcrumb);
 
@@ -117,6 +117,7 @@ var newsletter = __webpack_require__(1939);
 var footer = __webpack_require__(5608);
 // EXTERNAL MODULE: ./node_modules/next/link.js
 var next_link = __webpack_require__(1664);
+var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 // EXTERNAL MODULE: ./src/components/services/service.module.scss
 var service_module = __webpack_require__(3108);
 var service_module_default = /*#__PURE__*/__webpack_require__.n(service_module);
@@ -126,29 +127,28 @@ var service_module_default = /*#__PURE__*/__webpack_require__.n(service_module);
 
 
 function ServiceSidebar({ servicesSidebar  }) {
-    return(/*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
+    return /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
         lg: {
             span: 3
         },
-        children: servicesSidebar === null || servicesSidebar === void 0 ? void 0 : servicesSidebar.map((serviceSidebar, i)=>{
-            var ref, ref1;
-            return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+        children: servicesSidebar?.map((serviceSidebar, i)=>{
+            return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                 className: "sidebar",
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                         className: `${(service_module_default()).sidebar_widget} mb-30`,
                         children: /*#__PURE__*/ jsx_runtime_.jsx("ul", {
                             className: (service_module_default()).sidebar_list,
-                            children: serviceSidebar === null || serviceSidebar === void 0 ? void 0 : (ref = serviceSidebar.sidebarList) === null || ref === void 0 ? void 0 : ref.map((item, index)=>{
-                                return(/*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
-                                        href: item === null || item === void 0 ? void 0 : item.path,
+                            children: serviceSidebar?.sidebarList?.map((item, index)=>{
+                                return /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                    children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                        href: item?.path,
                                         children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                             download: true,
-                                            children: item === null || item === void 0 ? void 0 : item.listText
+                                            children: item?.listText
                                         })
                                     })
-                                }, index));
+                                }, index);
                             })
                         })
                     }),
@@ -156,30 +156,30 @@ function ServiceSidebar({ servicesSidebar  }) {
                         className: `${(service_module_default()).sidebar_brochure__widget}  mb-30`,
                         children: /*#__PURE__*/ jsx_runtime_.jsx("ul", {
                             className: `${(service_module_default()).sidebar_brochure__list}`,
-                            children: serviceSidebar === null || serviceSidebar === void 0 ? void 0 : (ref1 = serviceSidebar.downloadBrochure) === null || ref1 === void 0 ? void 0 : ref1.map((item, index)=>{
-                                return(/*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
-                                        href: item === null || item === void 0 ? void 0 : item.path,
+                            children: serviceSidebar?.downloadBrochure?.map((item, index)=>{
+                                return /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                    children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                        href: item?.path,
                                         children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                             download: true,
-                                            children: item === null || item === void 0 ? void 0 : item.listItem
+                                            children: item?.listItem
                                         })
                                     })
-                                }, index));
+                                }, index);
                             })
                         })
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                         className: `${(service_module_default()).sidebar_widget__banner}`,
                         children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                            src: serviceSidebar === null || serviceSidebar === void 0 ? void 0 : serviceSidebar.widgetBanner,
-                            alt: serviceSidebar === null || serviceSidebar === void 0 ? void 0 : serviceSidebar.widgetBannerAlt
+                            src: serviceSidebar?.widgetBanner,
+                            alt: serviceSidebar?.widgetBannerAlt
                         })
                     })
                 ]
-            }, i));
+            }, i);
         })
-    }));
+    });
 }
 /* harmony default export */ const service_sidebar = (ServiceSidebar);
 
@@ -199,11 +199,10 @@ var fa_ = __webpack_require__(6290);
 
 
 function OurService({ ourServices  }) {
-    return(/*#__PURE__*/ jsx_runtime_.jsx("div", {
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         className: "our-service",
-        children: ourServices === null || ourServices === void 0 ? void 0 : ourServices.map((ourService, i)=>{
-            var ref, ref1, ref2;
-            return(/*#__PURE__*/ jsx_runtime_.jsx("div", {
+        children: ourServices?.map((ourService, i)=>{
+            return /*#__PURE__*/ jsx_runtime_.jsx("div", {
                 className: "our-service-inner pt-45",
                 children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Row, {
                     className: "g-30",
@@ -217,17 +216,17 @@ function OurService({ ourServices  }) {
                                 children: [
                                     /*#__PURE__*/ jsx_runtime_.jsx("h2", {
                                         className: (our_services_module_default()).title,
-                                        children: ourService === null || ourService === void 0 ? void 0 : ourService.projectContentTitle
+                                        children: ourService?.projectContentTitle
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("p", {
                                         className: (our_services_module_default()).desc,
-                                        children: ourService === null || ourService === void 0 ? void 0 : ourService.projectContentDesc
+                                        children: ourService?.projectContentDesc
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("ul", {
                                         className: (our_services_module_default()).list,
-                                        children: ourService === null || ourService === void 0 ? void 0 : (ref = ourService.listItem) === null || ref === void 0 ? void 0 : ref.map((item, index)=>{
+                                        children: ourService?.listItem?.map((item, index)=>{
                                             const CheckIcon = fa_[item.checkIcon];
-                                            return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
+                                            return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
                                                 children: [
                                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                                         className: (our_services_module_default()).list_icon,
@@ -240,7 +239,7 @@ function OurService({ ourServices  }) {
                                                         })
                                                     })
                                                 ]
-                                            }, index));
+                                            }, index);
                                         })
                                     })
                                 ]
@@ -255,22 +254,22 @@ function OurService({ ourServices  }) {
                                 children: [
                                     /*#__PURE__*/ jsx_runtime_.jsx("h2", {
                                         className: (our_services_module_default()).title,
-                                        children: ourService === null || ourService === void 0 ? void 0 : ourService.projectAnalysisTitle
+                                        children: ourService?.projectAnalysisTitle
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("p", {
                                         className: (our_services_module_default()).desc,
-                                        children: ourService === null || ourService === void 0 ? void 0 : ourService.projectAnalysisDesc
+                                        children: ourService?.projectAnalysisDesc
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                         className: "addition-content",
                                         children: [
                                             /*#__PURE__*/ jsx_runtime_.jsx("p", {
                                                 className: (our_services_module_default()).desc,
-                                                children: ourService === null || ourService === void 0 ? void 0 : ourService.additionDescOne
+                                                children: ourService?.additionDescOne
                                             }),
                                             /*#__PURE__*/ jsx_runtime_.jsx("p", {
                                                 className: (our_services_module_default()).desc,
-                                                children: ourService === null || ourService === void 0 ? void 0 : ourService.additionDescTwo
+                                                children: ourService?.additionDescTwo
                                             })
                                         ]
                                     })
@@ -286,16 +285,16 @@ function OurService({ ourServices  }) {
                                 children: [
                                     /*#__PURE__*/ jsx_runtime_.jsx("h2", {
                                         className: (our_services_module_default()).title,
-                                        children: ourService === null || ourService === void 0 ? void 0 : ourService.projectPlanningTitle
+                                        children: ourService?.projectPlanningTitle
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("p", {
                                         className: (our_services_module_default()).desc,
-                                        children: ourService === null || ourService === void 0 ? void 0 : ourService.projectPlanningDesc
+                                        children: ourService?.projectPlanningDesc
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("ul", {
                                         className: `${(our_services_module_default()).list} ${(our_services_module_default()).list_02}`,
-                                        children: ourService === null || ourService === void 0 ? void 0 : (ref1 = ourService.listItemTwo) === null || ref1 === void 0 ? void 0 : ref1.map((item, index)=>{
-                                            return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
+                                        children: ourService?.listItemTwo?.map((item, index)=>{
+                                            return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
                                                 children: [
                                                     /*#__PURE__*/ jsx_runtime_.jsx("span", {
                                                         className: "text-primary",
@@ -303,7 +302,7 @@ function OurService({ ourServices  }) {
                                                     }),
                                                     item.text
                                                 ]
-                                            }, index));
+                                            }, index);
                                         })
                                     })
                                 ]
@@ -318,17 +317,17 @@ function OurService({ ourServices  }) {
                                 children: [
                                     /*#__PURE__*/ jsx_runtime_.jsx("h2", {
                                         className: (our_services_module_default()).title,
-                                        children: ourService === null || ourService === void 0 ? void 0 : ourService.projectContentTitle
+                                        children: ourService?.projectContentTitle
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("p", {
                                         className: (our_services_module_default()).desc,
-                                        children: ourService === null || ourService === void 0 ? void 0 : ourService.projectContentDesc
+                                        children: ourService?.projectContentDesc
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("ul", {
                                         className: (our_services_module_default()).list,
-                                        children: ourService === null || ourService === void 0 ? void 0 : (ref2 = ourService.listItem) === null || ref2 === void 0 ? void 0 : ref2.map((item, index)=>{
+                                        children: ourService?.listItem?.map((item, index)=>{
                                             const CheckIcon = fa_[item.checkIcon];
-                                            return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
+                                            return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
                                                 children: [
                                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                                         className: (our_services_module_default()).list_icon,
@@ -341,7 +340,7 @@ function OurService({ ourServices  }) {
                                                         })
                                                     })
                                                 ]
-                                            }, index));
+                                            }, index);
                                         })
                                     })
                                 ]
@@ -349,9 +348,9 @@ function OurService({ ourServices  }) {
                         })
                     ]
                 })
-            }, i));
+            }, i);
         })
-    }));
+    });
 }
 /* harmony default export */ const our_services = (OurService);
 
@@ -365,7 +364,7 @@ function ServiceContent(props) {
     const { service  } = props;
     const { largeImage , slug  } = props.service;
     const imagePath = `/images/services/${slug}/${largeImage}`;
-    return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Col, {
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Col, {
         lg: {
             span: 9
         },
@@ -376,7 +375,7 @@ function ServiceContent(props) {
                 children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
                     className: "img-full",
                     src: imagePath,
-                    alt: service === null || service === void 0 ? void 0 : service.title
+                    alt: service?.title
                 })
             }),
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
@@ -384,15 +383,15 @@ function ServiceContent(props) {
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx("h2", {
                         className: (index_module_default()).title,
-                        children: service === null || service === void 0 ? void 0 : service.title
+                        children: service?.title
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("h3", {
                         className: (index_module_default()).subtitle,
-                        children: service === null || service === void 0 ? void 0 : service.detailSubTitle
+                        children: service?.detailSubTitle
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("p", {
                         className: (index_module_default()).desc,
-                        children: service === null || service === void 0 ? void 0 : service.detailDesc
+                        children: service?.detailDesc
                     })
                 ]
             }),
@@ -403,7 +402,7 @@ function ServiceContent(props) {
                 ourServices: props.ourServices
             })
         ]
-    }));
+    });
 }
 /* harmony default export */ const service_content = (ServiceContent);
 
@@ -414,7 +413,7 @@ function ServiceContent(props) {
 
 
 function ServiceDetail(props) {
-    return(/*#__PURE__*/ jsx_runtime_.jsx("div", {
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         className: (index_module_default()).area,
         children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Container, {
             children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Row, {
@@ -431,7 +430,7 @@ function ServiceDetail(props) {
                 ]
             })
         })
-    }));
+    });
 }
 /* harmony default export */ const service_detail = (ServiceDetail);
 
@@ -447,7 +446,7 @@ var items_util = __webpack_require__(7698);
 
 
 function ServiceDetailsPage(props) {
-    return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_.Fragment, {
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_.Fragment, {
         children: [
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)((head_default()), {
                 children: [
@@ -481,17 +480,17 @@ function ServiceDetailsPage(props) {
                 footerItems: props.footerItems
             })
         ]
-    }));
+    });
 }
 function getStaticProps(context) {
     const { params  } = context;
     const { slug  } = params;
-    const service = (0,items_util/* getItemData */.m_)(slug, 'services');
-    const servicesSidebar = (0,items_util/* getAllItems */.Nx)('service-sidebar');
-    const richTexts = (0,items_util/* getAllItems */.Nx)('rich-text');
-    const ourServices = (0,items_util/* getAllItems */.Nx)('our-service');
-    const newsletterItems = (0,items_util/* getAllItems */.Nx)('newsletter');
-    const footerItems = (0,items_util/* getAllItems */.Nx)('footer');
+    const service = (0,items_util/* getItemData */.m_)(slug, "services");
+    const servicesSidebar = (0,items_util/* getAllItems */.Nx)("service-sidebar");
+    const richTexts = (0,items_util/* getAllItems */.Nx)("rich-text");
+    const ourServices = (0,items_util/* getAllItems */.Nx)("our-service");
+    const newsletterItems = (0,items_util/* getAllItems */.Nx)("newsletter");
+    const footerItems = (0,items_util/* getAllItems */.Nx)("footer");
     return {
         props: {
             service,
@@ -504,16 +503,14 @@ function getStaticProps(context) {
     };
 }
 function getStaticPaths() {
-    const serviceFilenames = (0,items_util/* getItemsFiles */.Jf)('services');
-    const slugs = serviceFilenames.map((fileName)=>fileName.replace(/\.md$/, '')
-    );
+    const serviceFilenames = (0,items_util/* getItemsFiles */.Jf)("services");
+    const slugs = serviceFilenames.map((fileName)=>fileName.replace(/\.md$/, ""));
     return {
         paths: slugs.map((slug)=>({
                 params: {
                     slug: slug
                 }
-            })
-        ),
+            })),
         fallback: false
     };
 }
@@ -530,11 +527,19 @@ module.exports = require("gray-matter");
 
 /***/ }),
 
-/***/ 562:
+/***/ 3280:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/server/denormalize-page-path.js");
+module.exports = require("next/dist/shared/lib/app-router-context.js");
+
+/***/ }),
+
+/***/ 2796:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/head-manager-context.js");
 
 /***/ }),
 
@@ -562,11 +567,51 @@ module.exports = require("next/dist/shared/lib/mitt.js");
 
 /***/ }),
 
+/***/ 4406:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/page-path/denormalize-page-path.js");
+
+/***/ }),
+
 /***/ 4964:
 /***/ ((module) => {
 
 "use strict";
 module.exports = require("next/dist/shared/lib/router-context.js");
+
+/***/ }),
+
+/***/ 1751:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/add-path-prefix.js");
+
+/***/ }),
+
+/***/ 6220:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/compare-states.js");
+
+/***/ }),
+
+/***/ 299:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/format-next-pathname-info.js");
+
+/***/ }),
+
+/***/ 3938:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/format-url.js");
 
 /***/ }),
 
@@ -578,11 +623,11 @@ module.exports = require("next/dist/shared/lib/router/utils/get-asset-path-from-
 
 /***/ }),
 
-/***/ 4365:
+/***/ 5789:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/get-middleware-regex.js");
+module.exports = require("next/dist/shared/lib/router/utils/get-next-pathname-info.js");
 
 /***/ }),
 
@@ -594,6 +639,14 @@ module.exports = require("next/dist/shared/lib/router/utils/is-dynamic.js");
 
 /***/ }),
 
+/***/ 8854:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/parse-path.js");
+
+/***/ }),
+
 /***/ 1292:
 /***/ ((module) => {
 
@@ -602,11 +655,27 @@ module.exports = require("next/dist/shared/lib/router/utils/parse-relative-url.j
 
 /***/ }),
 
+/***/ 4567:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/path-has-prefix.js");
+
+/***/ }),
+
 /***/ 979:
 /***/ ((module) => {
 
 "use strict";
 module.exports = require("next/dist/shared/lib/router/utils/querystring.js");
+
+/***/ }),
+
+/***/ 3297:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/remove-trailing-slash.js");
 
 /***/ }),
 
@@ -705,7 +774,7 @@ module.exports = require("path");
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [730,664,698,71,354], () => (__webpack_exec__(5910)));
+var __webpack_exports__ = __webpack_require__.X(0, [952,664,698,71,354], () => (__webpack_exec__(5910)));
 module.exports = __webpack_exports__;
 
 })();

@@ -25,6 +25,7 @@ var blog_module = __webpack_require__(5932);
 var blog_module_default = /*#__PURE__*/__webpack_require__.n(blog_module);
 // EXTERNAL MODULE: ./node_modules/next/link.js
 var next_link = __webpack_require__(1664);
+var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 ;// CONCATENATED MODULE: ./src/components/blogs/leftsidebar-item.js
 
 
@@ -34,14 +35,14 @@ function BlogLeftSidebarItem(props) {
     const { title , blogMeta , excerpt , mediumImage , slug  } = props.blog;
     const imagePath = `/images/blogs/${slug}/${mediumImage}`;
     const linkPath = `/blogs/${slug}`;
-    return(/*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
+    return /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
         md: {
             span: 6
         },
         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
             className: (blog_module_default()).blog_item,
             children: [
-                /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
+                /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                     href: linkPath,
                     children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                         className: (blog_module_default()).blog_img,
@@ -61,7 +62,7 @@ function BlogLeftSidebarItem(props) {
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("h3", {
                             className: (blog_module_default()).blog_title,
-                            children: /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
+                            children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                 href: linkPath,
                                 children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                     children: title
@@ -76,7 +77,7 @@ function BlogLeftSidebarItem(props) {
                             className: (blog_module_default()).blog_btn__wrap,
                             children: [
                                 /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
+                                    children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                         href: linkPath,
                                         children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                             className: (blog_module_default()).blog_btn__link,
@@ -85,7 +86,7 @@ function BlogLeftSidebarItem(props) {
                                     })
                                 }),
                                 /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
+                                    children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                         href: linkPath,
                                         children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                             children: "35 Comments"
@@ -98,7 +99,7 @@ function BlogLeftSidebarItem(props) {
                 })
             ]
         })
-    }));
+    });
 }
 /* harmony default export */ const leftsidebar_item = (BlogLeftSidebarItem);
 
@@ -111,7 +112,7 @@ function BlogLeftSidebarItem(props) {
 
 function BlogLeftSidebarGrid(props) {
     const { blogs  } = props;
-    return(/*#__PURE__*/ jsx_runtime_.jsx("div", {
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         className: (blog_module_default()).blog,
         children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Container, {
             children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Row, {
@@ -143,9 +144,9 @@ function BlogLeftSidebarGrid(props) {
                             /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Row, {
                                 className: "g-4",
                                 children: blogs.map((blog)=>{
-                                    return(/*#__PURE__*/ jsx_runtime_.jsx(leftsidebar_item, {
+                                    return /*#__PURE__*/ jsx_runtime_.jsx(leftsidebar_item, {
                                         blog: blog
-                                    }, blog.slug));
+                                    }, blog.slug);
                                 })
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx(page_navigation/* default */.Z, {})
@@ -154,7 +155,7 @@ function BlogLeftSidebarGrid(props) {
                 ]
             })
         })
-    }));
+    });
 }
 /* harmony default export */ const leftsidebar_grid = (BlogLeftSidebarGrid);
 
@@ -164,7 +165,7 @@ function BlogLeftSidebarGrid(props) {
 
 function BlogLeftSidebar(props) {
     const { blogs , categories , tags  } = props;
-    return(/*#__PURE__*/ jsx_runtime_.jsx("div", {
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Container, {
             children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Row, {
                 className: "g-0",
@@ -181,7 +182,7 @@ function BlogLeftSidebar(props) {
                 })
             })
         })
-    }));
+    });
 }
 /* harmony default export */ const leftsidebar = (BlogLeftSidebar);
 

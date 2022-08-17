@@ -1,23 +1,23 @@
 ---
-sectionTitle: 'We Construct your needs'
-sectionSubtitle: 'About Us'
-sectionDesc: 'Construction of itself, because it is pain, but <br /> because some proper style design occur in toil and pain pleasure we have expert team'
+sectionTitle: 'Nosotros Construimos tus necesidades'
+sectionSubtitle: '¿Quienes?'
+sectionDesc: 'Nunca esta de más ser prevenido,<br /> con mi padre eso lo sabemos. Negocio familiar con mas de 20 años de trayectoria a lo largo del país.'
 image: '/images/about/1-1.jpg'
 alt: 'About Image'
 pattern: '/images/about/pattern.png'
 patternAlt: 'Pattern'
-experienceYear: '25'
-ourProgress: 'Years of <span>Experience</span>'
+experienceYear: '20'
+ourProgress: 'Años de <span>Experiencia</span>'
 experienceImage: '/images/about/avatar.png'
 experienceAlt: 'Avatar'
-aboutSubtitle: 'Provide the best Constructing services for our client with their satisfaction'
-aboutDesc: 'Construction of itself, because it is pain, but because some are proper style design occur in toil and pain pleasure we have a expert team some of the main features..'
+aboutSubtitle: 'Proveemos el mejor servicio de refacciones y construcciones en Buenos Aires.'
+aboutDesc: 'La construccion es un arte. Multiples tecnicas se han de aplicar para hacer un trabajo. Nuestro equipo compila destrezas en distintas areas'
 listItem:
-    - Construction of itself, because it is pain, but because proper style design occur in toil and pain pleasure
-    - Construction of itself, because it is pain, but because proper style design occur in toil and pain pleasure
-    - Construction of itself, because it is pain, but because proper style design occur in toil and pain pleasure
+    - Herreria para la confeccion de soportes y estructuras. 
+    - Cimentación y saneamiento.
+    - Planificacion e instalacion de suministro eléctrico y acuífero.
 checkIcon: 'FaCheck'
-breadcrumbTitle: 'About us'
-breadcrumbSubtitle: 'What we do'
-breadcrumbDesc: 'Construction of itself, because it is pain some proper style design occur are pleasure'
+breadcrumbTitle: '¿Qué hacemos?'
+breadcrumbSubtitle: 'Los Amarilla'
+breadcrumbDesc: 'La construcción de tu sueño'
 ---

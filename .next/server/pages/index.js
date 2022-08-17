@@ -45,24 +45,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 6887:
-/***/ ((module) => {
-
-// Exports
-module.exports = {
-	"area": "latest-blog_area__XolIH",
-	"section__holder": "latest-blog_section__holder__hdCAD",
-	"section_title": "latest-blog_section_title__CKi5_",
-	"section_title__wrap": "latest-blog_section_title__wrap__Vutdr",
-	"sub_title": "latest-blog_sub_title__fxRLq",
-	"title": "latest-blog_title__Yd6v_",
-	"section_desc": "latest-blog_section_desc__xEhCu"
-};
-
-
-/***/ }),
-
-/***/ 8395:
+/***/ 5254:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -94,13 +77,13 @@ var banner_module_default = /*#__PURE__*/__webpack_require__.n(banner_module);
 
 
 function BannerOne({ bannerItems  }) {
-    return(/*#__PURE__*/ jsx_runtime_.jsx("div", {
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         className: (banner_module_default()).area,
         children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Container, {
             children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Row, {
                 className: "g-4",
-                children: bannerItems === null || bannerItems === void 0 ? void 0 : bannerItems.map((bannerItem, i)=>{
-                    return(/*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
+                children: bannerItems?.map((bannerItem, i)=>{
+                    return /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
                         lg: {
                             span: 4
                         },
@@ -108,34 +91,31 @@ function BannerOne({ bannerItems  }) {
                             span: 6
                         },
                         children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                            className: `${bannerItem.bannerBG.split(' ').map((item)=>(banner_module_default())[item]
-                            ).join(' ')}`,
+                            className: `${bannerItem.bannerBG.split(" ").map((item)=>(banner_module_default())[item]).join(" ")}`,
                             children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                 className: (banner_module_default()).content,
                                 children: [
                                     /*#__PURE__*/ jsx_runtime_.jsx("h2", {
                                         className: (banner_module_default()).title,
-                                        children: bannerItem === null || bannerItem === void 0 ? void 0 : bannerItem.title
+                                        children: bannerItem?.title
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("p", {
                                         className: (banner_module_default()).desc,
-                                        children: bannerItem === null || bannerItem === void 0 ? void 0 : bannerItem.desc
+                                        children: bannerItem?.desc
                                     })
                                 ]
                             })
                         })
-                    }, i));
+                    }, i);
                 })
             })
         })
-    }));
+    });
 }
 /* harmony default export */ const banner = (BannerOne);
 
 // EXTERNAL MODULE: ./src/components/banner/index-2.js
 var index_2 = __webpack_require__(8643);
-// EXTERNAL MODULE: ./src/components/brand/index.js
-var brand = __webpack_require__(3036);
 // EXTERNAL MODULE: external "react-countup"
 var external_react_countup_ = __webpack_require__(609);
 var external_react_countup_default = /*#__PURE__*/__webpack_require__.n(external_react_countup_);
@@ -160,7 +140,7 @@ function Counter() {
             }
         }
     };
-    return(/*#__PURE__*/ jsx_runtime_.jsx("div", {
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         className: (counter_module_default()).area,
         children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Container, {
             children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Row, {
@@ -168,21 +148,21 @@ function Counter() {
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
                         lg: {
-                            span: 3
+                            span: 4
                         },
                         sm: {
                             span: 6
                         },
                         children: /*#__PURE__*/ jsx_runtime_.jsx((external_react_countup_default()), {
                             start: focus ? 0 : null,
-                            end: 985,
+                            end: 10,
                             duration: 3,
                             children: ({ countUpRef  })=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                     className: (counter_module_default()).item,
                                     children: [
                                         /*#__PURE__*/ jsx_runtime_.jsx("h2", {
                                             className: (counter_module_default()).count_inner__text,
-                                            children: "985"
+                                            children: "10"
                                         }),
                                         /*#__PURE__*/ jsx_runtime_.jsx("h3", {
                                             className: (counter_module_default()).count,
@@ -190,11 +170,10 @@ function Counter() {
                                         }),
                                         /*#__PURE__*/ jsx_runtime_.jsx(external_react_intersection_observer_.InView, {
                                             as: "div",
-                                            onChange: (inView)=>visibleChangeHandler(inView)
-                                            ,
+                                            onChange: (inView)=>visibleChangeHandler(inView),
                                             children: /*#__PURE__*/ jsx_runtime_.jsx("span", {
                                                 className: (counter_module_default()).count_title,
-                                                children: "Projects"
+                                                children: "Proyectos"
                                             })
                                         })
                                     ]
@@ -225,11 +204,10 @@ function Counter() {
                                         }),
                                         /*#__PURE__*/ jsx_runtime_.jsx(external_react_intersection_observer_.InView, {
                                             as: "div",
-                                            onChange: (inView)=>visibleChangeHandler(inView)
-                                            ,
+                                            onChange: (inView)=>visibleChangeHandler(inView),
                                             children: /*#__PURE__*/ jsx_runtime_.jsx("span", {
                                                 className: (counter_module_default()).count_title,
-                                                children: "Clients"
+                                                children: "Clientes"
                                             })
                                         })
                                     ]
@@ -260,46 +238,10 @@ function Counter() {
                                         }),
                                         /*#__PURE__*/ jsx_runtime_.jsx(external_react_intersection_observer_.InView, {
                                             as: "div",
-                                            onChange: (inView)=>visibleChangeHandler(inView)
-                                            ,
+                                            onChange: (inView)=>visibleChangeHandler(inView),
                                             children: /*#__PURE__*/ jsx_runtime_.jsx("span", {
                                                 className: (counter_module_default()).count_title,
-                                                children: "Success"
-                                            })
-                                        })
-                                    ]
-                                })
-                        })
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
-                        lg: {
-                            span: 3
-                        },
-                        sm: {
-                            span: 6
-                        },
-                        children: /*#__PURE__*/ jsx_runtime_.jsx((external_react_countup_default()), {
-                            start: focus ? 0 : null,
-                            end: 120,
-                            duration: 3,
-                            children: ({ countUpRef  })=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                    className: (counter_module_default()).item,
-                                    children: [
-                                        /*#__PURE__*/ jsx_runtime_.jsx("h2", {
-                                            className: (counter_module_default()).count_inner__text,
-                                            children: "120"
-                                        }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx("h3", {
-                                            className: (counter_module_default()).count,
-                                            ref: countUpRef
-                                        }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx(external_react_intersection_observer_.InView, {
-                                            as: "div",
-                                            onChange: (inView)=>visibleChangeHandler(inView)
-                                            ,
-                                            children: /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                className: (counter_module_default()).count_title,
-                                                children: "Awards"
+                                                children: "Exitos"
                                             })
                                         })
                                     ]
@@ -309,7 +251,7 @@ function Counter() {
                 ]
             })
         })
-    }));
+    });
 }
 /* harmony default export */ const counter = (Counter);
 
@@ -318,6 +260,7 @@ var hero_module = __webpack_require__(2907);
 var hero_module_default = /*#__PURE__*/__webpack_require__.n(hero_module);
 // EXTERNAL MODULE: ./node_modules/next/link.js
 var next_link = __webpack_require__(1664);
+var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 // EXTERNAL MODULE: external "swiper"
 var external_swiper_ = __webpack_require__(2770);
 var external_swiper_default = /*#__PURE__*/__webpack_require__.n(external_swiper_);
@@ -338,7 +281,7 @@ external_swiper_default().use([
     external_swiper_.Autoplay
 ]);
 function Hero({ heroItems  }) {
-    return(/*#__PURE__*/ jsx_runtime_.jsx(react_.Swiper, {
+    return /*#__PURE__*/ jsx_runtime_.jsx(react_.Swiper, {
         autoplay: {
             delay: 4000,
             disableOnInteraction: false
@@ -346,7 +289,7 @@ function Hero({ heroItems  }) {
         speed: 1000,
         pagination: {
             clickable: true,
-            type: 'bullets'
+            type: "bullets"
         },
         navigation: true,
         updateOnWindowResize: true,
@@ -354,10 +297,9 @@ function Hero({ heroItems  }) {
         observeParents: true,
         slidesPerView: 1,
         className: "hero-slider",
-        children: heroItems === null || heroItems === void 0 ? void 0 : heroItems.map((heroItem, i)=>{
-            return(/*#__PURE__*/ jsx_runtime_.jsx(react_.SwiperSlide, {
-                className: `animation-style-01 ${heroItem.heroBG.split(' ').map((item)=>(hero_module_default())[item]
-                ).join(' ')}`,
+        children: heroItems?.map((heroItem, i)=>{
+            return /*#__PURE__*/ jsx_runtime_.jsx(react_.SwiperSlide, {
+                className: `animation-style-01 ${heroItem.heroBG.split(" ").map((item)=>(hero_module_default())[item]).join(" ")}`,
                 children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
                     className: "container",
                     children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
@@ -365,7 +307,7 @@ function Hero({ heroItems  }) {
                         children: [
                             /*#__PURE__*/ jsx_runtime_.jsx("span", {
                                 className: `subtitle-animation ${(hero_module_default()).subtitle}`,
-                                children: heroItem === null || heroItem === void 0 ? void 0 : heroItem.subtitle
+                                children: heroItem?.subtitle
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                 className: `title-animation ${(hero_module_default()).title}`,
@@ -382,18 +324,18 @@ function Hero({ heroItems  }) {
                             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                 className: `btn-animation ${(hero_module_default()).btn_wrap}`,
                                 children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
+                                    /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                         href: "/projects/project-fullwidth",
                                         children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                             className: `me-20 ${(hero_module_default()).btn} ${(hero_module_default()).btn_secondary} ${(hero_module_default()).btn_hover__white}`,
-                                            children: heroItem === null || heroItem === void 0 ? void 0 : heroItem.btnSecondaryText
+                                            children: heroItem?.btnSecondaryText
                                         })
                                     }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
+                                    /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                         href: "/contact",
                                         children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                             className: `${(hero_module_default()).btn} ${(hero_module_default()).btn_primary} ${(hero_module_default()).btn_hover__white}`,
-                                            children: heroItem === null || heroItem === void 0 ? void 0 : heroItem.btnPrimaryText
+                                            children: heroItem?.btnPrimaryText
                                         })
                                     })
                                 ]
@@ -401,9 +343,9 @@ function Hero({ heroItems  }) {
                         ]
                     })
                 })
-            }, i));
+            }, i);
         })
-    }));
+    });
 }
 /* harmony default export */ const hero = (Hero);
 
@@ -443,19 +385,19 @@ function HomePageServices(props) {
     }, [
         swiper
     ]);
-    return(/*#__PURE__*/ jsx_runtime_.jsx("div", {
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         className: (service_module_default()).area,
         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Container, {
             children: [
                 service_section__items.map((service_section__item, index)=>{
-                    return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                         className: (service_module_default()).section,
                         children: [
                             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                 className: (service_module_default()).section_title,
                                 children: [
                                     /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                        children: service_section__item === null || service_section__item === void 0 ? void 0 : service_section__item.subTitle
+                                        children: service_section__item?.subTitle
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("h2", {
                                         dangerouslySetInnerHTML: {
@@ -474,7 +416,7 @@ function HomePageServices(props) {
                                 })
                             })
                         ]
-                    }, index));
+                    }, index);
                 }),
                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                     className: (service_module_default()).navigation__holder,
@@ -504,8 +446,8 @@ function HomePageServices(props) {
                                     pagination: false,
                                     spaceBetween: 30,
                                     navigation: {
-                                        prevEl: prevRef === null || prevRef === void 0 ? void 0 : prevRef.current,
-                                        nextEl: nextRef === null || nextRef === void 0 ? void 0 : nextRef.current
+                                        prevEl: prevRef?.current,
+                                        nextEl: nextRef?.current
                                     },
                                     onSwiper: setSwiper,
                                     updateOnWindowResize: true,
@@ -530,11 +472,11 @@ function HomePageServices(props) {
                                     },
                                     className: (service_module_default()).slider,
                                     children: services.map((service)=>{
-                                        return(/*#__PURE__*/ jsx_runtime_.jsx(react_.SwiperSlide, {
+                                        return /*#__PURE__*/ jsx_runtime_.jsx(react_.SwiperSlide, {
                                             children: /*#__PURE__*/ jsx_runtime_.jsx(service_item/* default */.Z, {
                                                 service: service
                                             })
-                                        }, service.slug));
+                                        }, service.slug);
                                     })
                                 })
                             })
@@ -543,181 +485,9 @@ function HomePageServices(props) {
                 })
             ]
         })
-    }));
+    });
 }
 /* harmony default export */ const homepage_services = (HomePageServices);
-
-// EXTERNAL MODULE: ./src/components/home-page/latest-blog.module.scss
-var latest_blog_module = __webpack_require__(6887);
-var latest_blog_module_default = /*#__PURE__*/__webpack_require__.n(latest_blog_module);
-// EXTERNAL MODULE: ./src/components/blogs/blog.module.scss
-var blog_module = __webpack_require__(5932);
-var blog_module_default = /*#__PURE__*/__webpack_require__.n(blog_module);
-;// CONCATENATED MODULE: ./src/components/blogs/latest-blog-item.js
-
-
-
-function LatestBlogItem(props) {
-    const { title , blogMeta , excerpt , mediumImage , slug  } = props.blog;
-    const imagePath = `/images/blogs/${slug}/${mediumImage}`;
-    const linkPath = `/blogs/${slug}`;
-    return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-        className: (blog_module_default()).blog_item,
-        children: [
-            /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
-                href: linkPath,
-                children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                    className: (blog_module_default()).blog_img,
-                    children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                        className: "img-full",
-                        src: imagePath,
-                        alt: title
-                    })
-                })
-            }),
-            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                className: (blog_module_default()).blog_content,
-                children: [
-                    /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                        className: (blog_module_default()).blog_meta,
-                        children: blogMeta
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("h3", {
-                        className: (blog_module_default()).blog_title,
-                        children: /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
-                            href: linkPath,
-                            children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                children: title
-                            })
-                        })
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                        className: (blog_module_default()).blog_desc,
-                        children: excerpt
-                    }),
-                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
-                        className: (blog_module_default()).blog_btn__wrap,
-                        children: [
-                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                children: /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
-                                    href: linkPath,
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                        className: (blog_module_default()).blog_btn__link,
-                                        children: "Read more"
-                                    })
-                                })
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                children: /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
-                                    href: linkPath,
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                        children: "35 Comments"
-                                    })
-                                })
-                            })
-                        ]
-                    })
-                ]
-            })
-        ]
-    }));
-}
-/* harmony default export */ const latest_blog_item = (LatestBlogItem);
-
-;// CONCATENATED MODULE: ./src/components/home-page/latest-blog.js
-
-// import Link from 'next/link';
-
-
-
-
-
-
-external_swiper_default().use([
-    external_swiper_.Pagination,
-    external_swiper_.Autoplay
-]);
-function LatestBlog(props) {
-    const { blogs , blog_section__items  } = props;
-    return(/*#__PURE__*/ jsx_runtime_.jsx("div", {
-        className: (latest_blog_module_default()).area,
-        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Container, {
-            children: [
-                blog_section__items === null || blog_section__items === void 0 ? void 0 : blog_section__items.map((blog_section__item, index)=>{
-                    return(/*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: (latest_blog_module_default()).section__holder,
-                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                            className: (latest_blog_module_default()).section_title__wrap,
-                            children: [
-                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                    className: (latest_blog_module_default()).section_title,
-                                    children: [
-                                        /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                            className: (latest_blog_module_default()).sub_title,
-                                            children: blog_section__item === null || blog_section__item === void 0 ? void 0 : blog_section__item.subTitle
-                                        }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx("h2", {
-                                            className: (latest_blog_module_default()).title,
-                                            children: blog_section__item === null || blog_section__item === void 0 ? void 0 : blog_section__item.title
-                                        })
-                                    ]
-                                }),
-                                /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                    className: (latest_blog_module_default()).section_desc,
-                                    children: blog_section__item === null || blog_section__item === void 0 ? void 0 : blog_section__item.excerpt
-                                })
-                            ]
-                        })
-                    }, index));
-                }),
-                /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Row, {
-                    children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
-                        lg: {
-                            span: 12
-                        },
-                        children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                            className: (latest_blog_module_default()).slider,
-                            children: /*#__PURE__*/ jsx_runtime_.jsx(react_.Swiper, {
-                                // autoplay={{ delay: 4000, disableOnInteraction: false }}
-                                pagination: false,
-                                spaceBetween: 30,
-                                updateOnWindowResize: true,
-                                observer: true,
-                                observeParents: true,
-                                breakpoints: {
-                                    1200: {
-                                        slidesPerView: 3
-                                    },
-                                    992: {
-                                        slidesPerView: 2
-                                    },
-                                    768: {
-                                        slidesPerView: 2
-                                    },
-                                    576: {
-                                        slidesPerView: 1
-                                    },
-                                    0: {
-                                        slidesPerView: 1
-                                    }
-                                },
-                                children: blogs.map((blog)=>{
-                                    return(/*#__PURE__*/ jsx_runtime_.jsx(react_.SwiperSlide, {
-                                        className: (latest_blog_module_default()).blog__item,
-                                        children: /*#__PURE__*/ jsx_runtime_.jsx(latest_blog_item, {
-                                            blog: blog
-                                        })
-                                    }, blog.slug));
-                                })
-                            })
-                        })
-                    })
-                })
-            ]
-        })
-    }));
-}
-/* harmony default export */ const latest_blog = (LatestBlog);
 
 // EXTERNAL MODULE: ./src/components/home-page/latest-project.js + 1 modules
 var latest_project = __webpack_require__(4672);
@@ -725,10 +495,6 @@ var latest_project = __webpack_require__(4672);
 var footer = __webpack_require__(5608);
 // EXTERNAL MODULE: ./src/components/newsletter/newsletter.js
 var newsletter = __webpack_require__(1939);
-// EXTERNAL MODULE: ./src/components/team/index.js
-var team = __webpack_require__(1963);
-// EXTERNAL MODULE: ./src/components/testimonial/index.js
-var testimonial = __webpack_require__(4286);
 // EXTERNAL MODULE: ./src/lib/items-util.js
 var items_util = __webpack_require__(7698);
 ;// CONCATENATED MODULE: ./src/pages/index.js
@@ -738,19 +504,19 @@ var items_util = __webpack_require__(7698);
 
 
 
+// import BrandOne from "../components/brand";
 
 
 
+// import LatestBlog from "../components/home-page/latest-blog";
 
 
 
-
-
-
-
+// import Team from "../components/team";
+// import Testimonial from "../components/testimonial";
 
 function HomePage(props) {
-    return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_.Fragment, {
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_.Fragment, {
         children: [
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)((head_default()), {
                 children: [
@@ -780,22 +546,7 @@ function HomePage(props) {
                 services: props.services,
                 service_section__items: props.service_section__items
             }),
-            /*#__PURE__*/ jsx_runtime_.jsx(index_2/* default */.Z, {
-                bannerTwoItems: props.bannerTwoItems
-            }),
             /*#__PURE__*/ jsx_runtime_.jsx(counter, {}),
-            /*#__PURE__*/ jsx_runtime_.jsx(team/* default */.Z, {
-                teamItems: props.teamItems,
-                team_section__items: props.team_section__items
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx(testimonial/* default */.Z, {
-                testimonialItems: props.testimonialItems,
-                testimonial_section__items: props.testimonial_section__items
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx(latest_blog, {
-                blogs: props.blogs,
-                blog_section__items: props.blog_section__items
-            }),
             /*#__PURE__*/ jsx_runtime_.jsx(newsletter/* default */.Z, {
                 newsletterItems: props.newsletterItems
             }),
@@ -803,7 +554,7 @@ function HomePage(props) {
                 footerItems: props.footerItems
             })
         ]
-    }));
+    });
 }
 function getStaticProps() {
     const heroItems = (0,items_util/* getAllItems */.Nx)("heros");
@@ -811,19 +562,19 @@ function getStaticProps() {
     const aboutItems = (0,items_util/* getAllItems */.Nx)("about");
     const project_section__items = (0,items_util/* getAllItems */.Nx)("project-section");
     const projects = (0,items_util/* getAllItems */.Nx)("projects");
-    const LatestProject1 = (0,items_util/* getFeaturedItems */.E)(projects);
-    const brandItems = (0,items_util/* getAllItems */.Nx)("brand");
+    const LatestProject = (0,items_util/* getFeaturedItems */.E)(projects);
+    // const brandItems = getAllItems("brand");
     const services = (0,items_util/* getAllItems */.Nx)("services");
     const service_section__items = (0,items_util/* getAllItems */.Nx)("service-section");
-    const HomePageServices1 = (0,items_util/* getFeaturedItems */.E)(services);
-    const bannerTwoItems = (0,items_util/* getAllItems */.Nx)("banner-2");
-    const teamItems = (0,items_util/* getAllItems */.Nx)("team");
-    const team_section__items = (0,items_util/* getAllItems */.Nx)("team-section");
-    const testimonialItems = (0,items_util/* getAllItems */.Nx)("testimonial");
-    const testimonial_section__items = (0,items_util/* getAllItems */.Nx)("testimonial-section");
-    const blog_section__items = (0,items_util/* getAllItems */.Nx)("blog-section");
-    const blogs = (0,items_util/* getAllItems */.Nx)("blogs");
-    const LatestBlog1 = (0,items_util/* getFeaturedItems */.E)(blogs);
+    const HomePageServices = (0,items_util/* getFeaturedItems */.E)(services);
+    // const bannerTwoItems = getAllItems("banner-2");
+    // const teamItems = getAllItems("team");
+    // const team_section__items = getAllItems("team-section");
+    // const testimonialItems = getAllItems("testimonial");
+    // const testimonial_section__items = getAllItems("testimonial-section");
+    // const blog_section__items = getAllItems("blog-section");
+    // const blogs = getAllItems("blogs");
+    // const LatestBlog = getFeaturedItems(blogs);
     const newsletterItems = (0,items_util/* getAllItems */.Nx)("newsletter");
     const footerItems = (0,items_util/* getAllItems */.Nx)("footer");
     return {
@@ -832,17 +583,17 @@ function getStaticProps() {
             bannerItems,
             aboutItems,
             project_section__items,
-            projects: LatestProject1,
-            brandItems,
-            services: HomePageServices1,
+            projects: LatestProject,
+            // brandItems,
+            services: HomePageServices,
             service_section__items,
-            bannerTwoItems,
-            teamItems,
-            team_section__items,
-            testimonialItems,
-            testimonial_section__items,
-            blog_section__items,
-            blogs: LatestBlog1,
+            // bannerTwoItems,
+            // teamItems,
+            // team_section__items,
+            // testimonialItems,
+            // testimonial_section__items,
+            // blog_section__items,
+            // blogs: LatestBlog,
             newsletterItems,
             footerItems
         }
@@ -861,11 +612,19 @@ module.exports = require("gray-matter");
 
 /***/ }),
 
-/***/ 562:
+/***/ 3280:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/server/denormalize-page-path.js");
+module.exports = require("next/dist/shared/lib/app-router-context.js");
+
+/***/ }),
+
+/***/ 2796:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/head-manager-context.js");
 
 /***/ }),
 
@@ -893,11 +652,51 @@ module.exports = require("next/dist/shared/lib/mitt.js");
 
 /***/ }),
 
+/***/ 4406:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/page-path/denormalize-page-path.js");
+
+/***/ }),
+
 /***/ 4964:
 /***/ ((module) => {
 
 "use strict";
 module.exports = require("next/dist/shared/lib/router-context.js");
+
+/***/ }),
+
+/***/ 1751:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/add-path-prefix.js");
+
+/***/ }),
+
+/***/ 6220:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/compare-states.js");
+
+/***/ }),
+
+/***/ 299:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/format-next-pathname-info.js");
+
+/***/ }),
+
+/***/ 3938:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/format-url.js");
 
 /***/ }),
 
@@ -909,11 +708,11 @@ module.exports = require("next/dist/shared/lib/router/utils/get-asset-path-from-
 
 /***/ }),
 
-/***/ 4365:
+/***/ 5789:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/get-middleware-regex.js");
+module.exports = require("next/dist/shared/lib/router/utils/get-next-pathname-info.js");
 
 /***/ }),
 
@@ -925,6 +724,14 @@ module.exports = require("next/dist/shared/lib/router/utils/is-dynamic.js");
 
 /***/ }),
 
+/***/ 8854:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/parse-path.js");
+
+/***/ }),
+
 /***/ 1292:
 /***/ ((module) => {
 
@@ -933,11 +740,27 @@ module.exports = require("next/dist/shared/lib/router/utils/parse-relative-url.j
 
 /***/ }),
 
+/***/ 4567:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/path-has-prefix.js");
+
+/***/ }),
+
 /***/ 979:
 /***/ ((module) => {
 
 "use strict";
 module.exports = require("next/dist/shared/lib/router/utils/querystring.js");
+
+/***/ }),
+
+/***/ 3297:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/remove-trailing-slash.js");
 
 /***/ }),
 
@@ -1076,7 +899,7 @@ module.exports = require("path");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [730,664,698,71,932,875,286,734,252,66], () => (__webpack_exec__(8395)));
+var __webpack_exports__ = __webpack_require__.X(0, [952,664,698,71,404,289,520], () => (__webpack_exec__(5254)));
 module.exports = __webpack_exports__;
 
 })();

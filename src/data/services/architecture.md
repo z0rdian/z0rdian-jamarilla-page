@@ -1,5 +1,5 @@
 ---
-title: 'Architecture'
+title: 'Herrería'
 mediumImage: 'architecture-md.jpg'
 largeImage: 'architecture-lg.jpg'
 detailBreadcrumbSubTitle: 'Single Service'

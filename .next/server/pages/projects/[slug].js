@@ -89,7 +89,7 @@ var external_react_bootstrap_ = __webpack_require__(358);
 
 function DetailBreadcrumb(props) {
     const { title , subTitle , breadcrumbDesc  } = props;
-    return(/*#__PURE__*/ jsx_runtime_.jsx("div", {
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         className: "page_banner__bg",
         children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Container, {
             children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
@@ -110,7 +110,7 @@ function DetailBreadcrumb(props) {
                 ]
             })
         })
-    }));
+    });
 }
 /* harmony default export */ const detail_breadcrumb = (DetailBreadcrumb);
 
@@ -126,19 +126,19 @@ var project_module = __webpack_require__(6076);
 var project_module_default = /*#__PURE__*/__webpack_require__.n(project_module);
 // EXTERNAL MODULE: ./node_modules/next/link.js
 var next_link = __webpack_require__(1664);
+var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 ;// CONCATENATED MODULE: ./src/components/projects/project-sidebar.js
 
 
 
 
 function ProjectSidebar({ projectsSidebar  }) {
-    return(/*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
+    return /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
         lg: {
             span: 3
         },
-        children: projectsSidebar === null || projectsSidebar === void 0 ? void 0 : projectsSidebar.map((projectSidebar, i)=>{
-            var ref, ref1;
-            return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+        children: projectsSidebar?.map((projectSidebar, i)=>{
+            return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                 className: "sidebar pt-max-md-25",
                 children: [
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
@@ -146,16 +146,16 @@ function ProjectSidebar({ projectsSidebar  }) {
                         children: [
                             /*#__PURE__*/ jsx_runtime_.jsx("h2", {
                                 className: (project_module_default()).sidebar_widget__title,
-                                children: projectSidebar === null || projectSidebar === void 0 ? void 0 : projectSidebar.title
+                                children: projectSidebar?.title
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("ul", {
                                 className: (project_module_default()).sidebar_list,
-                                children: projectSidebar === null || projectSidebar === void 0 ? void 0 : (ref = projectSidebar.sidebarList) === null || ref === void 0 ? void 0 : ref.map((item, index)=>{
-                                    return(/*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                children: projectSidebar?.sidebarList?.map((item, index)=>{
+                                    return /*#__PURE__*/ jsx_runtime_.jsx("li", {
                                         dangerouslySetInnerHTML: {
                                             __html: item.listItem
                                         }
-                                    }, index));
+                                    }, index);
                                 })
                             })
                         ]
@@ -164,30 +164,30 @@ function ProjectSidebar({ projectsSidebar  }) {
                         className: `${(project_module_default()).sidebar_brochure__widget}  mb-30`,
                         children: /*#__PURE__*/ jsx_runtime_.jsx("ul", {
                             className: `${(project_module_default()).sidebar_brochure__list}`,
-                            children: projectSidebar === null || projectSidebar === void 0 ? void 0 : (ref1 = projectSidebar.downloadBrochure) === null || ref1 === void 0 ? void 0 : ref1.map((item, index)=>{
-                                return(/*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
-                                        href: item === null || item === void 0 ? void 0 : item.path,
+                            children: projectSidebar?.downloadBrochure?.map((item, index)=>{
+                                return /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                    children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                        href: item?.path,
                                         children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                             download: true,
-                                            children: item === null || item === void 0 ? void 0 : item.listItem
+                                            children: item?.listItem
                                         })
                                     })
-                                }, index));
+                                }, index);
                             })
                         })
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                         className: `${(project_module_default()).sidebar_widget__banner}`,
                         children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                            src: projectSidebar === null || projectSidebar === void 0 ? void 0 : projectSidebar.widgetBanner,
-                            alt: projectSidebar === null || projectSidebar === void 0 ? void 0 : projectSidebar.widgetBannerAlt
+                            src: projectSidebar?.widgetBanner,
+                            alt: projectSidebar?.widgetBannerAlt
                         })
                     })
                 ]
-            }, i));
+            }, i);
         })
-    }));
+    });
 }
 /* harmony default export */ const project_sidebar = (ProjectSidebar);
 
@@ -202,11 +202,10 @@ var fa_ = __webpack_require__(6290);
 
 
 function ProjectOverview({ projectsOverview  }) {
-    return(/*#__PURE__*/ jsx_runtime_.jsx("div", {
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         className: (project_overview_index_module_default()).item,
-        children: projectsOverview === null || projectsOverview === void 0 ? void 0 : projectsOverview.map((projectOverview, index1)=>{
-            var ref, ref1;
-            return(/*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Row, {
+        children: projectsOverview?.map((projectOverview, index)=>{
+            return /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Row, {
                 children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Col, {
                     lg: {
                         span: 12
@@ -214,17 +213,17 @@ function ProjectOverview({ projectsOverview  }) {
                     children: [
                         /*#__PURE__*/ jsx_runtime_.jsx("h2", {
                             className: (project_overview_index_module_default()).title,
-                            children: projectOverview === null || projectOverview === void 0 ? void 0 : projectOverview.title
+                            children: projectOverview?.title
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("p", {
                             className: (project_overview_index_module_default()).desc,
-                            children: projectOverview === null || projectOverview === void 0 ? void 0 : projectOverview.desc
+                            children: projectOverview?.desc
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("ul", {
                             className: (project_overview_index_module_default()).list,
-                            children: projectOverview === null || projectOverview === void 0 ? void 0 : (ref = projectOverview.listItem) === null || ref === void 0 ? void 0 : ref.map((item, index)=>{
+                            children: projectOverview?.listItem?.map((item, index)=>{
                                 const Social = fa_[item.checkIcon];
-                                return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
+                                return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
                                     children: [
                                         /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                             className: (project_overview_index_module_default()).list_icon,
@@ -237,33 +236,33 @@ function ProjectOverview({ projectsOverview  }) {
                                             })
                                         })
                                     ]
-                                }, index));
+                                }, index);
                             })
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("div", {
                             className: (project_overview_index_module_default()).image,
                             children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                                src: projectOverview === null || projectOverview === void 0 ? void 0 : projectOverview.image,
-                                alt: projectOverview === null || projectOverview === void 0 ? void 0 : projectOverview.imageAlt
+                                src: projectOverview?.image,
+                                alt: projectOverview?.imageAlt
                             })
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("h2", {
                             className: (project_overview_index_module_default()).handover_title,
-                            children: projectOverview === null || projectOverview === void 0 ? void 0 : projectOverview.handoverTitle
+                            children: projectOverview?.handoverTitle
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("p", {
                             className: (project_overview_index_module_default()).handover_desc,
-                            children: projectOverview === null || projectOverview === void 0 ? void 0 : projectOverview.handoverDesc
+                            children: projectOverview?.handoverDesc
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("p", {
                             className: (project_overview_index_module_default()).handover_desc,
-                            children: projectOverview === null || projectOverview === void 0 ? void 0 : projectOverview.additionDesc
+                            children: projectOverview?.additionDesc
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("ul", {
                             className: (project_overview_index_module_default()).list,
-                            children: projectOverview === null || projectOverview === void 0 ? void 0 : (ref1 = projectOverview.handoverListItem) === null || ref1 === void 0 ? void 0 : ref1.map((item, index)=>{
+                            children: projectOverview?.handoverListItem?.map((item, index)=>{
                                 const Social = fa_[item.checkIcon];
-                                return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
+                                return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
                                     children: [
                                         /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                             className: (project_overview_index_module_default()).list_icon,
@@ -276,14 +275,14 @@ function ProjectOverview({ projectsOverview  }) {
                                             })
                                         })
                                     ]
-                                }, index));
+                                }, index);
                             })
                         })
                     ]
                 })
-            }, index1));
+            }, index);
         })
-    }));
+    });
 }
 /* harmony default export */ const project_overview = (ProjectOverview);
 
@@ -299,7 +298,7 @@ function ProjectContent(props) {
     const { project  } = props;
     const { image , slug  } = props.project;
     const imagePath = `/images/projects/${slug}/${image}`;
-    return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Col, {
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Col, {
         lg: {
             span: 9
         },
@@ -317,7 +316,7 @@ function ProjectContent(props) {
                             className: (index_module_default()).single_img,
                             children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
                                 src: imagePath,
-                                alt: project === null || project === void 0 ? void 0 : project.title
+                                alt: project?.title
                             })
                         })
                     }),
@@ -336,8 +335,8 @@ function ProjectContent(props) {
                                         children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                             className: (index_module_default()).single_img,
                                             children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                                                src: project === null || project === void 0 ? void 0 : project.groupImageOne,
-                                                alt: project === null || project === void 0 ? void 0 : project.title
+                                                src: project?.groupImageOne,
+                                                alt: project?.title
                                             })
                                         })
                                     }),
@@ -348,8 +347,8 @@ function ProjectContent(props) {
                                         children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                             className: (index_module_default()).single_img,
                                             children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                                                src: project === null || project === void 0 ? void 0 : project.groupImageTwo,
-                                                alt: project === null || project === void 0 ? void 0 : project.title
+                                                src: project?.groupImageTwo,
+                                                alt: project?.title
                                             })
                                         })
                                     })
@@ -365,8 +364,8 @@ function ProjectContent(props) {
                                         children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                             className: (index_module_default()).single_img,
                                             children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                                                src: project === null || project === void 0 ? void 0 : project.groupImageThree,
-                                                alt: project === null || project === void 0 ? void 0 : project.title
+                                                src: project?.groupImageThree,
+                                                alt: project?.title
                                             })
                                         })
                                     }),
@@ -377,8 +376,8 @@ function ProjectContent(props) {
                                         children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                             className: (index_module_default()).single_img,
                                             children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                                                src: project === null || project === void 0 ? void 0 : project.groupImageFour,
-                                                alt: project === null || project === void 0 ? void 0 : project.title
+                                                src: project?.groupImageFour,
+                                                alt: project?.title
                                             })
                                         })
                                     })
@@ -393,19 +392,19 @@ function ProjectContent(props) {
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx("h2", {
                         className: (index_module_default()).title,
-                        children: project === null || project === void 0 ? void 0 : project.title
+                        children: project?.title
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("h3", {
                         className: `${(index_module_default()).subtitle} mb-40`,
-                        children: project === null || project === void 0 ? void 0 : project.detailSubTitle
+                        children: project?.detailSubTitle
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("h3", {
                         className: (index_module_default()).summery_title,
-                        children: project === null || project === void 0 ? void 0 : project.summeryTitle
+                        children: project?.summeryTitle
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("p", {
                         className: (index_module_default()).summery_desc,
-                        children: project === null || project === void 0 ? void 0 : project.summeryDesc
+                        children: project?.summeryDesc
                     })
                 ]
             }),
@@ -416,7 +415,7 @@ function ProjectContent(props) {
                 projectsOverview: props.projectsOverview
             })
         ]
-    }));
+    });
 }
 /* harmony default export */ const project_content = (ProjectContent);
 
@@ -427,7 +426,7 @@ function ProjectContent(props) {
 
 
 function ProjectDetail(props) {
-    return(/*#__PURE__*/ jsx_runtime_.jsx("div", {
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         className: (index_module_default()).area,
         children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Container, {
             children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Row, {
@@ -443,7 +442,7 @@ function ProjectDetail(props) {
                 ]
             })
         })
-    }));
+    });
 }
 /* harmony default export */ const project_detail = (ProjectDetail);
 
@@ -460,7 +459,7 @@ var items_util = __webpack_require__(7698);
 
 
 function ProjectDetailPage(props) {
-    return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_.Fragment, {
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_.Fragment, {
         children: [
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)((head_default()), {
                 children: [
@@ -494,18 +493,18 @@ function ProjectDetailPage(props) {
                 footerItems: props.footerItems
             })
         ]
-    }));
+    });
 }
 function getStaticProps(context) {
     const { params  } = context;
     const { slug  } = params;
-    const project = (0,items_util/* getItemData */.m_)(slug, 'projects');
-    const projectsSidebar = (0,items_util/* getAllItems */.Nx)('project-sidebar');
-    const richTexts = (0,items_util/* getAllItems */.Nx)('rich-text');
-    const projectsOverview = (0,items_util/* getAllItems */.Nx)('project-overview');
-    const bannerTwoItems = (0,items_util/* getAllItems */.Nx)('banner-2');
-    const newsletterItems = (0,items_util/* getAllItems */.Nx)('newsletter');
-    const footerItems = (0,items_util/* getAllItems */.Nx)('footer');
+    const project = (0,items_util/* getItemData */.m_)(slug, "projects");
+    const projectsSidebar = (0,items_util/* getAllItems */.Nx)("project-sidebar");
+    const richTexts = (0,items_util/* getAllItems */.Nx)("rich-text");
+    const projectsOverview = (0,items_util/* getAllItems */.Nx)("project-overview");
+    const bannerTwoItems = (0,items_util/* getAllItems */.Nx)("banner-2");
+    const newsletterItems = (0,items_util/* getAllItems */.Nx)("newsletter");
+    const footerItems = (0,items_util/* getAllItems */.Nx)("footer");
     return {
         props: {
             project,
@@ -519,16 +518,14 @@ function getStaticProps(context) {
     };
 }
 function getStaticPaths() {
-    const projectFilenames = (0,items_util/* getItemsFiles */.Jf)('projects');
-    const slugs = projectFilenames.map((fileName)=>fileName.replace(/\.md$/, '')
-    );
+    const projectFilenames = (0,items_util/* getItemsFiles */.Jf)("projects");
+    const slugs = projectFilenames.map((fileName)=>fileName.replace(/\.md$/, ""));
     return {
         paths: slugs.map((slug)=>({
                 params: {
                     slug: slug
                 }
-            })
-        ),
+            })),
         fallback: false
     };
 }
@@ -545,11 +542,19 @@ module.exports = require("gray-matter");
 
 /***/ }),
 
-/***/ 562:
+/***/ 3280:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/server/denormalize-page-path.js");
+module.exports = require("next/dist/shared/lib/app-router-context.js");
+
+/***/ }),
+
+/***/ 2796:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/head-manager-context.js");
 
 /***/ }),
 
@@ -577,11 +582,51 @@ module.exports = require("next/dist/shared/lib/mitt.js");
 
 /***/ }),
 
+/***/ 4406:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/page-path/denormalize-page-path.js");
+
+/***/ }),
+
 /***/ 4964:
 /***/ ((module) => {
 
 "use strict";
 module.exports = require("next/dist/shared/lib/router-context.js");
+
+/***/ }),
+
+/***/ 1751:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/add-path-prefix.js");
+
+/***/ }),
+
+/***/ 6220:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/compare-states.js");
+
+/***/ }),
+
+/***/ 299:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/format-next-pathname-info.js");
+
+/***/ }),
+
+/***/ 3938:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/format-url.js");
 
 /***/ }),
 
@@ -593,11 +638,11 @@ module.exports = require("next/dist/shared/lib/router/utils/get-asset-path-from-
 
 /***/ }),
 
-/***/ 4365:
+/***/ 5789:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/get-middleware-regex.js");
+module.exports = require("next/dist/shared/lib/router/utils/get-next-pathname-info.js");
 
 /***/ }),
 
@@ -609,6 +654,14 @@ module.exports = require("next/dist/shared/lib/router/utils/is-dynamic.js");
 
 /***/ }),
 
+/***/ 8854:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/parse-path.js");
+
+/***/ }),
+
 /***/ 1292:
 /***/ ((module) => {
 
@@ -617,11 +670,27 @@ module.exports = require("next/dist/shared/lib/router/utils/parse-relative-url.j
 
 /***/ }),
 
+/***/ 4567:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/path-has-prefix.js");
+
+/***/ }),
+
 /***/ 979:
 /***/ ((module) => {
 
 "use strict";
 module.exports = require("next/dist/shared/lib/router/utils/querystring.js");
+
+/***/ }),
+
+/***/ 3297:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/remove-trailing-slash.js");
 
 /***/ }),
 
@@ -720,7 +789,7 @@ module.exports = require("path");
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [730,664,698,71,717,354], () => (__webpack_exec__(1145)));
+var __webpack_exports__ = __webpack_require__.X(0, [952,664,698,71,717,354], () => (__webpack_exec__(1145)));
 module.exports = __webpack_exports__;
 
 })();

@@ -1,17 +1,44 @@
-"use strict";
 exports.id = 286;
 exports.ids = [286];
 exports.modules = {
 
+/***/ 9482:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+	"area": "testimonial_area__D0I_d",
+	"y_axis__140": "testimonial_y_axis__140__9kcDi",
+	"section__wrap": "testimonial_section__wrap__2yQOk",
+	"subtitle": "testimonial_subtitle__wxiD1",
+	"title": "testimonial_title__Ug7pI",
+	"section__btn": "testimonial_section__btn__4V7T2",
+	"item": "testimonial_item__JO1cW",
+	"content": "testimonial_content__PmWbO",
+	"desc": "testimonial_desc__gpB_E",
+	"quotation": "testimonial_quotation__fOmA7",
+	"direction_left": "testimonial_direction_left__7oFtg",
+	"direction_right": "testimonial_direction_right__lMH5h",
+	"user_info": "testimonial_user_info___dbPs",
+	"user_content": "testimonial_user_content__igDS8",
+	"user_name": "testimonial_user_name__J4ped",
+	"user_occupation": "testimonial_user_occupation__QBPND"
+};
+
+
+/***/ }),
+
 /***/ 4286:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1664);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(358);
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _testimonial_testimonial_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(9482);
@@ -35,14 +62,14 @@ swiper__WEBPACK_IMPORTED_MODULE_3___default().use([
     swiper__WEBPACK_IMPORTED_MODULE_3__.Autoplay
 ]);
 function Testimonial({ testimonialItems , testimonial_section__items  }) {
-    return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
         className: (_testimonial_testimonial_module_scss__WEBPACK_IMPORTED_MODULE_6___default().area),
         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__.Container, {
             children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__.Row, {
                 className: "g-4",
                 children: [
-                    testimonial_section__items === null || testimonial_section__items === void 0 ? void 0 : testimonial_section__items.map((testimonial_section__item, index)=>{
-                        return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__.Col, {
+                    testimonial_section__items?.map((testimonial_section__item, index)=>{
+                        return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__.Col, {
                             xl: {
                                 span: 5
                             },
@@ -55,11 +82,11 @@ function Testimonial({ testimonialItems , testimonial_section__items  }) {
                                 children: [
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                         className: (_testimonial_testimonial_module_scss__WEBPACK_IMPORTED_MODULE_6___default().subtitle),
-                                        children: testimonial_section__item === null || testimonial_section__item === void 0 ? void 0 : testimonial_section__item.subTitle
+                                        children: testimonial_section__item?.subTitle
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
                                         className: (_testimonial_testimonial_module_scss__WEBPACK_IMPORTED_MODULE_6___default().title),
-                                        children: testimonial_section__item === null || testimonial_section__item === void 0 ? void 0 : testimonial_section__item.title
+                                        children: testimonial_section__item?.title
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                         className: (_testimonial_testimonial_module_scss__WEBPACK_IMPORTED_MODULE_6___default().desc),
@@ -69,17 +96,17 @@ function Testimonial({ testimonialItems , testimonial_section__items  }) {
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                         className: "btn-wrap",
-                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_1__["default"], {
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
                                             href: "/",
                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                                 className: (_testimonial_testimonial_module_scss__WEBPACK_IMPORTED_MODULE_6___default().section__btn),
-                                                children: "view more"
+                                                children: "Contactanos"
                                             })
                                         })
                                     })
                                 ]
                             })
-                        }, index));
+                        }, index);
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__.Col, {
                         xl: {
@@ -96,37 +123,37 @@ function Testimonial({ testimonialItems , testimonial_section__items  }) {
                                     slidesPerView: 2,
                                     slidesPerColumn: 1,
                                     slidesPerGroup: 1,
-                                    slidesPerColumnFill: 'colums',
+                                    slidesPerColumnFill: "colums",
                                     spaceBetween: 30
                                 },
                                 992: {
                                     slidesPerView: 1,
                                     slidesPerColumn: 2,
                                     slidesPerGroup: 1,
-                                    slidesPerColumnFill: 'row',
+                                    slidesPerColumnFill: "row",
                                     spaceBetween: 30
                                 },
                                 768: {
-                                    slidesPerColumnFill: 'row',
+                                    slidesPerColumnFill: "row",
                                     slidesPerColumn: 1,
                                     slidesPerView: 2,
                                     spaceBetween: 30
                                 },
                                 576: {
-                                    slidesPerColumnFill: 'row',
+                                    slidesPerColumnFill: "row",
                                     slidesPerColumn: 1,
                                     slidesPerView: 1,
                                     spaceBetween: 30
                                 },
                                 0: {
-                                    slidesPerColumnFill: 'column',
+                                    slidesPerColumnFill: "column",
                                     slidesPerColumn: 1,
                                     slidesPerView: 1,
                                     spaceBetween: 30
                                 }
                             },
-                            children: testimonialItems === null || testimonialItems === void 0 ? void 0 : testimonialItems.map((testimonialItem, i)=>{
-                                return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(swiper_react__WEBPACK_IMPORTED_MODULE_4__.SwiperSlide, {
+                            children: testimonialItems?.map((testimonialItem, i)=>{
+                                return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(swiper_react__WEBPACK_IMPORTED_MODULE_4__.SwiperSlide, {
                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                         className: (_testimonial_testimonial_module_scss__WEBPACK_IMPORTED_MODULE_6___default().item),
                                         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
@@ -139,7 +166,7 @@ function Testimonial({ testimonialItems , testimonial_section__items  }) {
                                                             className: `${(_testimonial_testimonial_module_scss__WEBPACK_IMPORTED_MODULE_6___default().quotation)} ${(_testimonial_testimonial_module_scss__WEBPACK_IMPORTED_MODULE_6___default().direction_left)}`,
                                                             children: "“"
                                                         }),
-                                                        testimonialItem === null || testimonialItem === void 0 ? void 0 : testimonialItem.excerpt,
+                                                        testimonialItem?.excerpt,
                                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
                                                             className: `${(_testimonial_testimonial_module_scss__WEBPACK_IMPORTED_MODULE_6___default().quotation)} ${(_testimonial_testimonial_module_scss__WEBPACK_IMPORTED_MODULE_6___default().direction_right)}`,
                                                             children: "”"
@@ -152,8 +179,8 @@ function Testimonial({ testimonialItems , testimonial_section__items  }) {
                                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                                             className: "user_img",
                                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                                                src: testimonialItem === null || testimonialItem === void 0 ? void 0 : testimonialItem.avatar,
-                                                                alt: testimonialItem === null || testimonialItem === void 0 ? void 0 : testimonialItem.avatarAlt
+                                                                src: testimonialItem?.avatar,
+                                                                alt: testimonialItem?.avatarAlt
                                                             })
                                                         }),
                                                         /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
@@ -161,11 +188,11 @@ function Testimonial({ testimonialItems , testimonial_section__items  }) {
                                                             children: [
                                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
                                                                     className: (_testimonial_testimonial_module_scss__WEBPACK_IMPORTED_MODULE_6___default().user_name),
-                                                                    children: testimonialItem === null || testimonialItem === void 0 ? void 0 : testimonialItem.userName
+                                                                    children: testimonialItem?.userName
                                                                 }),
                                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                                                     className: (_testimonial_testimonial_module_scss__WEBPACK_IMPORTED_MODULE_6___default().user_occupation),
-                                                                    children: testimonialItem === null || testimonialItem === void 0 ? void 0 : testimonialItem.userOccupation
+                                                                    children: testimonialItem?.userOccupation
                                                                 })
                                                             ]
                                                         })
@@ -174,14 +201,14 @@ function Testimonial({ testimonialItems , testimonial_section__items  }) {
                                             ]
                                         })
                                     })
-                                }, i));
+                                }, i);
                             })
                         })
                     })
                 ]
             })
         })
-    }));
+    });
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Testimonial);
 

@@ -1,13 +1,30 @@
-"use strict";
 (() => {
 var exports = {};
 exports.id = 870;
 exports.ids = [870];
 exports.modules = {
 
+/***/ 8178:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+	"area": "counter_area__CInUI",
+	"max_md_g_y__80": "counter_max_md_g_y__80__tVfOc",
+	"pb__140": "counter_pb__140__Rt8Xu",
+	"item": "counter_item__SJtZW",
+	"count": "counter_count__4pMMP",
+	"count_inner__text": "counter_count_inner__text__zeDzQ",
+	"count_title": "counter_count_title__oqT3x"
+};
+
+
+/***/ }),
+
 /***/ 6801:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
@@ -30,30 +47,30 @@ var external_react_bootstrap_ = __webpack_require__(358);
 
 
 function TeamBreadcrumb({ teamsBreadcrumb  }) {
-    return(/*#__PURE__*/ jsx_runtime_.jsx("div", {
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         className: "page_banner__bg",
         children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Container, {
-            children: teamsBreadcrumb === null || teamsBreadcrumb === void 0 ? void 0 : teamsBreadcrumb.map((teamBreadcrumb, i)=>{
-                return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+            children: teamsBreadcrumb?.map((teamBreadcrumb, i)=>{
+                return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                     className: "page_content",
                     children: [
                         /*#__PURE__*/ jsx_runtime_.jsx("span", {
                             className: "page_subtitle",
-                            children: teamBreadcrumb === null || teamBreadcrumb === void 0 ? void 0 : teamBreadcrumb.breadcrumbSubtitle
+                            children: teamBreadcrumb?.breadcrumbSubtitle
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("h1", {
                             className: "page_title",
-                            children: teamBreadcrumb === null || teamBreadcrumb === void 0 ? void 0 : teamBreadcrumb.breadcrumbTitle
+                            children: teamBreadcrumb?.breadcrumbTitle
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("p", {
                             className: "page_desc",
-                            children: teamBreadcrumb === null || teamBreadcrumb === void 0 ? void 0 : teamBreadcrumb.breadcrumbDesc
+                            children: teamBreadcrumb?.breadcrumbDesc
                         })
                     ]
-                }, i));
+                }, i);
             })
         })
-    }));
+    });
 }
 /* harmony default export */ const our_team = (TeamBreadcrumb);
 
@@ -69,6 +86,7 @@ var react_ = __webpack_require__(3630);
 var swiper_bundle = __webpack_require__(9984);
 // EXTERNAL MODULE: ./node_modules/next/link.js
 var next_link = __webpack_require__(1664);
+var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 // EXTERNAL MODULE: external "react-icons/fa"
 var fa_ = __webpack_require__(6290);
 // EXTERNAL MODULE: external "react-icons/io5"
@@ -89,7 +107,7 @@ external_swiper_default().use([
     external_swiper_.Autoplay
 ]);
 function TeamTwo({ teamItemsTwo  }) {
-    return(/*#__PURE__*/ jsx_runtime_.jsx("div", {
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         className: (team_module_default()).area_02,
         children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Container, {
             children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Row, {
@@ -107,7 +125,7 @@ function TeamTwo({ teamItemsTwo  }) {
                                 slidesPerView: 4,
                                 slidesPerColumn: 2,
                                 slidesPerGroup: 1,
-                                slidesPerColumnFill: 'row'
+                                slidesPerColumnFill: "row"
                             },
                             992: {
                                 slidesPerView: 3
@@ -119,8 +137,8 @@ function TeamTwo({ teamItemsTwo  }) {
                                 slidesPerView: 1
                             }
                         },
-                        children: teamItemsTwo === null || teamItemsTwo === void 0 ? void 0 : teamItemsTwo.map((teamItemTwo, i)=>{
-                            return(/*#__PURE__*/ jsx_runtime_.jsx(react_.SwiperSlide, {
+                        children: teamItemsTwo?.map((teamItemTwo, i)=>{
+                            return /*#__PURE__*/ jsx_runtime_.jsx(react_.SwiperSlide, {
                                 children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                     className: (team_module_default()).item,
                                     children: [
@@ -128,8 +146,8 @@ function TeamTwo({ teamItemsTwo  }) {
                                             className: (team_module_default()).img,
                                             children: [
                                                 /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                                                    src: teamItemTwo === null || teamItemTwo === void 0 ? void 0 : teamItemTwo.image,
-                                                    alt: teamItemTwo === null || teamItemTwo === void 0 ? void 0 : teamItemTwo.alt,
+                                                    src: teamItemTwo?.image,
+                                                    alt: teamItemTwo?.alt,
                                                     className: "img-full"
                                                 }),
                                                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
@@ -138,7 +156,7 @@ function TeamTwo({ teamItemsTwo  }) {
                                                         /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
                                                             className: (team_module_default()).social_link__wrap,
                                                             children: [
-                                                                /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
+                                                                /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                                                     href: "https://www.example.com",
                                                                     children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                                                         children: /*#__PURE__*/ jsx_runtime_.jsx(fa_.FaShareAlt, {})
@@ -148,7 +166,7 @@ function TeamTwo({ teamItemsTwo  }) {
                                                                     className: (team_module_default()).social_link,
                                                                     children: [
                                                                         /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                                            children: /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
+                                                                            children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                                                                 href: "https://www.example.com",
                                                                                 children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                                                                     children: /*#__PURE__*/ jsx_runtime_.jsx(fa_.FaFacebookF, {})
@@ -156,7 +174,7 @@ function TeamTwo({ teamItemsTwo  }) {
                                                                             })
                                                                         }),
                                                                         /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                                            children: /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
+                                                                            children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                                                                 href: "https://www.example.com",
                                                                                 children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                                                                     children: /*#__PURE__*/ jsx_runtime_.jsx(fa_.FaTwitter, {})
@@ -164,7 +182,7 @@ function TeamTwo({ teamItemsTwo  }) {
                                                                             })
                                                                         }),
                                                                         /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                                            children: /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
+                                                                            children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                                                                 href: "https://www.example.com",
                                                                                 children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                                                                     children: /*#__PURE__*/ jsx_runtime_.jsx(fa_.FaInstagram, {})
@@ -177,7 +195,7 @@ function TeamTwo({ teamItemsTwo  }) {
                                                         }),
                                                         /*#__PURE__*/ jsx_runtime_.jsx("li", {
                                                             className: (team_module_default()).mail_link__wrap,
-                                                            children: /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
+                                                            children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                                                 href: "mailto://info@example.com",
                                                                 children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                                                     className: (team_module_default()).mail_link,
@@ -195,24 +213,24 @@ function TeamTwo({ teamItemsTwo  }) {
                                                 /*#__PURE__*/ jsx_runtime_.jsx("h3", {
                                                     className: (team_module_default()).title,
                                                     dangerouslySetInnerHTML: {
-                                                        __html: teamItemTwo === null || teamItemTwo === void 0 ? void 0 : teamItemTwo.teamTitle
+                                                        __html: teamItemTwo?.teamTitle
                                                     }
                                                 }),
                                                 /*#__PURE__*/ jsx_runtime_.jsx("span", {
                                                     className: (team_module_default()).occupation,
-                                                    children: teamItemTwo === null || teamItemTwo === void 0 ? void 0 : teamItemTwo.teamOccupation
+                                                    children: teamItemTwo?.teamOccupation
                                                 })
                                             ]
                                         })
                                     ]
                                 })
-                            }, i));
+                            }, i);
                         })
                     })
                 })
             })
         })
-    }));
+    });
 }
 /* harmony default export */ const index_2 = (TeamTwo);
 
@@ -235,7 +253,7 @@ var counter_index_2 = __webpack_require__(4015);
 
 
 function OurClients(props) {
-    return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_.Fragment, {
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_.Fragment, {
         children: [
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)((head_default()), {
                 children: [
@@ -262,13 +280,13 @@ function OurClients(props) {
                 footerItems: props.footerItems
             })
         ]
-    }));
+    });
 }
 function getStaticProps() {
-    const teamsBreadcrumb = (0,items_util/* getAllItems */.Nx)('team-breadcrumb');
-    const teamItemsTwo = (0,items_util/* getAllItems */.Nx)('team-02');
-    const newsletterItems = (0,items_util/* getAllItems */.Nx)('newsletter');
-    const footerItems = (0,items_util/* getAllItems */.Nx)('footer');
+    const teamsBreadcrumb = (0,items_util/* getAllItems */.Nx)("team-breadcrumb");
+    const teamItemsTwo = (0,items_util/* getAllItems */.Nx)("team-02");
+    const newsletterItems = (0,items_util/* getAllItems */.Nx)("newsletter");
+    const footerItems = (0,items_util/* getAllItems */.Nx)("footer");
     return {
         props: {
             teamsBreadcrumb,
@@ -286,20 +304,31 @@ function getStaticProps() {
 /***/ 8076:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("gray-matter");
 
 /***/ }),
 
-/***/ 562:
+/***/ 3280:
 /***/ ((module) => {
 
-module.exports = require("next/dist/server/denormalize-page-path.js");
+"use strict";
+module.exports = require("next/dist/shared/lib/app-router-context.js");
+
+/***/ }),
+
+/***/ 2796:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/head-manager-context.js");
 
 /***/ }),
 
 /***/ 4014:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/i18n/normalize-locale-path.js");
 
 /***/ }),
@@ -307,6 +336,7 @@ module.exports = require("next/dist/shared/lib/i18n/normalize-locale-path.js");
 /***/ 8524:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/is-plain-object.js");
 
 /***/ }),
@@ -314,55 +344,127 @@ module.exports = require("next/dist/shared/lib/is-plain-object.js");
 /***/ 8020:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/mitt.js");
+
+/***/ }),
+
+/***/ 4406:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/page-path/denormalize-page-path.js");
 
 /***/ }),
 
 /***/ 4964:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/router-context.js");
+
+/***/ }),
+
+/***/ 1751:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/add-path-prefix.js");
+
+/***/ }),
+
+/***/ 6220:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/compare-states.js");
+
+/***/ }),
+
+/***/ 299:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/format-next-pathname-info.js");
+
+/***/ }),
+
+/***/ 3938:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/format-url.js");
 
 /***/ }),
 
 /***/ 9565:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/router/utils/get-asset-path-from-route.js");
 
 /***/ }),
 
-/***/ 4365:
+/***/ 5789:
 /***/ ((module) => {
 
-module.exports = require("next/dist/shared/lib/router/utils/get-middleware-regex.js");
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/get-next-pathname-info.js");
 
 /***/ }),
 
 /***/ 1428:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/router/utils/is-dynamic.js");
+
+/***/ }),
+
+/***/ 8854:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/parse-path.js");
 
 /***/ }),
 
 /***/ 1292:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/router/utils/parse-relative-url.js");
+
+/***/ }),
+
+/***/ 4567:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/path-has-prefix.js");
 
 /***/ }),
 
 /***/ 979:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/router/utils/querystring.js");
+
+/***/ }),
+
+/***/ 3297:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/remove-trailing-slash.js");
 
 /***/ }),
 
 /***/ 6052:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/router/utils/resolve-rewrites.js");
 
 /***/ }),
@@ -370,6 +472,7 @@ module.exports = require("next/dist/shared/lib/router/utils/resolve-rewrites.js"
 /***/ 4226:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/router/utils/route-matcher.js");
 
 /***/ }),
@@ -377,6 +480,7 @@ module.exports = require("next/dist/shared/lib/router/utils/route-matcher.js");
 /***/ 5052:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/router/utils/route-regex.js");
 
 /***/ }),
@@ -384,6 +488,7 @@ module.exports = require("next/dist/shared/lib/router/utils/route-regex.js");
 /***/ 9232:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/utils.js");
 
 /***/ }),
@@ -391,6 +496,7 @@ module.exports = require("next/dist/shared/lib/utils.js");
 /***/ 968:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/head");
 
 /***/ }),
@@ -398,6 +504,7 @@ module.exports = require("next/head");
 /***/ 6689:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("react");
 
 /***/ }),
@@ -405,6 +512,7 @@ module.exports = require("react");
 /***/ 358:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("react-bootstrap");
 
 /***/ }),
@@ -412,6 +520,7 @@ module.exports = require("react-bootstrap");
 /***/ 609:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("react-countup");
 
 /***/ }),
@@ -419,6 +528,7 @@ module.exports = require("react-countup");
 /***/ 6290:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("react-icons/fa");
 
 /***/ }),
@@ -426,6 +536,7 @@ module.exports = require("react-icons/fa");
 /***/ 9989:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("react-icons/io5");
 
 /***/ }),
@@ -433,6 +544,7 @@ module.exports = require("react-icons/io5");
 /***/ 9785:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("react-intersection-observer");
 
 /***/ }),
@@ -440,6 +552,7 @@ module.exports = require("react-intersection-observer");
 /***/ 997:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("react/jsx-runtime");
 
 /***/ }),
@@ -447,6 +560,7 @@ module.exports = require("react/jsx-runtime");
 /***/ 2770:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("swiper");
 
 /***/ }),
@@ -454,6 +568,7 @@ module.exports = require("swiper");
 /***/ 3630:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("swiper/react");
 
 /***/ }),
@@ -461,6 +576,7 @@ module.exports = require("swiper/react");
 /***/ 7147:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("fs");
 
 /***/ }),
@@ -468,6 +584,7 @@ module.exports = require("fs");
 /***/ 1017:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("path");
 
 /***/ })
@@ -479,7 +596,7 @@ module.exports = require("path");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [730,664,698,71,734,706], () => (__webpack_exec__(6801)));
+var __webpack_exports__ = __webpack_require__.X(0, [952,664,698,71,995], () => (__webpack_exec__(6801)));
 module.exports = __webpack_exports__;
 
 })();

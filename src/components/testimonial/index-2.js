@@ -37,7 +37,7 @@ function TestimonialTwo({ testimonialItems, testimonial_section__items }) {
                                                 __html: testimonial_section__item.desc,
                                             }}
                                         ></p>
-                                        <div className='btn-wrap'>
+                                        {/* <div className='btn-wrap'>
                                             <Link href='/'>
                                                 <a
                                                     className={
@@ -47,7 +47,7 @@ function TestimonialTwo({ testimonialItems, testimonial_section__items }) {
                                                     view more
                                                 </a>
                                             </Link>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </Col>
                             );

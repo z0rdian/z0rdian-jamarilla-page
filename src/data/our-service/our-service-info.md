@@ -20,7 +20,7 @@ projectAnalysisTitle: 'Project Analysis'
 projectAnalysisDesc: 'Top rated construction packages we pleasure rationally encounter consequences interesting who loves or pursues or desires to obtain'
 additionDescOne: 'Top rated construction packages we pleasure rationally encounter consequences interesting who loves or pursues or desires to obtain'
 additionDescTwo: 'Top rated construction packages we pleasure rationally encounter consequences'
-projectPlanningTitle: 'Project Planning'
+projectPlanningTitle: 'Plan de Proyecto'
 projectPlanningDesc: 'op rated construction packages we pleasure rationally encounter consequences interesting who loves or pursues or desires to obtain'
 listItemTwo:
     [

@@ -33,10 +33,10 @@ module.exports = {
 
 
 function RichText({ richTexts  }) {
-    return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
         className: (_index_module_scss__WEBPACK_IMPORTED_MODULE_2___default().item),
-        children: richTexts === null || richTexts === void 0 ? void 0 : richTexts.map((richText, index)=>{
-            return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Row, {
+        children: richTexts?.map((richText, index)=>{
+            return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Row, {
                 className: "pb-35 g-30",
                 children: [
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Col, {
@@ -49,15 +49,15 @@ function RichText({ richTexts  }) {
                             children: [
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                     className: `${(_index_module_scss__WEBPACK_IMPORTED_MODULE_2___default().desc)} min-lg-w238`,
-                                    children: richText === null || richText === void 0 ? void 0 : richText.textOne
+                                    children: richText?.textOne
                                 }),
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                     className: `${(_index_module_scss__WEBPACK_IMPORTED_MODULE_2___default().desc)} min-lg-w238`,
-                                    children: richText === null || richText === void 0 ? void 0 : richText.textTwo
+                                    children: richText?.textTwo
                                 }),
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                     className: `${(_index_module_scss__WEBPACK_IMPORTED_MODULE_2___default().desc)} mb-0`,
-                                    children: richText === null || richText === void 0 ? void 0 : richText.textThree
+                                    children: richText?.textThree
                                 })
                             ]
                         })
@@ -73,15 +73,15 @@ function RichText({ richTexts  }) {
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                         className: `${(_index_module_scss__WEBPACK_IMPORTED_MODULE_2___default().single_image)} pe-20`,
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                            src: richText === null || richText === void 0 ? void 0 : richText.groupImageOne,
-                                            alt: richText === null || richText === void 0 ? void 0 : richText.groupImageAlt
+                                            src: richText?.groupImageOne,
+                                            alt: richText?.groupImageAlt
                                         })
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                         className: (_index_module_scss__WEBPACK_IMPORTED_MODULE_2___default().single_image),
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                            src: richText === null || richText === void 0 ? void 0 : richText.groupImageTwo,
-                                            alt: richText === null || richText === void 0 ? void 0 : richText.groupImageAlt
+                                            src: richText?.groupImageTwo,
+                                            alt: richText?.groupImageAlt
                                         })
                                     })
                                 ]
@@ -92,15 +92,15 @@ function RichText({ richTexts  }) {
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                         className: `${(_index_module_scss__WEBPACK_IMPORTED_MODULE_2___default().single_image)} pe-20`,
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                            src: richText === null || richText === void 0 ? void 0 : richText.groupImageThree,
-                                            alt: richText === null || richText === void 0 ? void 0 : richText.groupImageAlt
+                                            src: richText?.groupImageThree,
+                                            alt: richText?.groupImageAlt
                                         })
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                         className: (_index_module_scss__WEBPACK_IMPORTED_MODULE_2___default().single_image),
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                            src: richText === null || richText === void 0 ? void 0 : richText.groupImageFour,
-                                            alt: richText === null || richText === void 0 ? void 0 : richText.groupImageAlt
+                                            src: richText?.groupImageFour,
+                                            alt: richText?.groupImageAlt
                                         })
                                     })
                                 ]
@@ -113,13 +113,13 @@ function RichText({ richTexts  }) {
                         },
                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                             className: `${(_index_module_scss__WEBPACK_IMPORTED_MODULE_2___default().desc)} mb-0`,
-                            children: richText === null || richText === void 0 ? void 0 : richText.additionText
+                            children: richText?.additionText
                         })
                     })
                 ]
-            }, index));
+            }, index);
         })
-    }));
+    });
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (RichText);
 

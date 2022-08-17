@@ -41,12 +41,12 @@ module.exports = {
 
 
 function BannerFour({ bannerFourItems , bannerSection  }) {
-    return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
         className: `${(_banner_4_module_scss__WEBPACK_IMPORTED_MODULE_2___default().py__140)}`,
         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Container, {
             children: [
-                bannerSection === null || bannerSection === void 0 ? void 0 : bannerSection.map((items, bannerTitle)=>{
-                    return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                bannerSection?.map((items, bannerTitle)=>{
+                    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                         className: (_banner_4_module_scss__WEBPACK_IMPORTED_MODULE_2___default().section),
                         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                             className: (_banner_4_module_scss__WEBPACK_IMPORTED_MODULE_2___default().section__wrap),
@@ -55,10 +55,10 @@ function BannerFour({ bannerFourItems , bannerSection  }) {
                                     className: (_banner_4_module_scss__WEBPACK_IMPORTED_MODULE_2___default().section__title),
                                     children: [
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                            children: items === null || items === void 0 ? void 0 : items.sectionSubtitle
+                                            children: items?.sectionSubtitle
                                         }),
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
-                                            children: items === null || items === void 0 ? void 0 : items.sectionTitle
+                                            children: items?.sectionTitle
                                         })
                                     ]
                                 }),
@@ -70,12 +70,12 @@ function BannerFour({ bannerFourItems , bannerSection  }) {
                                 })
                             ]
                         })
-                    }, bannerTitle));
+                    }, bannerTitle);
                 }),
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Row, {
                     className: "g-30",
-                    children: bannerFourItems === null || bannerFourItems === void 0 ? void 0 : bannerFourItems.map((bannerFourItem, i)=>{
-                        return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Col, {
+                    children: bannerFourItems?.map((bannerFourItem, i)=>{
+                        return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Col, {
                             xl: {
                                 span: 3
                             },
@@ -86,31 +86,30 @@ function BannerFour({ bannerFourItems , bannerSection  }) {
                                 span: 6
                             },
                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                className: bannerFourItem.dynamicClassName.split(' ').map((item)=>(_banner_4_module_scss__WEBPACK_IMPORTED_MODULE_2___default())[item]
-                                ).join(' '),
+                                className: bannerFourItem.dynamicClassName.split(" ").map((item)=>(_banner_4_module_scss__WEBPACK_IMPORTED_MODULE_2___default())[item]).join(" "),
                                 children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                     className: (_banner_4_module_scss__WEBPACK_IMPORTED_MODULE_2___default().content),
-                                    "data-count": `${bannerFourItem === null || bannerFourItem === void 0 ? void 0 : bannerFourItem.dataCount}`,
+                                    "data-count": `${bannerFourItem?.dataCount}`,
                                     children: [
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
                                             className: (_banner_4_module_scss__WEBPACK_IMPORTED_MODULE_2___default().title),
                                             dangerouslySetInnerHTML: {
-                                                __html: bannerFourItem === null || bannerFourItem === void 0 ? void 0 : bannerFourItem.title
+                                                __html: bannerFourItem?.title
                                             }
                                         }),
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                             className: (_banner_4_module_scss__WEBPACK_IMPORTED_MODULE_2___default().desc),
-                                            children: bannerFourItem === null || bannerFourItem === void 0 ? void 0 : bannerFourItem.excerpt
+                                            children: bannerFourItem?.excerpt
                                         })
                                     ]
                                 })
                             })
-                        }, i));
+                        }, i);
                     })
                 })
             ]
         })
-    }));
+    });
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (BannerFour);
 

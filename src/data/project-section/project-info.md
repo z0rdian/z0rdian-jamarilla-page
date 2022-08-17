@@ -1,4 +1,4 @@
 ---
-subTitle: 'Projects'
-title: 'Our Recent <br /> Projects'
+subTitle: 'Proyectos'
+title: 'Nuestros <br /> Proyectos'
 ---

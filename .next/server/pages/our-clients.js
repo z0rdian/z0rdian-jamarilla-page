@@ -44,6 +44,7 @@ var index_2 = __webpack_require__(8643);
 var brand_breadcrumb = __webpack_require__(7745);
 // EXTERNAL MODULE: ./node_modules/next/link.js
 var next_link = __webpack_require__(1664);
+var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 // EXTERNAL MODULE: ./src/components/brand/brand.module.scss
 var brand_module = __webpack_require__(8470);
 var brand_module_default = /*#__PURE__*/__webpack_require__.n(brand_module);
@@ -69,7 +70,7 @@ external_swiper_default().use([
     external_swiper_.Autoplay
 ]);
 function BrandTwo({ brandItems  }) {
-    return(/*#__PURE__*/ jsx_runtime_.jsx("div", {
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         className: `${(brand_module_default()).bg} ${(brand_module_default()).space__yaxis}`,
         children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Container, {
             children: /*#__PURE__*/ jsx_runtime_.jsx(react_.Swiper, {
@@ -84,55 +85,55 @@ function BrandTwo({ brandItems  }) {
                         slidesPerView: 5,
                         slidesPerColumn: 2,
                         slidesPerGroup: 1,
-                        slidesPerColumnFill: 'row',
+                        slidesPerColumnFill: "row",
                         spaceBetween: 100
                     },
                     768: {
                         slidesPerView: 4,
                         slidesPerColumn: 2,
                         slidesPerGroup: 1,
-                        slidesPerColumnFill: 'row',
+                        slidesPerColumnFill: "row",
                         spaceBetween: 100
                     },
                     576: {
                         slidesPerView: 3,
                         slidesPerColumn: 2,
                         slidesPerGroup: 1,
-                        slidesPerColumnFill: 'row',
+                        slidesPerColumnFill: "row",
                         spaceBetween: 30
                     },
                     480: {
                         slidesPerView: 2,
                         slidesPerColumn: 2,
                         slidesPerGroup: 1,
-                        slidesPerColumnFill: 'row',
+                        slidesPerColumnFill: "row",
                         spaceBetween: 30
                     },
                     0: {
                         slidesPerView: 1,
                         slidesPerColumn: 1,
                         slidesPerGroup: 1,
-                        slidesPerColumnFill: 'row',
+                        slidesPerColumnFill: "row",
                         spaceBetween: 30
                     }
                 },
-                children: brandItems === null || brandItems === void 0 ? void 0 : brandItems.map((brandItem, i)=>{
-                    return(/*#__PURE__*/ jsx_runtime_.jsx(react_.SwiperSlide, {
-                        children: /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
+                children: brandItems?.map((brandItem, i)=>{
+                    return /*#__PURE__*/ jsx_runtime_.jsx(react_.SwiperSlide, {
+                        children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                             href: "/",
                             children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                 className: (brand_module_default()).item,
                                 children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                                    src: brandItem === null || brandItem === void 0 ? void 0 : brandItem.image,
-                                    alt: brandItem === null || brandItem === void 0 ? void 0 : brandItem.imageAlt
+                                    src: brandItem?.image,
+                                    alt: brandItem?.imageAlt
                                 })
                             })
                         })
-                    }, i));
+                    }, i);
                 })
             })
         })
-    }));
+    });
 }
 /* harmony default export */ const brand_index_2 = (BrandTwo);
 
@@ -156,7 +157,7 @@ var items_util = __webpack_require__(7698);
 
 
 function OurClients(props) {
-    return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_.Fragment, {
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_.Fragment, {
         children: [
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)((head_default()), {
                 children: [
@@ -189,16 +190,16 @@ function OurClients(props) {
                 footerItems: props.footerItems
             })
         ]
-    }));
+    });
 }
 function getStaticProps() {
-    const brands_breadcrumb = (0,items_util/* getAllItems */.Nx)('brand-breadcrumb');
-    const brandItems = (0,items_util/* getAllItems */.Nx)('brand');
-    const bannerTwoItems = (0,items_util/* getAllItems */.Nx)('banner-2');
-    const testimonialItems = (0,items_util/* getAllItems */.Nx)('testimonial');
-    const testimonial_section__items = (0,items_util/* getAllItems */.Nx)('testimonial-section');
-    const newsletterItems = (0,items_util/* getAllItems */.Nx)('newsletter');
-    const footerItems = (0,items_util/* getAllItems */.Nx)('footer');
+    const brands_breadcrumb = (0,items_util/* getAllItems */.Nx)("brand-breadcrumb");
+    const brandItems = (0,items_util/* getAllItems */.Nx)("brand");
+    const bannerTwoItems = (0,items_util/* getAllItems */.Nx)("banner-2");
+    const testimonialItems = (0,items_util/* getAllItems */.Nx)("testimonial");
+    const testimonial_section__items = (0,items_util/* getAllItems */.Nx)("testimonial-section");
+    const newsletterItems = (0,items_util/* getAllItems */.Nx)("newsletter");
+    const footerItems = (0,items_util/* getAllItems */.Nx)("footer");
     return {
         props: {
             brands_breadcrumb,
@@ -224,11 +225,19 @@ module.exports = require("gray-matter");
 
 /***/ }),
 
-/***/ 562:
+/***/ 3280:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/server/denormalize-page-path.js");
+module.exports = require("next/dist/shared/lib/app-router-context.js");
+
+/***/ }),
+
+/***/ 2796:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/head-manager-context.js");
 
 /***/ }),
 
@@ -256,11 +265,51 @@ module.exports = require("next/dist/shared/lib/mitt.js");
 
 /***/ }),
 
+/***/ 4406:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/page-path/denormalize-page-path.js");
+
+/***/ }),
+
 /***/ 4964:
 /***/ ((module) => {
 
 "use strict";
 module.exports = require("next/dist/shared/lib/router-context.js");
+
+/***/ }),
+
+/***/ 1751:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/add-path-prefix.js");
+
+/***/ }),
+
+/***/ 6220:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/compare-states.js");
+
+/***/ }),
+
+/***/ 299:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/format-next-pathname-info.js");
+
+/***/ }),
+
+/***/ 3938:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/format-url.js");
 
 /***/ }),
 
@@ -272,11 +321,11 @@ module.exports = require("next/dist/shared/lib/router/utils/get-asset-path-from-
 
 /***/ }),
 
-/***/ 4365:
+/***/ 5789:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/get-middleware-regex.js");
+module.exports = require("next/dist/shared/lib/router/utils/get-next-pathname-info.js");
 
 /***/ }),
 
@@ -288,6 +337,14 @@ module.exports = require("next/dist/shared/lib/router/utils/is-dynamic.js");
 
 /***/ }),
 
+/***/ 8854:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/parse-path.js");
+
+/***/ }),
+
 /***/ 1292:
 /***/ ((module) => {
 
@@ -296,11 +353,27 @@ module.exports = require("next/dist/shared/lib/router/utils/parse-relative-url.j
 
 /***/ }),
 
+/***/ 4567:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/path-has-prefix.js");
+
+/***/ }),
+
 /***/ 979:
 /***/ ((module) => {
 
 "use strict";
 module.exports = require("next/dist/shared/lib/router/utils/querystring.js");
+
+/***/ }),
+
+/***/ 3297:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/remove-trailing-slash.js");
 
 /***/ }),
 
@@ -415,7 +488,7 @@ module.exports = require("path");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [730,664,698,71,875,557], () => (__webpack_exec__(6205)));
+var __webpack_exports__ = __webpack_require__.X(0, [952,664,698,71,404,557], () => (__webpack_exec__(6205)));
 module.exports = __webpack_exports__;
 
 })();

@@ -50,30 +50,30 @@ var external_react_bootstrap_ = __webpack_require__(358);
 
 
 function TwoColumnsBreadcrumb({ projectsBreadcrumb  }) {
-    return(/*#__PURE__*/ jsx_runtime_.jsx("div", {
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         className: "page_banner__bg",
         children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Container, {
-            children: projectsBreadcrumb === null || projectsBreadcrumb === void 0 ? void 0 : projectsBreadcrumb.map((projectBreadcrumb, i)=>{
-                return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+            children: projectsBreadcrumb?.map((projectBreadcrumb, i)=>{
+                return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                     className: "page_content",
                     children: [
                         /*#__PURE__*/ jsx_runtime_.jsx("span", {
                             className: "page_subtitle",
-                            children: projectBreadcrumb === null || projectBreadcrumb === void 0 ? void 0 : projectBreadcrumb.twoColumnsSubtitle
+                            children: projectBreadcrumb?.twoColumnsSubtitle
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("h1", {
                             className: "page_title",
-                            children: projectBreadcrumb === null || projectBreadcrumb === void 0 ? void 0 : projectBreadcrumb.twoColumnsTitle
+                            children: projectBreadcrumb?.twoColumnsTitle
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("p", {
                             className: "page_desc",
-                            children: projectBreadcrumb === null || projectBreadcrumb === void 0 ? void 0 : projectBreadcrumb.twoColumnsDesc
+                            children: projectBreadcrumb?.twoColumnsDesc
                         })
                     ]
-                }, i));
+                }, i);
             })
         })
-    }));
+    });
 }
 /* harmony default export */ const two_columns_breadcrumb = (TwoColumnsBreadcrumb);
 
@@ -86,6 +86,7 @@ var project_module = __webpack_require__(6076);
 var project_module_default = /*#__PURE__*/__webpack_require__.n(project_module);
 // EXTERNAL MODULE: ./node_modules/next/link.js
 var next_link = __webpack_require__(1664);
+var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 ;// CONCATENATED MODULE: ./src/components/projects/two-columns-item.js
 
 
@@ -94,14 +95,14 @@ function ProjectTwoColumnsItem(props) {
     const { title , subTitle , duration , image , slug  } = props.project;
     const imagePath = `/images/projects/${slug}/${image}`;
     const linkPath = `/projects/${slug}`;
-    return(/*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
+    return /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
         lg: {
             span: 6
         },
         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
             className: "project-item",
             children: [
-                /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
+                /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                     href: linkPath,
                     children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                         className: "project-img",
@@ -120,7 +121,7 @@ function ProjectTwoColumnsItem(props) {
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("h3", {
                             className: "title mb-0",
-                            children: /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
+                            children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                 href: linkPath,
                                 children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                     children: title
@@ -134,7 +135,7 @@ function ProjectTwoColumnsItem(props) {
                 })
             ]
         })
-    }));
+    });
 }
 /* harmony default export */ const two_columns_item = (ProjectTwoColumnsItem);
 
@@ -151,16 +152,16 @@ function ProjectTwoColumnsGrid(props) {
     const loadMore = ()=>{
         setNoOfElement(noOfElement + noOfElement);
     };
-    return(/*#__PURE__*/ jsx_runtime_.jsx("div", {
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         className: (project_module_default()).project,
         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Container, {
             children: [
                 /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Row, {
                     className: "g-4",
                     children: slice.map((project)=>{
-                        return(/*#__PURE__*/ jsx_runtime_.jsx(two_columns_item, {
+                        return /*#__PURE__*/ jsx_runtime_.jsx(two_columns_item, {
                             project: project
-                        }, project.slug));
+                        }, project.slug);
                     })
                 }),
                 /*#__PURE__*/ jsx_runtime_.jsx("div", {
@@ -173,7 +174,7 @@ function ProjectTwoColumnsGrid(props) {
                 })
             ]
         })
-    }));
+    });
 }
 /* harmony default export */ const two_columns_grid = (ProjectTwoColumnsGrid);
 
@@ -182,9 +183,9 @@ function ProjectTwoColumnsGrid(props) {
 
 function ProjectTwoColumns(props) {
     const { projects  } = props;
-    return(/*#__PURE__*/ jsx_runtime_.jsx(two_columns_grid, {
+    return /*#__PURE__*/ jsx_runtime_.jsx(two_columns_grid, {
         projects: projects
-    }));
+    });
 }
 /* harmony default export */ const two_columns = (ProjectTwoColumns);
 
@@ -201,7 +202,7 @@ var items_util = __webpack_require__(7698);
 
 
 function ProjectTwoColumnsPage(props) {
-    return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_.Fragment, {
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_.Fragment, {
         children: [
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)((head_default()), {
                 children: [
@@ -230,14 +231,14 @@ function ProjectTwoColumnsPage(props) {
                 footerItems: props.footerItems
             })
         ]
-    }));
+    });
 }
 function getStaticProps() {
-    const projectsBreadcrumb = (0,items_util/* getAllItems */.Nx)('project-breadcrumb');
-    const allItems = (0,items_util/* getAllItems */.Nx)('projects');
-    const bannerTwoItems = (0,items_util/* getAllItems */.Nx)('banner-2');
-    const newsletterItems = (0,items_util/* getAllItems */.Nx)('newsletter');
-    const footerItems = (0,items_util/* getAllItems */.Nx)('footer');
+    const projectsBreadcrumb = (0,items_util/* getAllItems */.Nx)("project-breadcrumb");
+    const allItems = (0,items_util/* getAllItems */.Nx)("projects");
+    const bannerTwoItems = (0,items_util/* getAllItems */.Nx)("banner-2");
+    const newsletterItems = (0,items_util/* getAllItems */.Nx)("newsletter");
+    const footerItems = (0,items_util/* getAllItems */.Nx)("footer");
     return {
         props: {
             projectsBreadcrumb,
@@ -261,11 +262,19 @@ module.exports = require("gray-matter");
 
 /***/ }),
 
-/***/ 562:
+/***/ 3280:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/server/denormalize-page-path.js");
+module.exports = require("next/dist/shared/lib/app-router-context.js");
+
+/***/ }),
+
+/***/ 2796:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/head-manager-context.js");
 
 /***/ }),
 
@@ -293,11 +302,51 @@ module.exports = require("next/dist/shared/lib/mitt.js");
 
 /***/ }),
 
+/***/ 4406:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/page-path/denormalize-page-path.js");
+
+/***/ }),
+
 /***/ 4964:
 /***/ ((module) => {
 
 "use strict";
 module.exports = require("next/dist/shared/lib/router-context.js");
+
+/***/ }),
+
+/***/ 1751:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/add-path-prefix.js");
+
+/***/ }),
+
+/***/ 6220:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/compare-states.js");
+
+/***/ }),
+
+/***/ 299:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/format-next-pathname-info.js");
+
+/***/ }),
+
+/***/ 3938:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/format-url.js");
 
 /***/ }),
 
@@ -309,11 +358,11 @@ module.exports = require("next/dist/shared/lib/router/utils/get-asset-path-from-
 
 /***/ }),
 
-/***/ 4365:
+/***/ 5789:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/get-middleware-regex.js");
+module.exports = require("next/dist/shared/lib/router/utils/get-next-pathname-info.js");
 
 /***/ }),
 
@@ -325,6 +374,14 @@ module.exports = require("next/dist/shared/lib/router/utils/is-dynamic.js");
 
 /***/ }),
 
+/***/ 8854:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/parse-path.js");
+
+/***/ }),
+
 /***/ 1292:
 /***/ ((module) => {
 
@@ -333,11 +390,27 @@ module.exports = require("next/dist/shared/lib/router/utils/parse-relative-url.j
 
 /***/ }),
 
+/***/ 4567:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/path-has-prefix.js");
+
+/***/ }),
+
 /***/ 979:
 /***/ ((module) => {
 
 "use strict";
 module.exports = require("next/dist/shared/lib/router/utils/querystring.js");
+
+/***/ }),
+
+/***/ 3297:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/remove-trailing-slash.js");
 
 /***/ }),
 
@@ -436,7 +509,7 @@ module.exports = require("path");
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [730,664,698,71,717], () => (__webpack_exec__(3814)));
+var __webpack_exports__ = __webpack_require__.X(0, [952,664,698,71,717], () => (__webpack_exec__(3814)));
 module.exports = __webpack_exports__;
 
 })();

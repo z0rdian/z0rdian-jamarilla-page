@@ -7,7 +7,7 @@
         "predeploy": "npm run build",
         "deploy": "gh-pages -d build",
         "dev": "next dev",
-        "build":"next build",
+        "build": "next build",
         "export": "next export",
         "start": "next start",
         "lint": "next lint"
@@ -17,13 +17,13 @@
         "disqus-react": "^1.1.2",
         "gh-pages": "^4.0.0",
         "gray-matter": "^4.0.3",
-        "next": "^12.1.0",
+        "next": "^12.2.4",
         "prop-types": "^15.8.1",
         "proptypes": "^1.1.0",
-        "react": "17.0.2",
+        "react": "^17.0.2",
         "react-bootstrap": "^2.1.2",
         "react-countup": "^6.1.1",
-        "react-dom": "17.0.2",
+        "react-dom": "^17.0.2",
         "react-icons": "^4.3.1",
         "react-intersection-observer": "^8.33.1",
         "react-markdown": "^8.0.0",
@@ -31,8 +31,9 @@
         "swiper": "^6.8.4"
     },
     "devDependencies": {
+        "@babel/preset-env": "^7.18.10",
+        "@netlify/plugin-nextjs": "^4.0.0-beta.4",
         "eslint": "8.9.0",
-        "eslint-config-next": "12.1.0",
-        "@netlify/plugin-nextjs": "^4.0.0-beta.4"
+        "eslint-config-next": "12.1.0"
     }
 }

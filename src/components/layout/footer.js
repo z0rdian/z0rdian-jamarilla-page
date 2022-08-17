@@ -41,7 +41,7 @@ function Footer({ footerItems }) {
                                                 >
                                                     {footerItem?.inquary}
                                                 </h2>
-                                                <Link href='tel://+12345-879-854'>
+                                                {/* <Link href='tel://+12345-879-854'>
                                                     <a
                                                         className={
                                                             classes.inquary_number
@@ -51,7 +51,7 @@ function Footer({ footerItems }) {
                                                             footerItem?.inquaryNumber
                                                         }
                                                     </a>
-                                                </Link>
+                                                </Link> */}
                                             </div>
                                         </div>
                                     </Col>
@@ -61,7 +61,7 @@ function Footer({ footerItems }) {
                                         sm={{ span: 6 }}
                                         className='ps-xl-80 pt-40 pt-lg-0'
                                     >
-                                        <div className={classes.widget__item}>
+                                        {/* <div className={classes.widget__item}>
                                             <h2
                                                 className={
                                                     classes.widget__title
@@ -86,14 +86,14 @@ function Footer({ footerItems }) {
                                                     )
                                                 )}
                                             </ul>
-                                        </div>
+                                        </div> */}
                                     </Col>
                                     <Col
                                         lg={{ span: 3 }}
                                         sm={{ span: 6 }}
                                         className='ps-lg-50 pt-40 pt-lg-0'
                                     >
-                                        <div className={classes.widget__item}>
+                                        {/* <div className={classes.widget__item}>
                                             <h2
                                                 className={
                                                     classes.widget__title
@@ -118,7 +118,7 @@ function Footer({ footerItems }) {
                                                     )
                                                 )}
                                             </ul>
-                                        </div>
+                                        </div> */}
                                     </Col>
                                     <Col
                                         xl={{ span: 3 }}
@@ -133,7 +133,7 @@ function Footer({ footerItems }) {
                                             >
                                                 {footerItem?.contactInfoTitle}
                                             </h2>
-                                            <div
+                                            {/* <div
                                                 className={`pb-25 ${classes.widget__info}`}
                                             >
                                                 <p
@@ -151,7 +151,7 @@ function Footer({ footerItems }) {
                                                 >
                                                     {footerItem?.widgetNumber}
                                                 </span>
-                                            </div>
+                                            </div> */}
                                             <div
                                                 className={classes.widget__info}
                                             >
@@ -205,7 +205,7 @@ function Footer({ footerItems }) {
                                         </ul>
                                     </Col>
                                     <Col md={{ span: 6 }} sm={{ span: 8 }}>
-                                        <div className={classes.copyright}>
+                                        {/* <div className={classes.copyright}>
                                             <span className={classes.text}>
                                                 © 2022 OxyBuild Made with
                                                 <span className={classes.icon}>
@@ -216,7 +216,7 @@ function Footer({ footerItems }) {
                                                     HasThemes
                                                 </a>
                                             </span>
-                                        </div>
+                                        </div> */}
                                     </Col>
                                 </Row>
                             </Container>

@@ -1,5 +1,5 @@
 ---
-title: 'Renovation'
+title: 'Renovación'
 mediumImage: 'renovation-md.jpg'
 largeImage: 'renovation-lg.jpg'
 detailBreadcrumbSubTitle: 'Single Service'

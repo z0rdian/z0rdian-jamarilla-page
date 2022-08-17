@@ -18,16 +18,16 @@ function Counter() {
         <div className={classes.area}>
             <Container>
                 <Row className={classes.max_md_g_y__80}>
-                    <Col lg={{ span: 3 }} sm={{ span: 6 }}>
+                    <Col lg={{ span: 4 }} sm={{ span: 6 }}>
                         <CountUp
                             start={focus ? 0 : null}
-                            end={985}
+                            end={10}
                             duration={3}
                         >
                             {({ countUpRef }) => (
                                 <div className={classes.item}>
                                     <h2 className={classes.count_inner__text}>
-                                        985
+                                        10
                                     </h2>
                                     <h3
                                         className={classes.count}
@@ -40,7 +40,7 @@ function Counter() {
                                         }
                                     >
                                         <span className={classes.count_title}>
-                                            Projects
+                                            Proyectos
                                         </span>
                                     </InView>
                                 </div>
@@ -69,7 +69,7 @@ function Counter() {
                                         }
                                     >
                                         <span className={classes.count_title}>
-                                            Clients
+                                            Clientes
                                         </span>
                                     </InView>
                                 </div>
@@ -98,23 +98,23 @@ function Counter() {
                                         }
                                     >
                                         <span className={classes.count_title}>
-                                            Success
+                                            Exitos
                                         </span>
                                     </InView>
                                 </div>
                             )}
                         </CountUp>
                     </Col>
-                    <Col lg={{ span: 3 }} sm={{ span: 6 }}>
+                    {/* <Col lg={{ span: 3 }} sm={{ span: 6 }}>
                         <CountUp
                             start={focus ? 0 : null}
-                            end={120}
+                            end={15}
                             duration={3}
                         >
                             {({ countUpRef }) => (
                                 <div className={classes.item}>
                                     <h2 className={classes.count_inner__text}>
-                                        120
+                                        15
                                     </h2>
                                     <h3
                                         className={classes.count}
@@ -127,13 +127,13 @@ function Counter() {
                                         }
                                     >
                                         <span className={classes.count_title}>
-                                            Awards
+                                            Proveedores
                                         </span>
                                     </InView>
                                 </div>
                             )}
                         </CountUp>
-                    </Col>
+                    </Col> */}
                 </Row>
             </Container>
         </div>

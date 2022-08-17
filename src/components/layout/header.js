@@ -85,8 +85,8 @@ function Header() {
                                             src='/images/header/icon/phone.png'
                                             alt='Phone'
                                         />
-                                        <Link href='tel://01225-265-847'>
-                                            <a>01225 265 847</a>
+                                        <Link href='https://wa.me/message/E32XSP3MXIBFH1'>
+                                            <a>+54 9 11 6860-6386</a>
                                         </Link>
                                     </div>
                                     <div className={classes.time_schedule}>
@@ -113,7 +113,7 @@ function Header() {
                                     </Link>
                                 </div>
                             </Col>
-                            <Col xl={6} lg={4} sm={6}>
+                            {/* <Col xl={6} lg={4} sm={6}>
                                 <div className={classes.right}>
                                     <div>
                                         <Link href='/login-register'>
@@ -160,7 +160,7 @@ function Header() {
                                         </buton>
                                     </div>
                                 </div>
-                            </Col>
+                            </Col> */}
                         </Row>
                     </Container>
                 </div>
@@ -180,24 +180,24 @@ function Header() {
                                                 </a>
                                             </Link>
                                         </li>
-                                        <li>
+                                        {/* <li>
                                             <Link href='/about'>
                                                 <a>
-                                                    <span>About Us</span>
+                                                    <span>Nosotros</span>
                                                 </a>
                                             </Link>
-                                        </li>
+                                        </li> */}
                                         <li>
                                             <Link href='/services'>
                                                 <a>
-                                                    <span>Service</span>
+                                                    <span>Servicios</span>
                                                 </a>
                                             </Link>
                                         </li>
-                                        <li className={classes.dropdown_holder}>
+                                        {/* <li className={classes.dropdown_holder}>
                                             <Link href='/projects/project-fullwidth'>
                                                 <a>
-                                                    <span>Projects</span>
+                                                    <span>Proyectos</span>
                                                 </a>
                                             </Link>
                                             <ul
@@ -221,8 +221,8 @@ function Header() {
                                                     </Link>
                                                 </li>
                                             </ul>
-                                        </li>
-                                        <li className={classes.dropdown_holder}>
+                                        </li> */}
+                                        {/* <li className={classes.dropdown_holder}>
                                             <Link href='/'>
                                                 <a>
                                                     <span>Pages</span>
@@ -251,8 +251,8 @@ function Header() {
                                                     </Link>
                                                 </li>
                                             </ul>
-                                        </li>
-                                        <li className={classes.dropdown_holder}>
+                                        </li> */}
+                                        { /* <li className={classes.dropdown_holder}>
                                             <Link href='/blogs/blog-fullwidth'>
                                                 <a>
                                                     <span>Blogs</span>
@@ -276,11 +276,11 @@ function Header() {
                                                     </Link>
                                                 </li>
                                             </ul>
-                                        </li>
+                                        </li> */}
                                         <li className={classes.separator}>
                                             <Link href='/contact'>
                                                 <a>
-                                                    <span>Contact</span>
+                                                    <span>Contacto</span>
                                                 </a>
                                             </Link>
                                         </li>

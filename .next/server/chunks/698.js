@@ -7,10 +7,10 @@ exports.modules = {
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "E": () => (/* binding */ getFeaturedItems),
 /* harmony export */   "Jf": () => (/* binding */ getItemsFiles),
-/* harmony export */   "m_": () => (/* binding */ getItemData),
 /* harmony export */   "Nx": () => (/* binding */ getAllItems),
-/* harmony export */   "E": () => (/* binding */ getFeaturedItems)
+/* harmony export */   "m_": () => (/* binding */ getItemData)
 /* harmony export */ });
 /* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7147);
 /* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(fs__WEBPACK_IMPORTED_MODULE_0__);
@@ -22,14 +22,14 @@ exports.modules = {
 
 
 function getItemsFiles(type) {
-    const itemsDirectory = path__WEBPACK_IMPORTED_MODULE_1___default().join(process.cwd(), 'src/data', type);
+    const itemsDirectory = path__WEBPACK_IMPORTED_MODULE_1___default().join(process.cwd(), "src/data", type);
     return fs__WEBPACK_IMPORTED_MODULE_0___default().readdirSync(itemsDirectory);
 }
 function getItemData(itemIdentifier, type) {
     const itemsDirectory = path__WEBPACK_IMPORTED_MODULE_1___default().join(`${process.cwd()}/src/data/${type}`);
-    const itemSlug = itemIdentifier.replace(/\.md$/, '');
+    const itemSlug = itemIdentifier.replace(/\.md$/, "");
     const filePath = path__WEBPACK_IMPORTED_MODULE_1___default().join(itemsDirectory, `${itemSlug}.md`);
-    const fileContent = fs__WEBPACK_IMPORTED_MODULE_0___default().readFileSync(filePath, 'utf-8');
+    const fileContent = fs__WEBPACK_IMPORTED_MODULE_0___default().readFileSync(filePath, "utf-8");
     const { data , content  } = gray_matter__WEBPACK_IMPORTED_MODULE_2___default()(fileContent);
     const itemData = {
         slug: itemSlug,
@@ -43,13 +43,11 @@ function getAllItems(type) {
     const allItems = itemFiles.map((itemFile)=>{
         return getItemData(itemFile, type);
     });
-    const sortedItems = allItems.sort((itemA, itemB)=>itemA.date > itemB.date ? -1 : 1
-    );
+    const sortedItems = allItems.sort((itemA, itemB)=>itemA.date > itemB.date ? -1 : 1);
     return sortedItems;
 }
 function getFeaturedItems(items) {
-    return items.filter((item)=>item.isFeatured
-    );
+    return items.filter((item)=>item.isFeatured);
 }
 
 

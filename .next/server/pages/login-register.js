@@ -48,31 +48,31 @@ var external_react_bootstrap_ = __webpack_require__(358);
 ;// CONCATENATED MODULE: ./src/components/breadcrumb/login-register/index.js
 
 
-function LoginRegisterBreadcrumb({ LoginRegisterBreadcrumb: LoginRegisterBreadcrumb1  }) {
-    return(/*#__PURE__*/ jsx_runtime_.jsx("div", {
+function LoginRegisterBreadcrumb({ LoginRegisterBreadcrumb  }) {
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         className: "page_banner__bg",
         children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Container, {
-            children: LoginRegisterBreadcrumb1 === null || LoginRegisterBreadcrumb1 === void 0 ? void 0 : LoginRegisterBreadcrumb1.map((loginRegisterBreadcrumb, i)=>{
-                return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+            children: LoginRegisterBreadcrumb?.map((loginRegisterBreadcrumb, i)=>{
+                return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                     className: "page_content",
                     children: [
                         /*#__PURE__*/ jsx_runtime_.jsx("span", {
                             className: "page_subtitle",
-                            children: loginRegisterBreadcrumb === null || loginRegisterBreadcrumb === void 0 ? void 0 : loginRegisterBreadcrumb.breadcrumbSubtitle
+                            children: loginRegisterBreadcrumb?.breadcrumbSubtitle
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("h1", {
                             className: "page_title",
-                            children: loginRegisterBreadcrumb === null || loginRegisterBreadcrumb === void 0 ? void 0 : loginRegisterBreadcrumb.breadcrumbTitle
+                            children: loginRegisterBreadcrumb?.breadcrumbTitle
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("p", {
                             className: "page_desc",
-                            children: loginRegisterBreadcrumb === null || loginRegisterBreadcrumb === void 0 ? void 0 : loginRegisterBreadcrumb.breadcrumbDesc
+                            children: loginRegisterBreadcrumb?.breadcrumbDesc
                         })
                     ]
-                }, i));
+                }, i);
             })
         })
-    }));
+    });
 }
 /* harmony default export */ const login_register = (LoginRegisterBreadcrumb);
 
@@ -83,13 +83,14 @@ var index_module = __webpack_require__(7339);
 var index_module_default = /*#__PURE__*/__webpack_require__.n(index_module);
 // EXTERNAL MODULE: ./node_modules/next/link.js
 var next_link = __webpack_require__(1664);
+var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 ;// CONCATENATED MODULE: ./src/components/login-register/index.js
 
 
 
 
 function LoginRegister() {
-    return(/*#__PURE__*/ jsx_runtime_.jsx("div", {
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         className: (index_module_default()).area,
         children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Container, {
             children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Row, {
@@ -165,7 +166,7 @@ function LoginRegister() {
                                             },
                                             children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                                 className: (index_module_default()).forgotton_password,
-                                                children: /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                                     href: "#",
                                                     passHref: true,
                                                     children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
@@ -301,7 +302,7 @@ function LoginRegister() {
                 ]
             })
         })
-    }));
+    });
 }
 /* harmony default export */ const components_login_register = (LoginRegister);
 
@@ -319,7 +320,7 @@ var items_util = __webpack_require__(7698);
 
 
 function LoginRegisterPage(props) {
-    return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_.Fragment, {
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_.Fragment, {
         children: [
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)((head_default()), {
                 children: [
@@ -343,15 +344,15 @@ function LoginRegisterPage(props) {
                 footerItems: props.footerItems
             })
         ]
-    }));
+    });
 }
 function getStaticProps() {
-    const LoginRegisterBreadcrumb1 = (0,items_util/* getAllItems */.Nx)('login-register-breadcrumb');
-    const newsletterItems = (0,items_util/* getAllItems */.Nx)('newsletter');
-    const footerItems = (0,items_util/* getAllItems */.Nx)('footer');
+    const LoginRegisterBreadcrumb = (0,items_util/* getAllItems */.Nx)("login-register-breadcrumb");
+    const newsletterItems = (0,items_util/* getAllItems */.Nx)("newsletter");
+    const footerItems = (0,items_util/* getAllItems */.Nx)("footer");
     return {
         props: {
-            LoginRegisterBreadcrumb: LoginRegisterBreadcrumb1,
+            LoginRegisterBreadcrumb,
             newsletterItems,
             footerItems
         }
@@ -370,11 +371,19 @@ module.exports = require("gray-matter");
 
 /***/ }),
 
-/***/ 562:
+/***/ 3280:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/server/denormalize-page-path.js");
+module.exports = require("next/dist/shared/lib/app-router-context.js");
+
+/***/ }),
+
+/***/ 2796:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/head-manager-context.js");
 
 /***/ }),
 
@@ -402,11 +411,51 @@ module.exports = require("next/dist/shared/lib/mitt.js");
 
 /***/ }),
 
+/***/ 4406:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/page-path/denormalize-page-path.js");
+
+/***/ }),
+
 /***/ 4964:
 /***/ ((module) => {
 
 "use strict";
 module.exports = require("next/dist/shared/lib/router-context.js");
+
+/***/ }),
+
+/***/ 1751:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/add-path-prefix.js");
+
+/***/ }),
+
+/***/ 6220:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/compare-states.js");
+
+/***/ }),
+
+/***/ 299:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/format-next-pathname-info.js");
+
+/***/ }),
+
+/***/ 3938:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/format-url.js");
 
 /***/ }),
 
@@ -418,11 +467,11 @@ module.exports = require("next/dist/shared/lib/router/utils/get-asset-path-from-
 
 /***/ }),
 
-/***/ 4365:
+/***/ 5789:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/get-middleware-regex.js");
+module.exports = require("next/dist/shared/lib/router/utils/get-next-pathname-info.js");
 
 /***/ }),
 
@@ -434,6 +483,14 @@ module.exports = require("next/dist/shared/lib/router/utils/is-dynamic.js");
 
 /***/ }),
 
+/***/ 8854:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/parse-path.js");
+
+/***/ }),
+
 /***/ 1292:
 /***/ ((module) => {
 
@@ -442,11 +499,27 @@ module.exports = require("next/dist/shared/lib/router/utils/parse-relative-url.j
 
 /***/ }),
 
+/***/ 4567:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/path-has-prefix.js");
+
+/***/ }),
+
 /***/ 979:
 /***/ ((module) => {
 
 "use strict";
 module.exports = require("next/dist/shared/lib/router/utils/querystring.js");
+
+/***/ }),
+
+/***/ 3297:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/remove-trailing-slash.js");
 
 /***/ }),
 
@@ -545,7 +618,7 @@ module.exports = require("path");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [730,664,698,71], () => (__webpack_exec__(9910)));
+var __webpack_exports__ = __webpack_require__.X(0, [952,664,698,71], () => (__webpack_exec__(9910)));
 module.exports = __webpack_exports__;
 
 })();

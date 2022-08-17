@@ -1,5 +1,5 @@
 ---
-title: 'Concrete Supply'
+title: 'Estructuramiento'
 mediumImage: 'concrete-supply-md.jpg'
 largeImage: 'concrete-supply-lg.jpg'
 detailBreadcrumbSubTitle: 'Single Service'
