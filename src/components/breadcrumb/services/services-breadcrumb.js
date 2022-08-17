@@ -2,8 +2,8 @@ import { Container } from "react-bootstrap";
 
 function ServiceBreadcrumb({ servicesBreadcrumb }) {
   return (
-    <div className="blur">
-      <Container className="page_banner__bg">
+    <div className="page_banner__bg">
+      <Container>
         {servicesBreadcrumb?.map((serviceBreadcrumb, i) => {
           return (
             <div className="page_content" key={i}>

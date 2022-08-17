@@ -50,7 +50,7 @@
 .menu {
     &__list {
         display: flex;
-        justify-content: center;
+        justify-content: right;
         @include breakpoint(max-lg-device) {
             justify-content: flex-end;
         }

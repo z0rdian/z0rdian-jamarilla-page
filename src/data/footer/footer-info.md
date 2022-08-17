@@ -2,7 +2,7 @@
 footerLogo: '/images/logo/white.png'
 footerLogoAlt: 'Footer Logo'
 excerpt: 'Soluciones & Servicios'
-inquary: 'Con 💙 para el mundo'
+inquary: ''
 inquaryNumber: '+12345 879 854'
 informationTitle: 'Information'
 informationList:

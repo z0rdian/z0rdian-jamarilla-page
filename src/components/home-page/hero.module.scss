@@ -7,9 +7,11 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 786px;
+        height: 800px;
         display: flex;
         align-items: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
         @include breakpoint(max-xl-device) {
             height: 610px;
         }
