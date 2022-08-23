@@ -82,7 +82,7 @@ function Contact({ contactItems }) {
                                     <p className={`${classes.form_desc} mb-0`}>
                                         {contactItem?.formDesc}
                                     </p>
-                                    <form name="contacto" data-netlify="true" method="POST" className={classes.form}>
+                                    <form data-netlify-recaptcha="true" name="contacto" data-netlify="true" method="POST" className={classes.form}>
                                     <input type="hidden" name="form-name" value="contacto" />
                                         <div
                                             className={
@@ -113,6 +113,7 @@ function Contact({ contactItems }) {
                                             placeholder='Mensaje'
                                             className={`${classes.form_textarea__field} mt-30`}
                                         ></textarea>
+                                        <div data-netlify-recaptcha="true"></div>
                                         <div className={classes.form_btn__wrap}>
                                             <button
                                                 className={`${classes.btn} ${classes.btn_secondary} ${classes.btn_hover__primary}`}
