@@ -22,7 +22,7 @@ function HomePage(props) {
         <title>Home - Amarilla Construcciones</title>
         <meta
           name="description"
-          content="refacciones amarilla construcciones"
+          content="Amarilla Construcciones - Soluciones & Servicios"
         />
       </Head>
       <Hero heroItems={props.heroItems} />
