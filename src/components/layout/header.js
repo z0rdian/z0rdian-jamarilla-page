@@ -94,7 +94,7 @@ function Header() {
                                             src='/images/header/icon/clock.png'
                                             alt='Phone'
                                         />
-                                        <span>9.00 am - 11.00 pm</span>
+                                        <span>9.00 am - 5.00 pm</span>
                                     </div>
                                 </div>
                             </Col>

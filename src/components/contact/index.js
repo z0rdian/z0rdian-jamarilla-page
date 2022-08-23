@@ -110,6 +110,8 @@ function Contact({ contactItems }) {
                                         </div>
                                         <textarea
                                             type='text'
+                                            name='text'
+                                            id='text'
                                             placeholder='Mensaje'
                                             className={`${classes.form_textarea__field} mt-30`}
                                         ></textarea>
