@@ -38,7 +38,7 @@ function BannerTwo({ bannerTwoItems }) {
                                                 <a
                                                     className={`me-20 ${classes.btn} ${classes.btn_primary} ${classes.btn_hover__white}`}
                                                 >
-                                                    Empecémos
+                                                    Empecemos
                                                 </a>
                                             </Link>
                                         </div>
