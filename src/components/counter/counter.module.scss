@@ -9,6 +9,7 @@
     }
     @include breakpoint(max-sm-device) {
         padding-top: 95px;
+        padding-bottom: 95px;
     }
 }
 .max {
