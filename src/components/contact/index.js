@@ -83,6 +83,7 @@ function Contact({ contactItems }) {
                                         {contactItem?.formDesc}
                                     </p>
                                     <form data-netlify="true" method="POST" className={classes.form}>
+                                    <input type="hidden" name="form-name" value="contacto" />
                                         <div
                                             className={
                                                 classes.form_group__input
