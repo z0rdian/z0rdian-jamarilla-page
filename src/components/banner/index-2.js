@@ -34,7 +34,7 @@ function BannerTwo({ bannerTwoItems }) {
                                             {bannerTwoItem?.desc}
                                         </p>
                                         <div className={classes.hero_btn__wrap}>
-                                            <Link href='/projects'>
+                                            <Link href='/contact'>
                                                 <a
                                                     className={`me-20 ${classes.btn} ${classes.btn_primary} ${classes.btn_hover__white}`}
                                                 >

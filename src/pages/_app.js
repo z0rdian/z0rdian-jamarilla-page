@@ -2,6 +2,7 @@ import Layout from '../components/layout/layout';
 import '../styles/globals.scss';
 import Head from 'next/head';
 import { ScrollToTop } from '../components/scroll';
+import { WpIcon } from '../components/wp';
 
 function MyApp({ Component, pageProps }) {
     return (
@@ -14,7 +15,8 @@ function MyApp({ Component, pageProps }) {
                 <link rel='icon' href='/favicon.png' />
             </Head>
             <Component {...pageProps} />
-            <ScrollToTop />
+            <ScrollToTop></ScrollToTop>
+            <WpIcon></WpIcon>
         </Layout>
     );
 }
