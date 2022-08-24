@@ -192,7 +192,7 @@ function Footer({ footerItems }) {
                                                     return (
                                                         <li key={index}>
                                                             <Link
-                                                                href={`${item.path}`}
+                                                                href={`https://www.instagram.com/amarilla_construir/`}
                                                             >
                                                                 <a>
                                                                     <Social />

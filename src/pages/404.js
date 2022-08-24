@@ -10,10 +10,10 @@ function Error404Page(props) {
     return (
         <Fragment>
             <Head>
-                <title>Error 404 - Oxybuild</title>
+                <title>Error 404 - Amarilla</title>
                 <meta
                     name='description'
-                    content='OxyBuild - Construction React Next JS Template Industry, Products Manufacturing Company, building companies, architecture firms, and the like can take to their advantage by using OxyBuild - Construction React Next JS Template.'
+                    content=''
                 />
             </Head>
             <Error404Breadcrumb />

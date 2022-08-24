@@ -29,7 +29,7 @@ additionWidgetAddress: 'Mataderos Buenos Aires<br /> Capital Federal'
 additionWidgetNumber: '+54 9 11 6860-6386'
 socialList:
     [
-        { socialIcon: 'FaFacebookF', path: 'https://www.example.com' },
+        { socialIcon: 'FaFacebookF', path: 'https://www.instagram.com/amarilla_construir/' },
         { socialIcon: 'FaTwitter', path: 'https://www.example.com' },
         { socialIcon: 'FaInstagram', path: 'https://www.example.com' },
     ]

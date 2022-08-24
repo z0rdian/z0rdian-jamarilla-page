@@ -420,8 +420,8 @@ iframe {
         .button {
             &-prev,
             &-next {
-                border: 1px solid #dee2e6;
-                background-color: $white;
+                border: 1px solid $secondary;
+                background-color: $secondary;
                 width: 46px;
                 height: 46px;
                 line-height: 46px;
@@ -441,7 +441,7 @@ iframe {
                 &:hover {
                     border-color: $secondary;
                     background-color: $secondary;
-                    color: $white;
+                    color: $primary;
                 }
             }
             &-prev {
