@@ -2,7 +2,7 @@ import Layout from '../components/layout/layout';
 import '../styles/globals.scss';
 import Head from 'next/head';
 import { ScrollToTop } from '../components/scroll';
-import { WpIcon } from '../components/wp';
+import { WpIcon } from '../components/whatsapp';
 
 function MyApp({ Component, pageProps }) {
     return (
