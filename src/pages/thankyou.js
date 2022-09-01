@@ -12,7 +12,7 @@ function thankyouPage(props) {
                 <title>¡Gracias! - Amarilla</title>
                 <meta
                     name='description'
-                    content=''
+                    content='Amarilla Construcciones ThankYou Ṕage'
                 />
             </Head>
             <Thankyou />

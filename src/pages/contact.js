@@ -13,7 +13,7 @@ function ContactPage(props) {
                 <title>Contacto - Amarilla Construcciones</title>
                 <meta
                     name='description'
-                    content='Amarilla Construcciones'
+                    content='Amarilla Construcciones Refacciones Reparaciones Argentina'
                 />
             </Head>
             <ContactBreadcrumb ContactBreadcrumb={props.ContactBreadcrumb} />

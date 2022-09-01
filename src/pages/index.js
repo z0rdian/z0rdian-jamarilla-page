@@ -22,7 +22,7 @@ function HomePage(props) {
         <title>Home - Amarilla Construcciones</title>
         <meta
           name="description"
-          content="Amarilla Construcciones - Soluciones & Servicios"
+          content="Amarilla Construcciones - Soluciones y servicios en la Ciudad de Buenoa Aires. Refacciones de primera calidad al mejor precio. "
         />
       </Head>
       <Hero heroItems={props.heroItems} />
