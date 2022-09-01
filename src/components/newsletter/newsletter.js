@@ -13,10 +13,12 @@ function Newsletter({ newsletterItems }) {
                                     <h2 className={classes.title}>
                                         {newsletterItem?.title}
                                     </h2>
-                                    <form className={classes.form}>
+                                    <form action="/thankyou" name="newsletter" data-netlify="true" method="POST" className={classes.form}>
                                         <input
                                             className={classes.input_field}
                                             type='email'
+                                            name='newsletter'
+                                            id='newsletter'
                                             placeholder='¿Qué esperas?'
                                         ></input>
                                         <div className={classes.btn__wrap}>
