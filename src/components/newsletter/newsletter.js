@@ -14,6 +14,7 @@ function Newsletter({ newsletterItems }) {
                                         {newsletterItem?.title}
                                     </h2>
                                     <form action="/thankyou" name="newsletter" data-netlify="true" method="POST" className={classes.form}>
+                                    <input type="hidden" name="form-name" value="newsletter" />
                                         <input
                                             className={classes.input_field}
                                             type='email'
