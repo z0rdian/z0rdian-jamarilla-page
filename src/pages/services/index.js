@@ -18,7 +18,7 @@ function ServicePage(props) {
                 <title>Servicios - Amarilla</title>
                 <meta
                     name='description'
-                    content='Amarilla - Construcciones'
+                    content='Amarilla - Construcciones, refacciones y renovaciones'
                 />
             </Head>
             <ServiceBreadcrumb servicesBreadcrumb={props.servicesBreadcrumb} />

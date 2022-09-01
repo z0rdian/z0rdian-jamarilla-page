@@ -10,10 +10,10 @@ function ServiceDetailsPage(props) {
     return (
         <Fragment>
             <Head>
-                <title>{props.service.title} - Amarilla</title>
+                <title>Construcciones - Amarilla</title>
                 <meta
                     name='description'
-                    content='Construcciones & Renovaciones'
+                    content='Construcciones Refacciones y Renovaciones'
                 />
             </Head>
             <DetailBreadcrumb
