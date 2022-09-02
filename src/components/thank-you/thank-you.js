@@ -9,7 +9,7 @@ function Thankyou() {
                 <Row>
                     <Col xs={{ span: 12 }}>
                         <div className={classes.content}>
-                            <h1 className={classes.title}>¡Gracias!</h1>
+                            <h1 className={classes.title}>¡Genial!</h1>
                             <br></br>
                             <h2 className={classes.subtitle}>
                             ¡Será un placer trabajar en conjunto!
