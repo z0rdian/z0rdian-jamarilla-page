@@ -1,5 +1,5 @@
 ---
-footerLogo: '/images/logo/white.png'
+footerLogo: '/images/logo/white.svg'
 footerLogoAlt: 'Footer Logo'
 excerpt: 'Soluciones & Servicios'
 inquary: ''

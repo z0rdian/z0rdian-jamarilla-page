@@ -10,22 +10,22 @@ function ServiceItem(props) {
 
     return (
         <div className='service-item'>
-            <Link href='/contact'>
+            {/* <Link href='/contact'> */}
                 <a className={classes.img}>
                     <img className='img-full' src={imagePath} alt={title} />
                 </a>
-            </Link>
+            {/* </Link> */}
             <div className={classes.add__action}>
                 <h2 className='title mb-0'>
                     <Link href={linkPath}>{title}</Link>
                 </h2>
-                <div className={classes.icon}>
+                {/* <div className={classes.icon}>
                     <Link href='/contact' passHref>
                         <a>
                             <IoAddSharp />
                         </a>
                     </Link>
-                </div>
+                </div> */}
             </div>
         </div>
     );

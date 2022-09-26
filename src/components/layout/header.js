@@ -71,10 +71,10 @@ function Header() {
     return (
         <Fragment>
             <header className={classes.area}>
-                <div className={classes.top}>
+                {/* <div className={classes.top}>
                     <Container>
-                        <Row>
-                            <Col
+                        <Row> */}
+                            {/* <Col
                                 xl={{ span: 4, offset: 2 }}
                                 lg={{ span: 5, offset: 3 }}
                                 className='d-none d-lg-block'
@@ -97,7 +97,7 @@ function Header() {
                                         <span>9.00 am - 5.00 pm</span>
                                     </div>
                                 </div>
-                            </Col>
+                            </Col> */}
                             <Col
                                 sm={{ span: 6 }}
                                 className={`d-block d-lg-none`}
@@ -106,7 +106,7 @@ function Header() {
                                     <Link href='/'>
                                         <a className={classes.logo}>
                                             <img
-                                                src='/images/logo/light.png'
+                                                src='/images/logo/light.svg'
                                                 alt='Header Lisght Logo'
                                             />
                                         </a>
@@ -161,9 +161,9 @@ function Header() {
                                     </div>
                                 </div>
                             </Col> */}
-                        </Row>
+                        {/* </Row>
                     </Container>
-                </div>
+                </div> */}
                 <div ref={header} className={`sticky_holder ${classes.main}`}>
                     <Container>
                         <Row>
@@ -321,7 +321,7 @@ function Header() {
                         <Link href='/'>
                             <a className={classes.logo}>
                                 <img
-                                    src='/images/logo/dark.png'
+                                    src='/images/logo/dark.svg'
                                     alt='Header Dark Logo'
                                 />
                             </a>

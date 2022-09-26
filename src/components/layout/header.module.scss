@@ -45,7 +45,7 @@
     }
 }
 .main {
-    background-color: #00225a;
+    background-color: transparent;
 }
 .menu {
     &__list {
@@ -146,6 +146,7 @@
     @include breakpoint(max-sm-device) {
         display: flex;
         justify-content: center;
+        color: $white;
     }
 }
 /* -Fixed Logo- */
