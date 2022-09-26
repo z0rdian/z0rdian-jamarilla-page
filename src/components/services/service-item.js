@@ -17,7 +17,7 @@ function ServiceItem(props) {
             {/* </Link> */}
             <div className={classes.add__action}>
                 <h2 className='title mb-0'>
-                    <Link href={linkPath}>{title}</Link>
+                    {title}
                 </h2>
                 {/* <div className={classes.icon}>
                     <Link href='/contact' passHref>
