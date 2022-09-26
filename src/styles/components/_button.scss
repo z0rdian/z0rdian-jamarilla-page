@@ -12,6 +12,7 @@
     display: block;
     cursor: pointer;
     border: 0;
+    border-radius: 80px;
     @media (max-width: 479px) {
         width: 130px;
         height: 40px;
@@ -24,8 +25,8 @@
         line-height: 40px;
     }
     &_primary {
-        background-color: $primary;
-        color: $white;
+        background-color: $secondary;
+        color: $white; 
     }
     &_secondary {
         background-color: $secondary;
@@ -34,13 +35,13 @@
     &_hover {
         &__white {
             &:hover {
-                background-color: $white;
-                color: inherit;
+                background-color: rgb(216, 216, 216);
+                color: $secondary;
             }
         }
         &__primary {
             &:hover {
-                background-color: $primary;
+                background-color: $secondary;
                 color: $white;
             }
         }

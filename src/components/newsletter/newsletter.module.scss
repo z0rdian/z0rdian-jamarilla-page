@@ -3,12 +3,28 @@
 @import '../../styles/components/button';
 
 .bg {
-    background-image: url('/images/newsletter/bg/1-1-1920x198.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #d7d7d7;
+    background: linear-gradient(-45deg,#3e00a3,#3100a3,#290088,#610051);
+    background-size: 400% 400%;
     padding-top: 50px;
     padding-bottom: 50px;
+    animation: animate 15s cubic-bezier(0.36, 0.14, 0.25, 1) infinite;
+    -webkit-animation: animate 15s ease infinite;
+    flex-wrap: wrap;
 }
+
+@keyframes animate{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
 .item {
     @include breakpoint(min-lg-device) {
         display: flex;
@@ -56,6 +72,7 @@
     max-width: 625px;
     .input {
         &_field {
+            border-radius: 50px;
             background-color: transparent;
             border: 1px solid #ffb390;
             font-family: $yantramanav;
@@ -84,10 +101,10 @@
             height: 100%;
         }
         .btn {
+            margin: 7.5px 7.5px;
             font-family: $rajdhani;
             font-weight: 600;
             width: auto;
-            height: 100%;
             padding-left: 30px;
             padding-right: 30px;
             @include breakpoint(max-xs-device) {

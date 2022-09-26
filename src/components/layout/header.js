@@ -295,7 +295,7 @@ function Header() {
                                                 className={classes.search__btn}
                                                 onClick={SearchToggle}
                                             >
-                                                <FaSearch />
+                                                {/* <FaSearch /> */}
                                             </buton>
                                             <form className='search-form'>
                                                 <input
@@ -308,7 +308,7 @@ function Header() {
                                                     className='search-inner__btn'
                                                     type='submit'
                                                 >
-                                                    <FaSearch />
+                                                    {/* <FaSearch /> */}
                                                 </button>
                                             </form>
                                         </li>
