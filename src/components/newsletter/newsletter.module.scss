@@ -1,117 +1,117 @@
-@import '../../styles/abstract/custom-variables';
-@import '../../styles/abstract/custom-mixins';
-@import '../../styles/components/button';
+@import "../../styles/abstract/custom-variables";
+@import "../../styles/abstract/custom-mixins";
+@import "../../styles/components/button";
 
 .bg {
-    background-color: #d7d7d7;
-    background: linear-gradient(-45deg,#3e00a3,#3100a3,#290088,#610051);
-    background-size: 400% 400%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    animation: animate 15s cubic-bezier(0.36, 0.14, 0.25, 1) infinite;
-    -webkit-animation: animate 15s ease infinite;
-    flex-wrap: wrap;
+  background-color: #d7d7d7;
+  background: linear-gradient(-45deg, #3e00a3, #3100a3, #290088, #610051);
+  background-size: 400% 400%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  animation: animate 15s cubic-bezier(0.36, 0.14, 0.25, 1) infinite;
+  -webkit-animation: animate 15s ease infinite;
+  flex-wrap: wrap;
 }
 
-@keyframes animate{
-    0%{
-        background-position: 0 50%;
-    }
-    50%{
-        background-position: 100% 50%;
-    }
-    100%{
-        background-position: 0 50%;
-    }
+@keyframes animate {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }
 
 .item {
-    @include breakpoint(min-lg-device) {
-        display: flex;
-        align-items: center;
-        width: calc(100% - 65px);
-    }
+  @include breakpoint(min-lg-device) {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 65px);
+  }
 }
 .title {
-    position: relative;
-    text-align: center;
-    margin-bottom: 0;
-    font-size: 60px;
-    line-height: 1;
-    color: $white;
+  position: relative;
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 60px;
+  line-height: 1;
+  color: $white;
+  @include breakpoint(min-lg-device) {
+    padding-right: 40px;
+    margin-right: 40px;
+    text-align: right;
+  }
+  @include breakpoint(max-lg-device) {
+    font-size: 50px;
+  }
+  @include breakpoint(max-md-device) {
+    margin-bottom: 40px;
+  }
+  @include breakpoint(max-sm-device) {
+    font-size: 40px;
+  }
+  &:before {
     @include breakpoint(min-lg-device) {
-        padding-right: 40px;
-        margin-right: 40px;
-        text-align: right;
+      background-color: $white;
+      width: 1px;
+      height: 100px;
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
     }
-    @include breakpoint(max-lg-device) {
-        font-size: 50px;
-    }
-    @include breakpoint(max-md-device) {
-        margin-bottom: 40px;
-    }
-    @include breakpoint(max-sm-device) {
-        font-size: 40px;
-    }
-    &:before {
-        @include breakpoint(min-lg-device) {
-            background-color: #ffb390;
-            width: 1px;
-            height: 100px;
-            content: '';
-            position: absolute;
-            top: 50%;
-            right: 0;
-            transform: translateY(-50%);
-        }
-    }
+  }
 }
 .form {
-    position: relative;
-    width: 100%;
-    max-width: 625px;
-    .input {
-        &_field {
-            border-radius: 50px;
-            background-color: transparent;
-            border: 1px solid #ffb390;
-            font-family: $yantramanav;
-            color: $white;
-            opacity: 0.9;
-            width: 100%;
-            height: 75px;
-            padding-left: 25px;
-            padding-right: 210px;
-            font-size: 18px;
-            @include breakpoint(max-xs-device) {
-                padding-right: 25px;
-            }
-            &::placeholder {
-                color: $white;
-            }
-        }
+  position: relative;
+  width: 100%;
+  max-width: 625px;
+  .input {
+    &_field {
+      border-radius: 50px;
+      background-color: transparent;
+      border: 1px solid $white;
+      font-family: $yantramanav;
+      color: $white;
+      opacity: 0.9;
+      width: 100%;
+      height: 75px;
+      padding-left: 25px;
+      padding-right: 210px;
+      font-size: 18px;
+      @include breakpoint(max-xs-device) {
+        padding-right: 25px;
+      }
+      &::placeholder {
+        color: $white;
+      }
     }
+  }
 }
 .btn {
-    &__wrap {
-        @include breakpoint(min-sm-device) {
-            position: absolute;
-            top: 0;
-            right: 0;
-            height: 100%;
-        }
-        .btn {
-            margin: 7.5px 7.5px;
-            font-family: $rajdhani;
-            font-weight: 600;
-            width: auto;
-            padding-left: 30px;
-            padding-right: 30px;
-            @include breakpoint(max-xs-device) {
-                margin-top: 15px;
-                width: 100%;
-                height: 70px;
-            }
-        }
+  &__wrap {
+    @include breakpoint(min-sm-device) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
     }
+    .btn {
+      margin: 7.5px 7.5px;
+      font-family: $rajdhani;
+      font-weight: 600;
+      width: auto;
+      padding-left: 30px;
+      padding-right: 30px;
+      @include breakpoint(max-xs-device) {
+        margin-top: 15px;
+        width: 100%;
+        height: 70px;
+      }
+    }
+  }
 }
