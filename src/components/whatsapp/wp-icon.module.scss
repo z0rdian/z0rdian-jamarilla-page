@@ -1,30 +1,29 @@
-@import '../../styles/abstract/custom-variables';
-
+@import "../../styles/abstract/custom-variables";
 
 .wp {
-    &_icon {
-            background-color: $secondary;
-            cursor: pointer;
-            position: fixed;
-            right: 70px;
-            bottom: 20px;
-            z-index: 1;
-            font-size: 20px;
-            overflow: hidden;
-            display: block;
-            text-align: center;
-            width: 30px;
-            height: 30px;
-            line-height: 10px;
-            transition: $baseTransition;
-            color: $white;
-            border: 0;
-            outline: 0;
-            display: inline-block;
-            padding-top: 5px;
-            padding-left: 1px;
-            &:hover {
-                background-color: #075E54;
-            }
-        }
+  &_icon {
+    background-color: $secondary;
+    cursor: pointer;
+    position: fixed;
+    right: 70px;
+    bottom: 10.5px;
+    z-index: 1;
+    font-size: 30px;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    line-height: 10px;
+    transition: $baseTransition;
+    color: $white;
+    border: 0;
+    outline: 0;
+    display: inline-block;
+    padding-top: 7px;
+    padding-left: 1px;
+    &:hover {
+      background-color: #075e54;
+    }
+  }
 }

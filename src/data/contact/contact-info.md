@@ -28,7 +28,7 @@ infoList:
            listValue: '',
        },
    ]
-btnText: 'Enviar'
+btnText: 'Enviar.'
 formTitle: 'Solicitá nuestros servicios'
 formDesc: 'Estaremos trabajando en conjunto en menos de lo que te esperas.'
 mapPattern: '/images/contact/pattern.png'

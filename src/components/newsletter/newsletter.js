@@ -30,7 +30,7 @@ function Newsletter({ newsletterItems }) {
                       <button
                         className={`${classes.btn} ${classes.btn_secondary} ${classes.btn_hover__white}`}
                       >
-                        Suscribirse
+                        Enviar.
                       </button>
                     </div>
                   </form>
