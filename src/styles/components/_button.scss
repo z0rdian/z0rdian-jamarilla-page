@@ -35,19 +35,19 @@
     &_hover {
         &__white {
             &:hover {
-                background-color: rgb(216, 216, 216);
-                color: $secondary;
+                background-color: $primary;
+                color: $white;
             }
         }
         &__primary {
             &:hover {
-                background-color: $secondary;
+                background-color: $primary;
                 color: $white;
             }
         }
         &__secondary {
             &:hover {
-                background-color: $secondary;
+                background-color: $primary;
                 color: $white;
             }
         }
