@@ -11,7 +11,7 @@ ourProgress: "Años de <span>Experiencia</span>"
 experienceImage: "/images/about/avatar.png"
 experienceAlt: "Avatar"
 aboutSubtitle: "Proveemos el mejor servicio de refacciones y construcciones en Buenos Aires."
-aboutDesc: "La construcción es un arte. Múltiples técnicas se han de aplicar para hacer un trabajo. Nuestro equipo compila las destrezas de distintas areas."
+aboutDesc: "La construcción es un arte. Múltiples técnicas se han de aplicar para hacer un trabajo. Nuestro equipo compila las destrezas de distintas áreas."
 listItem:
   - Herrería para la confección de soportes y estructuras.
   - Cimentación y saneamiento.
