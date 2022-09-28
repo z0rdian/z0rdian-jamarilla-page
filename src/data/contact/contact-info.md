@@ -8,7 +8,7 @@ title: '¡Empecemos!'
 desc: ''
 addressTitle: 'Ubicación'
 addressDesc: 'Mataderos, Ciudad Autónoma de Buenos Aires'
-infoTitle: 'Información de Contacto'
+infoTitle: 'Información de contacto.'
 infoList:
    [
        {

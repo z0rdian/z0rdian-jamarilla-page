@@ -28,9 +28,7 @@ function Counter() {
                     as="div"
                     onChange={(inView) => visibleChangeHandler(inView)}
                   >
-                    <span className={classes.count_title}>
-                      Días en servicio.
-                    </span>
+                    <span className={classes.count_title}>Días</span>
                   </InView>
                 </div>
               )}
@@ -46,7 +44,7 @@ function Counter() {
                     as="div"
                     onChange={(inView) => visibleChangeHandler(inView)}
                   >
-                    <span className={classes.count_title}>Clientes satisfechos.</span>
+                    <span className={classes.count_title}>Clientes</span>
                   </InView>
                 </div>
               )}
@@ -62,7 +60,7 @@ function Counter() {
                     as="div"
                     onChange={(inView) => visibleChangeHandler(inView)}
                   >
-                    <span className={classes.count_title}>Proveedores.</span>
+                    <span className={classes.count_title}>Profesionales</span>
                   </InView>
                 </div>
               )}
