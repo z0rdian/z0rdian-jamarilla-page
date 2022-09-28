@@ -1,3 +1,3 @@
 ---
-title: "¡Suscribite y recibí descuentos!"
+title: "¡Solicitá tú presupuesto!"
 ---

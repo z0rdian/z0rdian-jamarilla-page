@@ -3,7 +3,7 @@ image: '/images/contact/1-1-510x587.jpg'
 imageAlt: 'Contact Image'
 pattern: '/images/contact/pattern.png'
 patternAlt: 'Contact Pattern'
-subTitle: '¿Tenes algo en mente?'
+subTitle: '¿Tenés algo en mente?'
 title: '¡Empecemos!'
 desc: ''
 addressTitle: 'Ubicación'
@@ -29,8 +29,8 @@ infoList:
        },
    ]
 btnText: 'Enviar'
-formTitle: 'Déjanos un Mensaje'
-formDesc: 'Contrucciones top, en menos de lo que te esperas.'
+formTitle: 'Solicitá nuestros servicios'
+formDesc: 'Estaremos trabajando en conjunto en menos de lo que te esperas.'
 mapPattern: '/images/contact/pattern.png'
 mapPatternAlt: 'Map Pattern'
 ---

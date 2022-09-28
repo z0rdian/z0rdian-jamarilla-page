@@ -1,77 +1,77 @@
-@import '../../styles/abstract/custom-variables';
-@import '../../styles/abstract/custom-mixins';
-@import '../../styles/components/button';
+@import "../../styles/abstract/custom-variables";
+@import "../../styles/abstract/custom-mixins";
+@import "../../styles/components/button";
 
 .slide {
-    &-bg {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 800px;
-        display: flex;
-        align-items: center;
-        padding-top: 100px;
-        padding-bottom: 100px;
-        @include breakpoint(max-xl-device) {
-            height: 610px;
-        }
-        &-01 {
-            background-image: url('/images/hero/1.jpg');
-        }
-        &-02 {
-            background-image: url('/images/hero/2.jpg');
-        }
+  &-bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @include breakpoint(max-xl-device) {
+      height: 610px;
     }
+    &-01 {
+      background-image: url("/images/hero/1.jpg");
+    }
+    &-02 {
+      background-image: url("/images/hero/2.jpg");
+    }
+  }
 }
 .subtitle {
-    font-family: $rajdhani;
-    font-size: 24px;
-    line-height: 30px;
-    display: block;
-    color: $white;
-    position: relative;
-    padding-left: 100px;
-    margin-bottom: 5px;
-    &:before {
-        background-color: $white;
-        width: 80px;
-        height: 1px;
-        position: absolute;
-        content: '';
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-    }
+  font-family: $rajdhani;
+  font-size: 30px;
+  line-height: 30px;
+  display: block;
+  color: $white;
+  position: relative;
+  padding-left: 100px;
+  margin-bottom: 5px;
+  &:before {
+    background-color: $white;
+    width: 80px;
+    height: 1px;
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
 }
 .title {
-    h2 {
-        font-size: 88px;
-        line-height: 85px;
-        font-weight: 700;
-        max-width: 57%;
-        @include breakpoint(max-xl-device) {
-            max-width: 85%;
-        }
-        @include breakpoint(max-md-device) {
-            font-size: 50px;
-            line-height: 1;
-        }
-        @include breakpoint(max-sm-device) {
-            max-width: 100%;
-        }
-        span {
-            color: $white;
-        }
+  h2 {
+    font-size: 88px;
+    line-height: 85px;
+    font-weight: 700;
+    max-width: 57%;
+    @include breakpoint(max-xl-device) {
+      max-width: 85%;
     }
+    @include breakpoint(max-md-device) {
+      font-size: 50px;
+      line-height: 1;
+    }
+    @include breakpoint(max-sm-device) {
+      max-width: 100%;
+    }
+    span {
+      color: $white;
+    }
+  }
 }
 .desc {
-    margin-bottom: 35px;
-    max-width: 520px;
-    font-size: 20px;
+  margin-bottom: 35px;
+  max-width: 520px;
+  font-size: 20px;
 }
 .btn {
-    &_wrap {
-        display: flex;
-        border-radius: 15px;
-    }
+  &_wrap {
+    display: flex;
+    border-radius: 15px;
+  }
 }
