@@ -20,7 +20,7 @@ function Newsletter({ newsletterItems }) {
                                             type='email'
                                             name='newsletter'
                                             id='newsletter'
-                                            placeholder='¿Qué esperas?'
+                                            placeholder='¿Qué esperás?'
                                         ></input>
                                         <div className={classes.btn__wrap}>
                                             <button

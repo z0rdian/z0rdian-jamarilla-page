@@ -1,5 +1,5 @@
 ---
-sectionTitle: "Estamos construyendo tus sueños."
+sectionTitle: "Estamos  tus sueños."
 sectionSubtitle: "¿Quiénes?"
 sectionDesc: "Nunca esta de más ser prevenido,<br /> con mi padre eso lo sabemos. Negocio familiar con mas de 20 años de trayectoria a lo largo del país."
 image: "/images/about/1-1.jpg"
