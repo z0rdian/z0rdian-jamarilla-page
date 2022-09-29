@@ -29,7 +29,7 @@ infoList:
        },
    ]
 btnText: 'Enviar.'
-formTitle: 'Envienos un mensaje y en breve le atenderemos'
+formTitle: 'Envíenos un mensaje y en breve le atenderemos'
 formDesc: 'Estaremos trabajando en conjunto en menos de lo que se espera.'
 mapPattern: '/images/contact/pattern.png'
 mapPatternAlt: 'Map Pattern'
