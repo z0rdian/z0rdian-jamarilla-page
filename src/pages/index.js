@@ -20,10 +20,10 @@ function HomePage(props) {
   return (
     <Fragment>
       <Head>
-        <title>Home - Marai Construcciones</title>
+        <title>Home - Amarilla Construcciones</title>
         <meta
           name="description"
-          content="Marai Construcciones - Soluciones y servicios en la Ciudad de Buenoa Aires. Refacciones de primera calidad al mejor precio. "
+          content="Amarilla Construcciones - Soluciones y servicios en la Ciudad de Buenoa Aires. Refacciones de primera calidad al mejor precio. "
         />
       </Head>
       <Hero heroItems={props.heroItems} />
