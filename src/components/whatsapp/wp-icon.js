@@ -3,7 +3,7 @@ import classes from '../whatsapp/wp-icon.module.scss';
 import { FaWhatsapp } from 'react-icons/fa' ;
 
 export const WpIcon = () => {
-    const [isVisable, setIsVisable] = useState(false);
+    const [isVisable, setIsVisable] = useState(true);
 
     const toggleVisibility = () => {
         if (window.pageYOffset > 100) {

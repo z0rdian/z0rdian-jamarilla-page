@@ -3,11 +3,11 @@ import classes from "../instagram/ig-icon.module.scss";
 import { FaInstagram } from "react-icons/fa";
 
 export const IgIcon = () => {
-  const [isVisable, setIsVisable] = useState(false);
+  const [isVisable, setIsVisable] = useState(true);
 
   const toggleVisibility = () => {
-    if (window.pageYOffset > 100) {
-      setIsVisable(true);
+    if (window.pageYOffset > 0) {
+      setIsVisable(true);   
     } else {
       setIsVisable(true);
     }

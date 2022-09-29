@@ -1,5 +1,5 @@
 ---
-footerLogo: "/images/logo/white.svg"
+footerLogo: "/images/logo/logo-amara-main.svg"
 footerLogoAlt: "Footer Logo"
 excerpt: "Soluciones & Servicios"
 inquary: ""

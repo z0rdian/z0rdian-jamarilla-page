@@ -1,80 +1,80 @@
-import { Fragment, useEffect, useState, useRef } from 'react';
-import Link from 'next/link';
-import { Col, Container, Row } from 'react-bootstrap';
-import classes from '../layout/header.module.scss';
-import { FaSearch, FaBars } from 'react-icons/fa';
-import { IoCloseOutline } from 'react-icons/io5';
-import { OffcanvasData } from './offcanvas-data';
+import { Fragment, useEffect, useState, useRef } from "react";
+import Link from "next/link";
+import { Col, Container, Row } from "react-bootstrap";
+import classes from "../layout/header.module.scss";
+import { FaSearch, FaBars } from "react-icons/fa";
+import { IoCloseOutline } from "react-icons/io5";
+import { OffcanvasData } from "./offcanvas-data";
 
 function Header() {
-    // Header Sticky Activation
-    const header = useRef();
-    useEffect(() => {
-        window.addEventListener('scroll', isSticky);
-        return () => {
-            window.removeEventListener('scroll', isSticky);
-        };
-    }, []);
-
-    const isSticky = (e) => {
-        const scrollTop = window.scrollY;
-        scrollTop >= 250
-            ? header.current.classList.add('is-sticky')
-            : header.current.classList.remove('is-sticky');
+  // Header Sticky Activation
+  const header = useRef();
+  useEffect(() => {
+    window.addEventListener("scroll", isSticky);
+    return () => {
+      window.removeEventListener("scroll", isSticky);
     };
-    // End here
+  }, []);
 
-    // Header Search Toggle Activation
-    const [search, setSearch] = useState(false);
+  const isSticky = (e) => {
+    const scrollTop = window.scrollY;
+    scrollTop >= 250
+      ? header.current.classList.add("is-sticky")
+      : header.current.classList.remove("is-sticky");
+  };
+  // End here
 
-    const SearchToggle = () => {
-        search ? setSearch(false) : setSearch(true);
+  // Header Search Toggle Activation
+  const [search, setSearch] = useState(false);
+
+  const SearchToggle = () => {
+    search ? setSearch(false) : setSearch(true);
+  };
+  // End here
+
+  // Offcanvas Activation
+  const [offcanvas, setOffcanvas] = useState(false);
+  const showOffcanvas = () => setOffcanvas(!offcanvas);
+
+  const [submenuOpenId, setSubmenuOpenId] = useState({});
+
+  const showSubmenuClickHandler = (id) =>
+    setSubmenuOpenId((prevData) => {
+      return {
+        [id.toString()]: !prevData[id.toString()],
+      };
+    });
+
+  useEffect(() => {
+    document.body.onclick = (e) => {
+      if (offcanvas) {
+        const clickIgnoreClassList = [
+          "offcanvas-menu",
+          "menu-bar-button",
+          "has-children",
+          "offcanvas-close-btn",
+        ];
+
+        if (
+          !clickIgnoreClassList.find((item) =>
+            [...e.target.classList].includes(item)
+          )
+        ) {
+          setOffcanvas(false);
+        }
+      }
     };
-    // End here
+  }, [offcanvas]);
 
-    // Offcanvas Activation
-    const [offcanvas, setOffcanvas] = useState(false);
-    const showOffcanvas = () => setOffcanvas(!offcanvas);
+  // End here
 
-    const [submenuOpenId, setSubmenuOpenId] = useState({});
-
-    const showSubmenuClickHandler = (id) =>
-        setSubmenuOpenId((prevData) => {
-            return {
-                [id.toString()]: !prevData[id.toString()],
-            };
-        });
-
-    useEffect(() => {
-        document.body.onclick = (e) => {
-            if (offcanvas) {
-                const clickIgnoreClassList = [
-                    'offcanvas-menu',
-                    'menu-bar-button',
-                    'has-children',
-                    'offcanvas-close-btn',
-                ];
-
-                if (
-                    !clickIgnoreClassList.find((item) =>
-                        [...e.target.classList].includes(item)
-                    )
-                ) {
-                    setOffcanvas(false);
-                }
-            }
-        };
-    }, [offcanvas]);
-
-    // End here
-
-    return (
-        <Fragment>
-            <header className={classes.area}>
-                {/* <div className={classes.top}>
+  return (
+    <Fragment>
+      <header className={classes.area}>
+        {/* <div className={classes.top}>
                     <Container>
                         <Row> */}
-                            {/* <Col
+        {/* <Col
                                 xl={{ span: 4, offset: 2 }}
                                 lg={{ span: 5, offset: 3 }}
                                 className='d-none d-lg-block'
@@ -98,22 +98,19 @@ function Header() {
                                     </div>
                                 </div>
                             </Col> */}
-                            <Col
-                                sm={{ span: 6 }}
-                                className={`d-block d-lg-none`}
-                            >
-                                <div className={`header-logo`}>
-                                    <Link href='/'>
-                                        <a className={classes.logo}>
-                                            <img
-                                                src='/images/logo/light.svg'
-                                                alt='Header Lisght Logo'
-                                            />
-                                        </a>
-                                    </Link>
-                                </div>
-                            </Col>
-                            {/* <Col xl={6} lg={4} sm={6}>
+        <Col sm={{ span: 6 }} className={`d-block d-lg-none`}>
+          <div className={`header-logo`}>
+            <Link href="/">
+              <a className={classes.logo}>
+                <img
+                  src="/images/logo/logo-amara.svg"
+                  alt="Header Lisght Logo"
+                />
+              </a>
+            </Link>
+          </div>
+        </Col>
+        {/* <Col xl={6} lg={4} sm={6}>
                                 <div className={classes.right}>
                                     <div>
                                         <Link href='/login-register'>
@@ -161,40 +158,37 @@ function Header() {
                                     </div>
                                 </div>
                             </Col> */}
-                        {/* </Row>
+        {/* </Row>
                     </Container>
                 </div> */}
-                <div ref={header} className={`sticky_holder ${classes.main}`}>
-                    <Container>
-                        <Row>
-                            <Col
-                                xl={{ span: 10, offset: 2 }}
-                                className='d-none d-lg-block'
-                            >
-                                <nav className={classes.menu}>
-                                    <ul className={classes.menu__list}>
-                                        <li>
-                                            <Link href='/'>
-                                                <a>
-                                                    <span>Home</span>
-                                                </a>
-                                            </Link>
-                                        </li>
-                                        {/* <li>
+        <div ref={header} className={`sticky_holder ${classes.main}`}>
+          <Container>
+            <Row>
+              <Col xl={{ span: 10, offset: 2 }} className="d-none d-lg-block">
+                <nav className={classes.menu}>
+                  <ul className={classes.menu__list}>
+                    <li>
+                      <Link href="/">
+                        <a>
+                          <span>Home</span>
+                        </a>
+                      </Link>
+                    </li>
+                    {/* <li>
                                             <Link href='/about'>
                                                 <a>
                                                     <span>Nosotros</span>
                                                 </a>
                                             </Link>
                                         </li> */}
-                                        <li>
-                                            <Link href='/services'>
-                                                <a>
-                                                    <span>Servicios</span>
-                                                </a>
-                                            </Link>
-                                        </li>
-                                        {/* <li className={classes.dropdown_holder}>
+                    <li>
+                      <Link href="/services">
+                        <a>
+                          <span>Servicios</span>
+                        </a>
+                      </Link>
+                    </li>
+                    {/* <li className={classes.dropdown_holder}>
                                             <Link href='/projects/project-fullwidth'>
                                                 <a>
                                                     <span>Proyectos</span>
@@ -222,7 +216,7 @@ function Header() {
                                                 </li>
                                             </ul>
                                         </li> */}
-                                        {/* <li className={classes.dropdown_holder}>
+                    {/* <li className={classes.dropdown_holder}>
                                             <Link href='/'>
                                                 <a>
                                                     <span>Pages</span>
@@ -252,7 +246,7 @@ function Header() {
                                                 </li>
                                             </ul>
                                         </li> */}
-                                        { /* <li className={classes.dropdown_holder}>
+                    {/* <li className={classes.dropdown_holder}>
                                             <Link href='/blogs/blog-fullwidth'>
                                                 <a>
                                                     <span>Blogs</span>
@@ -277,126 +271,96 @@ function Header() {
                                                 </li>
                                             </ul>
                                         </li> */}
-                                        <li className={classes.separator}>
-                                            <Link href='/contact'>
-                                                <a>
-                                                    <span>Contacto</span>
-                                                </a>
-                                            </Link>
-                                        </li>
-                                        <li
-                                            className={`${
-                                                search
-                                                    ? 'search-show'
-                                                    : 'search-hide'
-                                            }`}
-                                        >
-                                            <buton
-                                                className={classes.search__btn}
-                                                onClick={SearchToggle}
-                                            >
-                                                {/* <FaSearch /> */}
-                                            </buton>
-                                            <form className='search-form'>
-                                                <input
-                                                    className='search-input'
-                                                    type='search'
-                                                    name='search'
-                                                    placeholder='Search'
-                                                />
-                                                <button
-                                                    className='search-inner__btn'
-                                                    type='submit'
-                                                >
-                                                    {/* <FaSearch /> */}
-                                                </button>
-                                            </form>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </Col>
-                        </Row>
-                    </Container>
-                    <div className={`${classes.fixed__logo} d-none d-lg-flex`} >
-                        <Link href='/'>
-                            <a className={classes.logo}>
-                                <img
-                                    src='/images/logo/dark.svg'
-                                    alt='Header Dark Logo'
-                                />
-                            </a>
-                        </Link>
-                    </div>
-                </div>
-            </header>
-            <div
-                className={
-                    offcanvas
-                        ? 'offcanvas-menu-wrap active'
-                        : 'offcanvas-menu-wrap'
-                }
-            >
-                <nav className='offcanvas-menu'>
-                    <ul className='offcanvas-menu-items'>
-                        <li className='offcanvas-top'>
-                            <button
-                                className='offcanvas-close-btn'
-                                aria-label='Right Align'
-                            >
-                                <IoCloseOutline onClick={showOffcanvas} />
-                            </button>
-                        </li>
-                        {OffcanvasData.map((item, offcanvas) => {
-                            const submenu = item.submenu;
-                            return (
-                                <li
-                                    key={offcanvas}
-                                    className={`${item.cName}${
-                                        submenuOpenId[item.id.toString()]
-                                            ? ' active'
-                                            : ''
-                                    }`}
-                                    onClick={
-                                        submenu
-                                            ? () =>
-                                                  showSubmenuClickHandler(
-                                                      item.id
-                                                  )
-                                            : () => {}
-                                    }
-                                >
-                                    <Link href={item.path}>
-                                        <a
-                                            className={
-                                                item?.submenu
-                                                    ? 'has-children'
-                                                    : ''
-                                            }
-                                        >
-                                            {item.title}
-                                        </a>
-                                    </Link>
-                                    {submenu && (
-                                        <ul className='submenu'>
-                                            {submenu?.map((item, submenu) => {
-                                                return (
-                                                    <li key={submenu}>
-                                                        <Link href={item.link}>
-                                                            <a>{item.text}</a>
-                                                        </Link>
-                                                    </li>
-                                                );
-                                            })}
-                                        </ul>
-                                    )}
-                                </li>
-                            );
-                        })}
-                    </ul>
+                    <li className={classes.separator}>
+                      <Link href="/contact">
+                        <a>
+                          <span>Contacto</span>
+                        </a>
+                      </Link>
+                    </li>
+                    <li className={`${search ? "search-show" : "search-hide"}`}>
+                      <buton
+                        className={classes.search__btn}
+                        onClick={SearchToggle}
+                      >
+                        {/* <FaSearch /> */}
+                      </buton>
+                      <form className="search-form">
+                        <input
+                          className="search-input"
+                          type="search"
+                          name="search"
+                          placeholder="Search"
+                        />
+                        <button className="search-inner__btn" type="submit">
+                          {/* <FaSearch /> */}
+                        </button>
+                      </form>
+                    </li>
+                  </ul>
                 </nav>
-            </div>
-        </Fragment>
-    );
+              </Col>
+            </Row>
+          </Container>
+          <div className={`${classes.fixed__logo} d-none d-lg-flex`}>
+            <Link href="/">
+              <a className={classes.logo}>
+                <img src="/images/logo/logo-amara-main.svg" alt="Header Dark Logo" />
+              </a>
+            </Link>
+          </div>
+        </div>
+      </header>
+      <div
+        className={
+          offcanvas ? "offcanvas-menu-wrap active" : "offcanvas-menu-wrap"
+        }
+      >
+        <nav className="offcanvas-menu">
+          <ul className="offcanvas-menu-items">
+            <li className="offcanvas-top">
+              <button className="offcanvas-close-btn" aria-label="Right Align">
+                <IoCloseOutline onClick={showOffcanvas} />
+              </button>
+            </li>
+            {OffcanvasData.map((item, offcanvas) => {
+              const submenu = item.submenu;
+              return (
+                <li
+                  key={offcanvas}
+                  className={`${item.cName}${
+                    submenuOpenId[item.id.toString()] ? " active" : ""
+                  }`}
+                  onClick={
+                    submenu ? () => showSubmenuClickHandler(item.id) : () => {}
+                  }
+                >
+                  <Link href={item.path}>
+                    <a className={item?.submenu ? "has-children" : ""}>
+                      {item.title}
+                    </a>
+                  </Link>
+                  {submenu && (
+                    <ul className="submenu">
+                      {submenu?.map((item, submenu) => {
+                        return (
+                          <li key={submenu}>
+                            <Link href={item.link}>
+                              <a>{item.text}</a>
+                            </Link>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
+      </div>
+    </Fragment>
+  );
 }
 
 export default Header;
