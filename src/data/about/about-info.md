@@ -18,6 +18,6 @@ listItem:
   - Planificación e instalación de suministro eléctrico y acuífero.
 checkIcon: "FaCheck"
 breadcrumbTitle: "¿Qué hacemos?"
-breadcrumbSubtitle: "Los Amarilla"
-breadcrumbDesc: "La construcción de tu sueño"
+breadcrumbSubtitle: "Fácil."
+breadcrumbDesc: "La construcción de tu sueño."
 ---

@@ -1,5 +1,5 @@
 ---
-title: 'Plan de Proyecto'
+title: 'Plan'
 mediumImage: 'project-planning-md.jpg'
 largeImage: 'project-planning-lg.jpg'
 detailBreadcrumbSubTitle: 'Single Service'

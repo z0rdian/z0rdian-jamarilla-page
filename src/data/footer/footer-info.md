@@ -1,5 +1,5 @@
 ---
-footerLogo: "/images/logo/logo-amara-main.svg"
+footerLogo: "/images/logo/logo-marai-main.svg"
 footerLogoAlt: "Footer Logo"
 excerpt: "Soluciones & Servicios"
 inquary: ""
@@ -27,5 +27,11 @@ widgetAddress: "Paraná 326 Buenos Aires<br /> Capital Federal"
 widgetNumber: "+54 9 11 6860-6386"
 additionWidgetAddress: "Mataderos Buenos Aires<br /> Capital Federal"
 additionWidgetNumber: "+54 9 11 6860-6386"
-socialList: [{ socialIcon: "FaInstagram", path: "https://www.instagram.com/amarilla_construir/" }]
+socialList:
+  [
+    {
+      socialIcon: "FaInstagram",
+      path: "https://www.instagram.com/amarilla_construir/",
+    },
+  ]
 ---

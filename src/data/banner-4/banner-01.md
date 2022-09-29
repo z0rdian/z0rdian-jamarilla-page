@@ -1,5 +1,5 @@
 ---
-title: 'Reunión con<br/> nuestros clientes'
+title: 'Reunión'
 excerpt: 'En el primer encuentro se determinaran las tareas por hacer.'
 path: '/projects'
 dataCount: '01'

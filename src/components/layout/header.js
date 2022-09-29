@@ -103,7 +103,7 @@ function Header() {
             <Link href="/">
               <a className={classes.logo}>
                 <img
-                  src="/images/logo/logo-amara.svg"
+                  src="/images/logo/logo-marai.svg"
                   alt="Header Lisght Logo"
                 />
               </a>
@@ -305,7 +305,10 @@ function Header() {
           <div className={`${classes.fixed__logo} d-none d-lg-flex`}>
             <Link href="/">
               <a className={classes.logo}>
-                <img src="/images/logo/logo-amara-main.svg" alt="Header Dark Logo" />
+                <img
+                  src="/images/logo/logo-marai-main.svg"
+                  alt="Header Dark Logo"
+                />
               </a>
             </Link>
           </div>
