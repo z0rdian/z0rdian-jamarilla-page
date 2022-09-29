@@ -3,6 +3,7 @@
 .scroll {
     &_to {
         &__top {
+            border-radius: 5px;
             background-color: $secondary;
             cursor: pointer;
             position: fixed;

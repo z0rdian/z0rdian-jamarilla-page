@@ -2,11 +2,12 @@
 
 .wp {
   &_icon {
-    background-color: $secondary;
+    border-radius: 5px;
+    background-color: #25D366;
     cursor: pointer;
     position: fixed;
-    right: 70px;
-    bottom: 10.5px;
+    right: 20px;
+    bottom: 56px;
     z-index: 1;
     font-size: 30px;
     overflow: hidden;

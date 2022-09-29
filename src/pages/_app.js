@@ -3,6 +3,7 @@ import '../styles/globals.scss';
 import Head from 'next/head';
 import { ScrollToTop } from '../components/scroll';
 import { WpIcon } from '../components/whatsapp';
+import { IgIcon } from '../components/instagram';
 
 function MyApp({ Component, pageProps }) {
     return (
@@ -17,6 +18,7 @@ function MyApp({ Component, pageProps }) {
             <Component {...pageProps} />
             <ScrollToTop></ScrollToTop>
             <WpIcon></WpIcon>
+            <IgIcon></IgIcon>
         </Layout>
     );
 }

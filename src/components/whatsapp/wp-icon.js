@@ -9,7 +9,7 @@ export const WpIcon = () => {
         if (window.pageYOffset > 100) {
             setIsVisable(true);
         } else {
-            setIsVisable(false);
+            setIsVisable(true);
         }
     };
 

@@ -62,7 +62,7 @@ function Footer({ footerItems }) {
                 <Row>
                   <Col md={{ span: 6 }} sm={{ span: 4 }}>
                     <ul className={classes.social}>
-                      {footerItem?.socialList?.map((item, index) => {
+                      {/* {footerItem?.socialList?.map((item, index) => {
                         const Social = FaIcons[item.socialIcon];
                         return (
                           <li key={index}>
@@ -75,7 +75,7 @@ function Footer({ footerItems }) {
                             </Link>
                           </li>
                         );
-                      })}
+                      })} */}
                     </ul>
                   </Col>
                   <Col md={{ span: 6 }} sm={{ span: 8 }}></Col>
