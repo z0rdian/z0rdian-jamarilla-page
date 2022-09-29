@@ -29,8 +29,8 @@ infoList:
        },
    ]
 btnText: 'Enviar.'
-formTitle: 'Solicitá nuestros servicios'
-formDesc: 'Estaremos trabajando en conjunto en menos de lo que te esperas.'
+formTitle: 'Envienos un mensaje y en breve le atenderemos'
+formDesc: 'Estaremos trabajando en conjunto en menos de lo que se espera.'
 mapPattern: '/images/contact/pattern.png'
 mapPatternAlt: 'Map Pattern'
 ---
