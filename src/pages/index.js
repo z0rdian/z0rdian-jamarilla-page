@@ -15,7 +15,6 @@ import Newsletter from "../components/newsletter/newsletter";
 // import Testimonial from "../components/testimonial";
 import Contact from "../components/contactHome";
 import { getAllItems, getFeaturedItems } from "../lib/items-util";
-import BannerFour from "../components/banner/index-4";
 
 function HomePage(props) {
   return (
@@ -28,16 +27,16 @@ function HomePage(props) {
         />
       </Head>
       <Hero heroItems={props.heroItems} />
+      <HomePageServices
+        services={props.services}
+        service_section__items={props.service_section__items}
+      />
       <BannerOne bannerItems={props.bannerItems} />
       <AboutOne aboutItems={props.aboutItems} />
       {/* <LatestProject
         projects={props.projects}
         project_section__items={props.project_section__items}
       /> */}
-      <HomePageServices
-        services={props.services}
-        service_section__items={props.service_section__items}
-      />
       {/* <BannerTwo bannerTwoItems={props.bannerTwoItems} /> */}
       <Counter />
       {/* <Team
@@ -52,10 +51,6 @@ function HomePage(props) {
         blogs={props.blogs}
         blog_section__items={props.blog_section__items}
       /> */}
-      <BannerFour
-        bannerFourItems={props.bannerFourItems}
-        bannerSection={props.bannerSection}
-      />
       <Contact contactItems={props.contactItems} />
       <Newsletter newsletterItems={props.newsletterItems} />
       <Footer footerItems={props.footerItems} />
@@ -82,8 +77,6 @@ export function getStaticProps() {
   // const blog_section__items = getAllItems("blog-section");
   // const blogs = getAllItems("blogs");
   // const LatestBlog = getFeaturedItems(blogs);
-  const bannerFourItems = getAllItems("banner-4");
-  const bannerSection = getAllItems("banner-section");
   const contactItems = getAllItems("contact");
   const newsletterItems = getAllItems("newsletter");
   const footerItems = getAllItems("footer");
@@ -105,8 +98,6 @@ export function getStaticProps() {
       // testimonial_section__items,
       // blog_section__items,
       // blogs: LatestBlog,
-      bannerFourItems,
-      bannerSection,
       contactItems,
       newsletterItems,
       footerItems,
