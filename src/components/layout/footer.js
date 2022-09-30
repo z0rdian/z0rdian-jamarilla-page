@@ -13,7 +13,7 @@ function Footer({ footerItems }) {
             <div className={`${classes.bg}`}>
               <Container>
                 <Row>
-                  <Col lg={{ span: 3 }}>
+                  <Col lg={{ span: 9 }}>
                     <div className={classes.widget__item}>
                       <Link href="/">
                         <a className={classes.logo}>
@@ -60,7 +60,7 @@ function Footer({ footerItems }) {
             <div className={classes.bottom}>
               <Container>
                 <Row>
-                  <Col md={{ span: 6 }} sm={{ span: 4 }}>
+                  <Col md={{ span: 5 }} sm={{ span: 4 }}>
                     <ul className={classes.social}>
                       {/* {footerItem?.socialList?.map((item, index) => {
                         const Social = FaIcons[item.socialIcon];
