@@ -18,7 +18,7 @@ function Counter() {
     <div className={classes.area}>
       <Container>
         <Row className={classes.max_md_g_y__80}>
-          <Col lg={{ span: 4 }} sm={{ span: 6 }}>
+          <Col lg={{ span: 5 }} sm={{ span: 1 }}>
             <CountUp start={focus ? 0 : null} end={4380} duration={3}>
               {({ countUpRef }) => (
                 <div className={classes.item}>
@@ -34,7 +34,7 @@ function Counter() {
               )}
             </CountUp>
           </Col>
-          <Col lg={{ span: 3 }} sm={{ span: 6 }}>
+          <Col lg={{ span: 3 }} sm={{ span: 1 }}>
             <CountUp start={focus ? 0 : null} end={30} duration={3}>
               {({ countUpRef }) => (
                 <div className={classes.item}>
