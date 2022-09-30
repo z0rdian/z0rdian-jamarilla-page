@@ -24,7 +24,7 @@ function Footer({ footerItems }) {
                         </a>
                       </Link>
                       <p
-                        className={classes.desc}
+                        className={classes.widget_address}
                         dangerouslySetInnerHTML={{
                           __html: footerItem?.excerpt,
                         }}
@@ -54,31 +54,6 @@ function Footer({ footerItems }) {
                       </div>
                     </div>
                   </Col>
-                </Row>
-              </Container>
-            </div>
-            <div className={classes.bottom}>
-              <Container>
-                <Row>
-                  <Col md={{ span: 5 }} sm={{ span: 4 }}>
-                    <ul className={classes.social}>
-                      {/* {footerItem?.socialList?.map((item, index) => {
-                        const Social = FaIcons[item.socialIcon];
-                        return (
-                          <li key={index}>
-                            <Link
-                              href={`https://www.instagram.com/amarilla_construir/`}
-                            >
-                              <a>
-                                <Social />
-                              </a>
-                            </Link>
-                          </li>
-                        );
-                      })} */}
-                    </ul>
-                  </Col>
-                  <Col md={{ span: 6 }} sm={{ span: 8 }}></Col>
                 </Row>
               </Container>
             </div>
