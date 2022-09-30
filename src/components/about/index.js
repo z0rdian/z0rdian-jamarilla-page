@@ -12,7 +12,7 @@ function AboutOne({ aboutItems }) {
                         <div className={classes.section}>
                             <div className={classes.section__wrap}>
                                 <div className={classes.section__title}>
-                                    <span>{aboutItem?.sectionSubtitle}</span>
+                                    {/* <span>{aboutItem?.sectionSubtitle}</span> */}
                                     <h2>{aboutItem?.sectionTitle}</h2>
                                 </div>
                                 <p

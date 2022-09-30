@@ -1,7 +1,7 @@
 ---
-sectionTitle: "Estamos construyendo tus sueños"
+sectionTitle: "Apasionados por la calidad"
 sectionSubtitle: "¿Quiénes?"
-sectionDesc: "Nunca esta de más ser prevenido,<br /> con mi padre eso lo sabemos. Negocio familiar con mas de 20 años de trayectoria a lo largo del país."
+sectionDesc: null
 image: "/images/about/1-1.jpg"
 alt: "About Image"
 pattern: "/images/about/pattern.png"
@@ -11,7 +11,7 @@ ourProgress: "Años de <span>Experiencia</span>"
 experienceImage: "/images/about/avatar.png"
 experienceAlt: "Avatar"
 aboutSubtitle: "Proveemos el mejor servicio de refacciones y construcciones de Buenos Aires"
-aboutDesc: "La construcción es un arte. Múltiples técnicas se han de aplicar para hacer un trabajo. Nuestro equipo compila las destrezas de distintas áreas."
+aboutDesc: "La construcción es un arte. Múltiples técnicas se han de aplicar para llevar a cabo una obra. Nuestro equipo compila las destrezas de distintas áreas."
 listItem:
   - Herrería para la confección de soportes y estructuras.
   - Cimentación y saneamiento.

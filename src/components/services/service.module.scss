@@ -21,11 +21,17 @@
 }
 .add {
   &__action {
-    background-color: $secondary;
+    background-color: #d7d7d7;
+    // background: linear-gradient(-45deg, rgb(255, 94, 19), #000000f3, #0a369dff );
+    background: linear-gradient(-45deg, #000000f3, rgb(255, 94, 19),#000000f3, #0a369dff, #000000f3 );
+    background-size: 300% 300%;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    animation: animate 15s cubic-bezier(0.36, 0.14, 0.25, 1) infinite;
+    -webkit-animation: animate 15s ease infinite;
+    flex-wrap: wrap;
     h2 {
       margin-bottom: 0;
       a {
@@ -35,6 +41,19 @@
         }
       }
     }
+    
+    @keyframes animate {
+      0% {
+        background-position: 0 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0 50%;
+      }
+    }
+    
     .icon {
       background-color: $primary;
       width: 35px;
