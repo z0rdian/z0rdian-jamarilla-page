@@ -1,7 +1,7 @@
 ---
 footerLogo: "/images/logo/logo-marai-main.svg"
 footerLogoAlt: "Footer Logo"
-excerpt: "Soluciones & Servicios"
+excerpt: ""
 inquary: ""
 inquaryNumber: "+12345 879 854"
 informationTitle: "Information"

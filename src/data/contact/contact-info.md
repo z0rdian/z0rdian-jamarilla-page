@@ -28,7 +28,7 @@ infoList:
            listValue: '',
        },
    ]
-btnText: 'Enviar.'
+btnText: 'Enviar'
 formTitle: 'Envíenos un mensaje y en breve le atenderemos'
 formDesc: 'Estaremos trabajando en conjunto en menos de lo que usted se espera.'
 mapPattern: '/images/contact/pattern.png'

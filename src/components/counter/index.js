@@ -35,10 +35,10 @@ function Counter() {
             </CountUp>
           </Col>
           <Col lg={{ span: 3 }} sm={{ span: 1 }}>
-            <CountUp start={focus ? 0 : null} end={30} duration={3}>
+            <CountUp start={focus ? 0 : null} end={113} duration={3}>
               {({ countUpRef }) => (
                 <div className={classes.item}>
-                  <h2 className={classes.count_inner__text}>+30</h2>
+                  <h2 className={classes.count_inner__text}>+113</h2>
                   <h3 className={classes.count} ref={countUpRef} />
                   <InView
                     as="div"
