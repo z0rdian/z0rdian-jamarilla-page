@@ -114,6 +114,7 @@
   }
   &_textarea {
     &__field {
+      resize: none;
       border-top-right-radius: 15px;
       border: 1px solid #8f8f8f;
       font-family: $yantramanav;
@@ -128,4 +129,8 @@
       padding-top: 40px;
     }
   }
+}
+
+.map_size{
+  border-top-right-radius: 15px;
 }

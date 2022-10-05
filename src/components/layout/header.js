@@ -170,7 +170,7 @@ function Header() {
                     <li>
                       <Link href="/">
                         <a>
-                          <span>Home</span>
+                          <span>Inicio</span>
                         </a>
                       </Link>
                     </li>

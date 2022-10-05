@@ -2,7 +2,7 @@
 sectionTitle: "Apasionados por la calidad"
 sectionSubtitle: "¿Quiénes?"
 sectionDesc: null
-image: "/images/about/1-1.jpg"
+image: "/images/about/1-1.png"
 alt: "About Image"
 pattern: "/images/about/pattern.png"
 patternAlt: "Pattern"

@@ -576,8 +576,10 @@ iframe {
     }
   }
   &_size {
-    height: 530px;
-    padding-bottom: 70px;
+    height: 560px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    // padding-bottom: 70px;
     @include breakpoint(min-sm-device) {
       width: 480px;
     }
