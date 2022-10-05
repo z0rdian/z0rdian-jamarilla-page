@@ -20,7 +20,7 @@ function HomePage(props) {
   return (
     <Fragment>
       <Head>
-        <title>Home - Amarilla Construcciones</title>
+        <title>Inicio - Amarilla Construcciones</title>
         <meta
           name="description"
           content="Amarilla Construcciones - Soluciones y servicios en la Ciudad de Buenos Aires. Refacciones de primera calidad al mejor precio. "
